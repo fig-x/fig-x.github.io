@@ -8,6 +8,8 @@
 import React, { Component } from 'react';
 import { withRouter } from './withRouter.js';
 import LabName from './LabName.js';
+import * as d3 from 'd3';
+
 
 class Footer extends Component {
 
@@ -20,6 +22,16 @@ class Footer extends Component {
 
     componentDidMount() {
         // this.createVis()
+        Date.prototype.getMonthName = function () {
+            let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            return months[this.getMonth()];
+          };
+        
+          d3.select("#lastUpdate")
+            .html(function () {
+              var x = new Date(document.lastModified)
+              return x.getMonthName() + " " + x.getFullYear()
+            })
     }
 
     componentDidUpdate() {
@@ -36,7 +48,7 @@ class Footer extends Component {
                 {/* <p className="float-start">
                     <a href="#">Back to top</a>
                 </p> */}
-                <p>Copyright © <LabName /> | Updated in June 2024</p>
+                <p>Copyright © <LabName /> | Updated in <span id='lastUpdate'>x 2024</span></p>
                
             </div>
         </footer>

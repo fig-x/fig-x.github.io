@@ -2,8 +2,8 @@
 
 import React, { Component } from 'react';
 import { withRouter } from './withRouter.js';
-
-class LabName extends Component {
+import { FiExternalLink } from "react-icons/fi";
+class NormalA extends Component {
 
 
 
@@ -25,13 +25,12 @@ class LabName extends Component {
 
     render() {
         return (
-            <font>
-            FIG. 1
-            </font>
+            <a href={this.props.href} target='_blank' className='normal-a'>{this.props.text} <FiExternalLink className='icon-adjustment'/></a>
+       
         )
     }
 
 }
 
 
-export default LabName;
+export default NormalA;

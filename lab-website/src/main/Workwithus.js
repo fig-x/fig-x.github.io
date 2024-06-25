@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Navigator from './Navigator.js';
+import { withRouter } from '../code/withRouter.js';
+import HeaderSpan from '../code/HeaderSpan.js';
 
-class People extends Component {
+import Navigator from '../code/Navigator.js';
+
+class Workwithus extends Component {
 
 
 
@@ -25,12 +28,13 @@ class People extends Component {
             <div>
                 <div className='top-header'>
                     <div className="container">
-                        <Navigator activeItem='people-nav' />
+                        <Navigator activeItem='workwithus-nav' />
                     </div>
                 </div>
+                <HeaderSpan text='Work with us'/>
                 <div class="container">
                     <div class="row">
-                        people page
+                        workwithus page
                     </div>
                 </div>
 
@@ -41,4 +45,4 @@ class People extends Component {
 }
 
 
-export default People;
+export default Workwithus;

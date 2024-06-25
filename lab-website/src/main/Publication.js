@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { withRouter } from './withRouter.js';
+import Navigator from '../code/Navigator.js';
+import HeaderSpan from '../code/HeaderSpan.js';
 
-
-import Navigator from './Navigator.js';
-
-class Artifact extends Component {
+class Publication extends Component {
 
 
 
@@ -28,20 +26,20 @@ class Artifact extends Component {
             <div>
                 <div className='top-header'>
                     <div className="container">
-                        <Navigator activeItem='artifact-nav' />
+                        <Navigator activeItem='publication-nav' />
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        Artifact page
+                <HeaderSpan text='Publication'/>
+                <div className="container">
+                    <div className="row">
+                        Publication page
                     </div>
                 </div>
             </div>
-
         )
     }
 
 }
 
 
-export default Artifact;
+export default Publication;

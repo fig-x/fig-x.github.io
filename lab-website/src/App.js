@@ -1,22 +1,23 @@
 // import logo from './logo.svg';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useEffect } from "react"
-import Home from './code/Home.js'
-import People from './code/People.js'
-import Publication from './code/Publication.js'
-import Artifact from './code/Artifact.js'
-import Workwithus from './code/Workwithus.js'
-import Research from './code/Research.js'
+import Home from './main/Home.js'
+import People from './main/People.js'
+import Publication from './main/Publication.js'
+import Artifact from './main/Artifact.js'
+import Workwithus from './main/Workwithus.js'
+import Research from './main/Research.js'
 import Navigator from "./code/Navigator.js";
+import Footer from "./code/Footer.js";
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer
- from "./code/Footer.js";
+import { Button } from 'reactstrap'; 
+
 function App() {
   // console.log(process.env.PUBLIC_URL)
   useEffect(() => {
-    document.title = "FIG. 1 Lab"
+    document.title = "FIG. 1 Research"
   }, [])
   return (
     <Router basename={`/${process.env.PUBLIC_URL}`}>

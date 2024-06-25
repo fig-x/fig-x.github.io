@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { withRouter } from './withRouter.js';
 
-class LabName extends Component {
+class HeaderSpan extends Component {
 
 
 
@@ -25,13 +25,14 @@ class LabName extends Component {
 
     render() {
         return (
-            <font>
-            FIG. 1
-            </font>
+            <div className='header-span'>
+                <div className='container'>{this.props.text}</div>
+            </div>
+       
         )
     }
 
 }
 
 
-export default LabName;
+export default HeaderSpan;

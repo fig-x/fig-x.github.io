@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { withRouter } from './withRouter.js';
+import { withRouter } from '../code/withRouter.js';
 
-
-import Navigator from './Navigator.js';
+import HeaderSpan from '../code/HeaderSpan.js';
+import Navigator from '../code/Navigator.js';
 
 class Research extends Component {
 
@@ -31,6 +31,7 @@ class Research extends Component {
                         <Navigator activeItem='research-nav' />
                     </div>
                 </div>
+                <HeaderSpan text='Research'/>
                 <div class="container">
                     <div class="row">
                         Research page

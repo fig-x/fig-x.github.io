@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { withRouter } from './withRouter.js';
-
-
-import Navigator from './Navigator.js';
-
-class Workwithus extends Component {
+import Navigator from '../code/Navigator.js';
+import HeaderSpan from '../code/HeaderSpan.js';
+class People extends Component {
 
 
 
@@ -28,12 +25,13 @@ class Workwithus extends Component {
             <div>
                 <div className='top-header'>
                     <div className="container">
-                        <Navigator activeItem='workwithus-nav' />
+                        <Navigator activeItem='people-nav' />
                     </div>
                 </div>
+                <HeaderSpan text='People'/>
                 <div class="container">
                     <div class="row">
-                        workwithus page
+                        people page
                     </div>
                 </div>
 
@@ -44,4 +42,4 @@ class Workwithus extends Component {
 }
 
 
-export default Workwithus;
+export default People;
