@@ -2,17 +2,17 @@
 
 
 :root {
-  --theme-color: #ba1864;
-  --theme-color-light: #eccee5;
+  --theme-color: #db4a7b;
+  --theme-color-light: #db4a7b88;
   --theme-color-very-light: #f3f2f5;
-
+  font-size: 18px;
 
 }
 
 
 body {
   /* margin: 0; */
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,12 +42,6 @@ code {
   margin-bottom: 2%;
 }
 
-
-.header {
-  background-color: #f8f9fa;
-  padding: 20px;
-  text-align: center;
-}
 
 
 /* navigation bar */

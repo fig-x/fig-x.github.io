@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 See `https://github.com/gitname/react-gh-pages` for how to deploy this to Github.
 
+See `https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages` for routing problems
+
 ## Available Scripts
 
 In the project directory, you can run:

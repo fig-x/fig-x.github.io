@@ -24,19 +24,20 @@ class Artifact extends Component {
 
 
     render() {
-        return (<div>
-            <div className='top-header'>
-                <div className="container">
-                    <Navigator activeItem='artifact-nav' />
+        return (
+            <div>
+                <div className='top-header'>
+                    <div className="container">
+                        <Navigator activeItem='artifact-nav' />
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    Artifact page
+                <div class="container">
+                    <div class="row">
+                        Artifact page
+                    </div>
                 </div>
             </div>
 
-        </div>
         )
     }
 

@@ -25,9 +25,9 @@ class LabName extends Component {
 
     render() {
         return (
-            <text>
+            <font>
             FiG. 1
-            </text>
+            </font>
         )
     }
 

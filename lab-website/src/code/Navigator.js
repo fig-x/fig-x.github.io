@@ -7,6 +7,7 @@ import LabName from './LabName.js';
 
 class Navigator extends Component {
 
+    // state = {'activeItem': 'home-nav'}
 
     constructor(props) {
         super(props);
@@ -30,8 +31,6 @@ class Navigator extends Component {
 
 
     render() {
-        document.title = 'FIG. 1 Lab'
-        console.log(this.props.activeItem)
         // https://www.codeply.com/p/zzFC5XoyUm
         return (
             <nav className="navbar navbar-expand-lg">
@@ -51,8 +50,13 @@ class Navigator extends Component {
                                 className={this.props.activeItem == 'home-nav' ?
                                     "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
                                 onClick={() => {
-                                    this.setState({ 'activeIem': 'home-nav' })
-                                    window.open('/react-gh-pages', '_self')
+                                    // this.setState({ 'activeItem': 'home-nav' })
+                                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+                                        window.open('/react-gh-pages/', '_self')
+                                    } else {
+                                        window.open('/Home', '_self')
+                                    }
+
                                     //  this.forceUpdate()
                                 }}
                             >Home</a>
@@ -61,8 +65,12 @@ class Navigator extends Component {
                             <a href="#" className={this.props.activeItem == 'research-nav' ?
                                 "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
                                 onClick={() => {
-                                    this.setState({ 'activeIem': 'research-nav' })
-                                    window.open('/react-gh-pages/Research', '_self')
+                                    // this.setState({ 'activeItem': 'research-nav'})
+                                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+                                        window.open('/react-gh-pages/Research', '_self')
+                                    } else {
+                                        window.open('/Research', '_self')
+                                    }
                                 }}
                             >Research</a>
                         </li>
@@ -70,8 +78,12 @@ class Navigator extends Component {
                             <a href="#" className={this.props.activeItem == 'people-nav' ?
                                 "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
                                 onClick={() => {
-                                    this.setState({ 'activeIem': 'people-nav' })
-                                    window.open('/react-gh-pages/People', '_self')
+                                    // this.setState({ 'activeItem': 'people-nav' })
+                                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+                                        window.open('/react-gh-pages/People', '_self')
+                                    } else {
+                                        window.open('/People', '_self')
+                                    }
                                 }}
                             >People</a>
                         </li>
@@ -80,8 +92,12 @@ class Navigator extends Component {
                             <a href="#" className={this.props.activeItem == 'publication-nav' ?
                                 "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
                                 onClick={() => {
-                                    this.setState({ 'activeIem': 'publication-nav' })
-                                    window.open('/react-gh-pages/Publication', '_self')
+                                    // this.setState({ 'activeItem': 'publication-nav' })
+                                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+                                        window.open('/react-gh-pages/Publication', '_self')
+                                    } else {
+                                        window.open('/Publication', '_self')
+                                    }
                                 }}
                             >Publication</a>
                         </li>
@@ -90,8 +106,12 @@ class Navigator extends Component {
                             <a href="#" className={this.props.activeItem == 'artifact-nav' ?
                                 "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
                                 onClick={() => {
-                                    this.setState({ 'activeIem': 'artifact-nav' })
-                                    window.open('/react-gh-pages/Artifact', '_self')
+                                    // this.setState({ 'activeItem': 'artifact-nav' })
+                                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+                                        window.open('/react-gh-pages/Artifact', '_self')
+                                    } else {
+                                        window.open('/Artifact', '_self')
+                                    }
                                 }}
                             >Artifact</a>
                         </li>
@@ -100,8 +120,12 @@ class Navigator extends Component {
                             <a href="#" className={this.props.activeItem == 'workwithus-nav' ?
                                 "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
                                 onClick={() => {
-                                    this.setState({ 'activeIem': 'workwithus-nav' })
-                                    window.open('/react-gh-pages/Workwithus', '_self')
+                                    // this.setState({ 'activeItem': 'workwithus-nav' })
+                                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+                                        window.open('/react-gh-pages/Workwithus', '_self')
+                                    } else {
+                                        window.open('/Workwithus', '_self')
+                                    }
                                 }}
                             >Work with us</a>
                         </li>

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { withRouter } from './withRouter.js';
-
-
 import Navigator from './Navigator.js';
+
 class People extends Component {
 
 
@@ -23,19 +21,20 @@ class People extends Component {
 
 
     render() {
-        return (<div>
-            <div className='top-header'>
-                <div className="container">
-                    <Navigator activeItem='people-nav' />
+        return (
+            <div>
+                <div className='top-header'>
+                    <div className="container">
+                        <Navigator activeItem='people-nav' />
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    people page
+                <div class="container">
+                    <div class="row">
+                        people page
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
         )
     }
 

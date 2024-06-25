@@ -24,18 +24,19 @@ class Research extends Component {
 
 
     render() {
-        return (<div>
-             <div className='top-header'>
+        return (
+            <div>
+                <div className='top-header'>
                     <div className="container">
                         <Navigator activeItem='research-nav' />
                     </div>
                 </div>
-            <div class="container">
-                <div class="row">
-                    Research page
+                <div class="container">
+                    <div class="row">
+                        Research page
+                    </div>
                 </div>
             </div>
-        </div>
 
         )
     }

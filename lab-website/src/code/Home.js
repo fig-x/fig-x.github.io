@@ -4,7 +4,6 @@ import SpecText from './SpecText.js'
 
 import Navigator from './Navigator.js';
 import LabName from './LabName.js';
-import Footer from './Footer.js';
 class Home extends Component {
 
 
@@ -26,17 +25,24 @@ class Home extends Component {
 
     render() {
         return (
-            <div >
+            <div>
                 <div className='top-header'>
                     <div className="container">
-                        <Navigator activeItem='home-nav' />
+                        <Navigator activeItem = 'home-nav'/>
                     </div>
                 </div>
                 <div className="container">
                     <div className="">
                         <h1 className="homepage-logo"><LabName /></h1>
-                        <p>An Innovation Research Group of Interaction, Visualization, and Computing</p>
-                        {/* <p><SpecText text='F'/>umeng's Research <SpecText text='G'/>roup of <SpecText text='i'/>nteraction, V<SpecText text='i'/>sualization, and Comput<SpecText text='i'/>ng, the first</p> */}
+                        <br></br>
+                        <p>
+                            Hello! We are a research lab at 
+                            working on Human-Computer Interaction, Data Visualization, and Visual Computing.
+                        <br/>
+                        <SpecText text='I'/> stands for Innovation, Interaction, Visualization, and Computing.</p>
+                        <p>
+
+                        </p>
                     </div>
                     <div className="row">
                         {/* <div class="col-md-4">
@@ -53,9 +59,8 @@ class Home extends Component {
                     </div> */}
                     </div>
                 </div>
-
-                <Footer />
             </div>
+
         )
     }
 

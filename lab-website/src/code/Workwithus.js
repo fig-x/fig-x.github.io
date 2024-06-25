@@ -26,19 +26,18 @@ class Workwithus extends Component {
     render() {
         return (
             <div>
-             <div className='top-header'>
+                <div className='top-header'>
                     <div className="container">
                         <Navigator activeItem='workwithus-nav' />
                     </div>
                 </div>
-            <div class="container">
-                <div class="row">
-                    workwithus page
+                <div class="container">
+                    <div class="row">
+                        workwithus page
+                    </div>
                 </div>
+
             </div>
-        </div>
-
-
         )
     }
 
