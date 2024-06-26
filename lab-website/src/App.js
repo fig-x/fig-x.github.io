@@ -17,7 +17,7 @@ import { Button } from 'reactstrap';
 function App() {
   // console.log(process.env.PUBLIC_URL)
   useEffect(() => {
-    document.title = "FIG. 1 Research"
+    document.title = "FIGX Research"
   }, [])
   return (
     <Router basename={`/${process.env.PUBLIC_URL}`}>

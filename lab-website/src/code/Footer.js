@@ -25,12 +25,12 @@ class Footer extends Component {
         Date.prototype.getMonthName = function () {
             let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             return months[this.getMonth()];
-          };
-        
-          d3.select("#lastUpdate")
+        };
+
+        d3.select("#lastUpdate")
             .html(function () {
-              var x = new Date(document.lastModified)
-              return x.getMonthName() + " " + x.getFullYear()
+                var x = new Date(document.lastModified)
+                return x.getMonthName() + " " + x.getFullYear()
             })
     }
 
@@ -43,15 +43,15 @@ class Footer extends Component {
 
     render() {
         return (
-            <footer className="text-muted py-5">
+
             <div className="container">
-                {/* <p className="float-start">
-                    <a href="#">Back to top</a>
-                </p> */}
-                <p>Copyright © <LabName /> | Updated in <span id='lastUpdate'>x 2024</span></p>
-               
+                <footer className="footer-bottom d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div className=''>
+                        {/* <hr style={{'width': '80%'}} className='float-center'/> */}
+                        <p className='footer-span'>Copyright © <LabName /> <br />Last updated in <span id='lastUpdate'>x 2024</span></p></div>
+                </footer >
             </div>
-        </footer>
+
         )
     }
 

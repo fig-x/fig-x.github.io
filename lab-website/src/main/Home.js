@@ -8,6 +8,8 @@ import HeaderSpan from '../code/HeaderSpan.js';
 import NormalA from '../code/NormalA.js';
 import * as d3 from 'd3';
 import * as d3time from 'd3-time-format'
+import { isMobile } from 'react-device-detect';
+import { _newspath } from '../code/helper.js'
 
 const tParser = d3time.timeParse("%Y-%m-%d")
 const oFormat = d3time.timeFormat("%Y %B")
@@ -26,7 +28,7 @@ class Home extends Component {
     componentDidMount() {
         // this.createVis()
 
-        d3.json('https://raw.githubusercontent.com/fig-one/fig-one-data/main/news.json', (newsdata) => {
+        d3.json(_newspath, (newsdata) => {
             this.createNews(newsdata)
 
         })
@@ -55,7 +57,7 @@ class Home extends Component {
             allnews
                 // .forEach()
                 .append('div')
-                .attr('class', 'col-1 newsdate')
+                .attr('class', 'col-2 newsdate')
                 .text(d => {
                     return oFormat(d.timeFormatted)
                 })
@@ -82,28 +84,32 @@ class Home extends Component {
                     <div className="padding-top">
                         <div className="row">
 
-                            <div className='col-lg-3'>
+                           {isMobile && <div className='col-lg-4'>
                                 <img src="front-page.svg" style={{ 'width': '100%' }} />
-                            </div>
-                            <div className='col-lg-9' style={{ 'padding-top': '10px' }}>
+                            </div> }
+                            <div className='col-lg-8' style={{ 'padding-top': '10px' }}>
                                 <p>
-                                    Hello! We are a research lab within the <NormalA
+                                    We are a research lab within the <NormalA
                                         href="https://www.cs.umd.edu/" text="Department of Computer
                                         Science"/> at the <NormalA href="https://umd.edu/" text="University of
-                                            Maryland, College Park" />.
-                                    We specialize in Human-Computer Interaction, Information Visualization, and Visual Computing.
-                                    Our research develops visual representations and interfaces that empower people to understand, interact with, and
-                                    develop computional models, such as probabilistic forecasts, machine learning, and foundation models.
-                                    Topics we like include model explanation, uncertainty communication, decision-making, and data and AI literacy.
+                                            Maryland, College Park" />, specializing in Human-Computer Interaction, Information Visualization, and Visual Computing.
+                                    We develop visual representations and interfaces that empower people to understand, interact with, and
+                                    develop computional models, including probabilistic forecasts, machine learning, and foundation models.
                                     <br />
 
                                 </p>
                             </div>
 
+
+                           {!isMobile && <div className='col-lg-4'>
+                                <img src="front-page.svg" style={{ 'width': '100%' }} />
+                            </div> }
+
                         </div>    </div>
                     <div className="padding-top"></div>
                     <div className="row">
-                        <div id='home-slide-show'></div>
+                        <h2>Topics</h2>
+                        <div id='topic-frontpage'></div>
                     </div>
                     <div className="padding-top"></div>
                     <div className="row">
