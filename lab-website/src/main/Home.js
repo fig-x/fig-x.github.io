@@ -21,17 +21,22 @@ class Home extends Component {
 
     constructor(props) {
         super(props);
-        this.createNews = this.createNews.bind(this)
     }
 
 
     componentDidMount() {
         // this.createVis()
 
-        d3.json(_newspath, (newsdata) => {
-            this.createNews(newsdata)
-
-        })
+        fetch(_newspath)
+            .then(response => response.json())
+            .then(data => {
+                data.sort((a, b) => {
+                    a.timeFormatted = tParser(a.time)
+                    b.timeFormatted = tParser(b.time)
+                    return b.timeFormatted - a.timeFormatted
+                })
+                this.setState({ 'newsdata': data })
+            });
     }
 
     componentDidUpdate() {
@@ -39,38 +44,32 @@ class Home extends Component {
     }
 
 
-    createNews(newsdata) {
-        if (newsdata) {
-            // console.log(newsdata)
-            newsdata.sort((a, b) => {
-                a.timeFormatted = tParser(a.time)
-                b.timeFormatted = tParser(b.time)
-                return b.timeFormatted - a.timeFormatted
-            })
+    //     createNews(newsdata) {
 
-            let allnews = d3.select('#news-containter')
-                .selectAll('news')
-                .data(newsdata)
-                .enter().append("div")
-                .attr('class', 'row')
 
-            allnews
-                // .forEach()
-                .append('div')
-                .attr('class', 'col-2 newsdate')
-                .text(d => {
-                    return oFormat(d.timeFormatted)
-                })
+    //         let allnews = d3.select('#news-containter')
+    //             .selectAll('news')
+    //             .data(newsdata)
+    //             .enter().append("div")
+    //             .attr('class', 'row')
 
-            allnews
-                .append('div')
-                .attr('class', 'col-10 newscontent')
-                .html(d => {
-                    return d.htmlContent
-                })
+    //         allnews
+    //             // .forEach()
+    //             .append('div')
+    //             .attr('class', 'col-2 newsdate')
+    //             .text(d => {
+    //                 return oFormat(d.timeFormatted)
+    //             })
 
-        }
-    }
+    //         allnews
+    //             .append('div')
+    //             .attr('class', 'col-10 newscontent')
+    //             .html(d => {
+    //                 return d.htmlContent
+    //             })
+
+    //     }
+    // }
 
     render() {
         return (
@@ -84,9 +83,9 @@ class Home extends Component {
                     <div className="padding-top">
                         <div className="row">
 
-                           {isMobile && <div className='col-lg-4'>
+                            {isMobile && <div className='col-lg-4'>
                                 <img src="front-page.svg" style={{ 'width': '100%' }} />
-                            </div> }
+                            </div>}
                             <div className='col-lg-8' style={{ 'padding-top': '10px' }}>
                                 <p>
                                     We are a research lab within the <NormalA
@@ -94,16 +93,16 @@ class Home extends Component {
                                         Science"/> at the <NormalA href="https://umd.edu/" text="University of
                                             Maryland, College Park" />, specializing in Human-Computer Interaction, Information Visualization, and Visual Computing.
                                     We develop visual representations and interfaces that empower people to understand, interact with, and
-                                    develop computional models, including probabilistic forecasts, machine learning, and foundation models.
+                                    develop computional models. These models include probabilistic forecasts, machine learning, and foundation models.
                                     <br />
 
                                 </p>
                             </div>
 
 
-                           {!isMobile && <div className='col-lg-4'>
+                            {!isMobile && <div className='col-lg-4'>
                                 <img src="front-page.svg" style={{ 'width': '100%' }} />
-                            </div> }
+                            </div>}
 
                         </div>    </div>
                     <div className="padding-top"></div>
@@ -114,11 +113,21 @@ class Home extends Component {
                     <div className="padding-top"></div>
                     <div className="row">
                         <h2>News</h2>
-                        <div id='news-containter'></div>
+                        <div id='news-containter'>
+
+                            {this.state && this.state.newsdata && this.state.newsdata.map(d => {
+                                return (
+                                    <div className='row'>
+                                        <div className='col-2 newsdate'>{oFormat(d.timeFormatted)}</div><div className='col-10 newscontent' dangerouslySetInnerHTML={{ __html: d.htmlContent }} />
+
+                                    </div>
+                                )
+                            })
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
-
+            </div >
         )
     }
 

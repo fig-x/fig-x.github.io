@@ -9,7 +9,7 @@ import React, { Component } from 'react';
 import { withRouter } from './withRouter.js';
 import LabName from './LabName.js';
 import * as d3 from 'd3';
-
+import { VscGithub } from "react-icons/vsc";
 
 class Footer extends Component {
 
@@ -27,11 +27,10 @@ class Footer extends Component {
             return months[this.getMonth()];
         };
 
-        d3.select("#lastUpdate")
-            .html(function () {
+
                 var x = new Date(document.lastModified)
-                return x.getMonthName() + " " + x.getFullYear()
-            })
+                this.setState({'last': x.getMonthName() + " " + x.getFullYear()})
+      
     }
 
     componentDidUpdate() {
@@ -47,8 +46,9 @@ class Footer extends Component {
             <div className="container">
                 <footer className="footer-bottom d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                     <div className=''>
+                        Github <VscGithub className='icon-adjustment'/> <a href="https://github.com/fig-x" target='blank' className='plain-a'>fig-x</a>
                         {/* <hr style={{'width': '80%'}} className='float-center'/> */}
-                        <p className='footer-span'>Copyright © <LabName /> <br />Last updated in <span id='lastUpdate'>x 2024</span></p></div>
+                        <p className='footer-span'>Copyright © <LabName /> <br />Last updated in {this.state && <span id='lastUpdate'>{this.state.last}</span>}</p></div>
                 </footer >
             </div>
 
