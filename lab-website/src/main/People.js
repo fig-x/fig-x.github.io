@@ -19,12 +19,11 @@ class People extends Component {
 
     constructor(props) {
         super(props);
-        // this.createPeople = this.createPeople.bind(this)
     }
 
 
     componentDidMount() {
-        // this.createVis()
+
         fetch(_peoplepath)
             .then(response => response.json())
             .then(data => {
@@ -36,11 +35,6 @@ class People extends Component {
                 })
 
                 this.setState({ peopledata: data })
-                let arr = ['current', 'current-non-human', 'alumni']
-                // arr.forEach(c => {
-                //     let subset = data.filter(p => p.catergory === c)
-                // 
-                // })
 
             });
 
@@ -83,7 +77,7 @@ class People extends Component {
                                         <Card.Body>
                                             <p className='people-info'>{p.position}</p>
                                             <p className='people-info' dangerouslySetInnerHTML={{__html: p.quote}}/>
-                                            {p.year && <p className='people-info'>since <font className='people-little-info'>{p.year}</font></p>}
+                                            {p.year && <h5 className='people-info'>since <font className='people-little-info'>{p.year}</font></h5>}
                                         </Card.Body>
                                     </Card>)
                                 })}

@@ -34,7 +34,7 @@ class Navigator extends Component {
   render() {
     // https://www.codeply.com/p/zzFC5XoyUm
     return (
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar navbar-expand-lg border-bottom">
         <div className="container-fluid" style={{'paddingLeft': 0}}>
             <a className="navbar-brand" href="#"><img src='fig.svg' style={{ 'width': '2rem' }}></img></a>
             {/* <div className="w-100 text-right  "> */}

@@ -43,14 +43,15 @@ class Footer extends Component {
     render() {
         return (
 
-            <div className="container">
-                <footer className="footer-bottom d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <div className=''>
+
+                <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+                    <div className='container border-top footer-bottom '>
                         Github <VscGithub className='icon-adjustment'/> <a href="https://github.com/fig-x" target='blank' className='plain-a'>fig-x</a>
                         {/* <hr style={{'width': '80%'}} className='float-center'/> */}
-                        <p className='footer-span'>Copyright © <LabName /> <br />Last updated in {this.state && <span id='lastUpdate'>{this.state.last}</span>}</p></div>
+                        <p className='footer-span'>Copyright © <LabName /> <br />Last updated in {this.state && <span id='lastUpdate'>{this.state.last}</span>}
+                        </p></div>
                 </footer >
-            </div>
+
 
         )
     }

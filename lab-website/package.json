@@ -1,7 +1,7 @@
 {
   "name": "lab-website",
   "version": "0.1.0",
-  "homepage": "https://fig-one.github.io/",
+  "homepage": "https://fig-x.github.io/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
