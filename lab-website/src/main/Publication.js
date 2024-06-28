@@ -41,11 +41,11 @@ class Publication extends Component {
             <div>
 
                 <div className='top-header'>
-                    <div className="container">
+                    <div className="container border-bottom">
                         <Navigator activeItem='publication-nav' />
                     </div>
                 </div>
-                <HeaderSpan text='Publication' />
+                {/* <HeaderSpan text='Publication' /> */}
 
                 <div className="container">
                     <div className='padding-top'></div>
@@ -64,7 +64,7 @@ class Publication extends Component {
                                         <p className='paper-people' dangerouslySetInnerHTML={{ __html: pub.people }} />
 
                                         {pub.description && <p className='paper-description'><q>{pub.description}</q></p>}
-                                        <p className='paper-venue'><span className='paper-short-name'>{pub.abbr} </span>  <span className='sep-bar paper-long-name'>  | </span>
+                                        <p className='paper-venue'><span className='paper-short-name'>{pub.abbr} {pub.year} </span>  <span className='sep-bar paper-long-name'>  | </span>
                                             <span className='paper-long-name'>{this.state.publicationmap[pub.abbr]} </span>{pub.awards && <span className='sep-bar'>  | </span>}
                                             {pub.awards && !pub.awards.includes("Best") && <span className='paper-award'> <PiMedal /> {pub.awards}</span>}
                                             {pub.awards && pub.awards.includes("Best") && <span className='paper-award'> <PiMedalFill /> {pub.awards}</span>}</p>

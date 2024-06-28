@@ -9,8 +9,8 @@ import { FiExternalLink } from "react-icons/fi";
 let arr = ['current', 'current-non-human', 'alumni']
 
 let nameMap = {
-    'current': 'current members',
-    'current-non-human': 'Non-human friends',
+    'current': 'Current',
+    'current-non-human': 'Non-human',
     'alumni': 'Alumni'
 }
 
@@ -50,11 +50,11 @@ class People extends Component {
         return (
             <div>
                 <div className='top-header'>
-                    <div className="container">
+                    <div className="container border-bottom">
                         <Navigator activeItem='people-nav' />
                     </div>
                 </div>
-                <HeaderSpan text='People' />
+                {/* <HeaderSpan text='People' /> */}
                 <div class="container">
                     <div id='people' class="row">
 
@@ -64,7 +64,7 @@ class People extends Component {
     
                             return (subset.length > 0 && <div>
                                 <div className='padding-top' ></div>
-                                <h3>{nameMap[c]}</h3>
+                                <h2>{nameMap[c]}</h2>
                                 {subset.map(p => {
                                     return (<Card className='people-card'>
 
@@ -75,9 +75,9 @@ class People extends Component {
                                             {p.website == '' && <span href={p.website} target='_blank' className='people-name'>{p.name} </span>}
                                         </Card.Title>
                                         <Card.Body>
-                                            <p className='people-info'>{p.position}</p>
+                                            <p className='people-position'>{p.position}</p>
                                             <p className='people-info' dangerouslySetInnerHTML={{__html: p.quote}}/>
-                                            {p.year && <h5 className='people-info'>since <font className='people-little-info'>{p.year}</font></h5>}
+                                            {p.year && <p className='people-info'>since <font className='people-little-info'>{p.year}</font></p>}
                                         </Card.Body>
                                     </Card>)
                                 })}

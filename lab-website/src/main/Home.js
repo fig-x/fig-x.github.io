@@ -75,7 +75,7 @@ class Home extends Component {
         return (
             <div>
                 <div className='top-header'>
-                    <div className="container">
+                    <div className="container border-bottom">
                         <Navigator activeItem='home-nav' />
                     </div>
                 </div>
@@ -88,12 +88,12 @@ class Home extends Component {
                             </div>}
                             <div className='col-lg-8' style={{ 'padding-top': '10px' }}>
                                 <p>
-                                    We are a research lab within the <NormalA
+                                    Hello! We are a research lab within the <NormalA
                                         href="https://www.cs.umd.edu/" text="Department of Computer
                                         Science"/> at the <NormalA href="https://umd.edu/" text="University of
                                             Maryland, College Park" />, specializing in Human-Computer Interaction, Information Visualization, and Visual Computing.
                                     We develop visual representations and interfaces that empower people to understand, interact with, and
-                                    develop computional models. These models include probabilistic forecasts, machine learning, and foundation models.
+                                    develop computional models. Our target models include probabilistic forecasts, machine learning, and foundation models.
                                     <br />
 
                                 </p>

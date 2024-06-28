@@ -27,7 +27,7 @@ class Artifact extends Component {
         return (
             <div>
                 <div className='top-header'>
-                    <div className="container">
+                    <div className="container border-bottom">
                         <Navigator activeItem='artifact-nav' />
                     </div>
                 </div>
