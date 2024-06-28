@@ -26,8 +26,8 @@ class Workwithus extends Component {
     render() {
         return (
             <div>
-                <div className='top-header'>
-                    <div className="container border-bottom">
+                <div className='top-header border-bottom'>
+                    <div className="container">
                         <Navigator activeItem='workwithus-nav' />
                     </div>
                 </div>

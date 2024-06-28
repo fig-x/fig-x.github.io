@@ -43,20 +43,25 @@ class Footer extends Component {
     render() {
         return (
 
+            <div>
+                <div className='padding-top'></div>
+                <footer className="border-top d-flex flex-wrap bg-dark justify-content-between align-items-center py-3 ">
+                    <div className='container '>
+                        <div className='row'>
+                            <div className='col-lg-3 footer-bottom'>
+                                Github <VscGithub className='icon-adjustment' /> 
+                                <a href="https://github.com/fig-x" target='blank' className='plain-a'> fig-x</a>  <br />
+                               Copyright © <LabName /> <br />
+                                    Last update in {this.state && <span id='lastUpdate'>{this.state.last}</span>}
+                                </div>   <div className='col-lg-3 footer-bottom'>
+                                  Brendan Iribe Center 
+                                  <br />8125 Paint Branch Dr. 
+                                  <br />College Park, MD 20742 
 
-            <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-                <div className='container border-top'>
-                    <div className='row'>
-                        <div className='footer-bottom col-lg-6'>
-                            Github <VscGithub className='icon-adjustment' /> <a href="https://github.com/fig-x" target='blank' className='plain-a'>fig-x</a>
-                            {/* <hr style={{'width': '80%'}} className='float-center'/> */}
-                            <p className='footer-span'>Copyright © <LabName /> <br />Last updated in {this.state && <span id='lastUpdate'>{this.state.last}</span>}
-                            </p></div>
-
-                        <div className=' footer-bottom col-lg-6 text-end'>
-                        <p>Brendan Iribe Center <br/>8125 Paint Branch Dr. <br />College Park, MD 20742</p>
-                        </div>      </div></div>
-            </footer >
+                            </div>
+                        </div>
+                    </div>
+                </footer ></div >
 
 
         )

@@ -1,28 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url(BlinkMacSystemFont.css);
 
 :root {
-  --theme-color: #1aaaed;
+  --theme-color: #4855ac;
   --award-color: #1aaaed;
-  --theme-color-light: #abe3f6;
+  --theme-color-light: #b7d8fe;
   --theme-color-very-light: #e7f7fe;
   --light-gray: #cccccc;
   --dark-gray: #777777;
   --background-gray: #f6f7f8; 
-  font-size: 1.09rem;
+  font-size: 1.1rem;
   /* bottom: 0; */
   /* margin-bottom: 0; */
 }
 
-
+html{
+  background-color: #212529;
+}
 body {
   /* margin: 0; */
-  font-family: 'Aleo', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family:  BlinkMacSystemFont, BlinkMacSystemFontL, 'Roboto', system-ui, -apple-system, 
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 350 !important;
-  /* font-size: 18px !important; */
 }
 
 code {
@@ -39,21 +41,22 @@ code {
 
 .header-span {
   font-size: larger;
-  font-family: 'Roboto Condensed' !important;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-family: 'Aleo' !important;
+  /* font-weight: bolder; */
+  font-weight: 700 !important;
+  /* text-transform: uppercase; */
   /* color: var(--theme-color); */
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 
 h2 {
-  font-size: 1.3rem !important;
-  font-family: 'Roboto Condensed' !important;
+  font-size: 1.35rem !important;
+  font-family: 'Aleo' !important;
   font-weight: 600 !important;
   font-variation-settings: "wdth" 100;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
   color: var(--theme-color);
   margin-bottom: 1rem !important;
 }
@@ -133,7 +136,9 @@ transition: .2s;
   font-size: 85%;
 }
 
-
+.container {
+  margin: 0 1vw 0 1vm !important;
+}
 
 /* each module */
 
@@ -151,7 +156,7 @@ transition: .2s;
 /* footer */
 
 .footer-bottom {
-  height: 80px;
+  height: auto;
   padding-bottom: 20px !important;
   /* bottom:-20px; */
   width: 100%;
@@ -181,7 +186,6 @@ transition: .2s;
 }
 
 .people-name {
-  /* color: var(--theme-color); */
   font-size: 90%;
   font-style: normal;
   color: inherit;
@@ -190,12 +194,16 @@ transition: .2s;
 
 }
 
+
+
 .headshot {
-  margin: 20px 20px 20px 0;
+  /* padding: .5px; */
+  margin: 20px 20px 0px 0;
   border-top-left-radius: 50% !important;
   border-top-right-radius: 50% !important;
   border-bottom-left-radius: 50% !important;
   border-bottom-right-radius: 50% !important;
+  border: var(--bs-border-color) 1px solid;
   /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
 }
 
@@ -244,6 +252,7 @@ transition: .2s;
 }
 
 .paper-title{
+  font-family: 'Roboto';
   padding-top: .5rem;
   padding-bottom: .3rem;
   font-size: 1.1rem;
@@ -251,7 +260,7 @@ transition: .2s;
   margin-bottom: 0;
   /* font-size: large; */
   word-spacing: .5px;
-  font-weight: 600 !important;
+  font-weight: 550 !important;
 }
 
 .paper-people{
@@ -335,5 +344,5 @@ transition: .2s;
   -webkit-text-decoration-line:  underline !important;
   -webkit-text-decoration-color:  var(--theme-color-light) !important;
   -webkit-text-decoration-style: solid !important;
-  -webkit-text-decoration-thickness: 2px !important;
+  -webkit-text-decoration-thickness: 3px !important;
 }

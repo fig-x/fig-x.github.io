@@ -74,8 +74,8 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div className='top-header'>
-                    <div className="container border-bottom">
+                <div className='top-header border-bottom'>
+                    <div className="container">
                         <Navigator activeItem='home-nav' />
                     </div>
                 </div>
@@ -86,7 +86,7 @@ class Home extends Component {
                             {isMobile && <div className='col-lg-4'>
                                 <img src="front-page.svg" style={{ 'width': '100%' }} />
                             </div>}
-                            <div className='col-lg-8' style={{ 'padding-top': '10px' }}>
+                            <div className='col-lg-7' style={{ 'padding-top': '10px' }}>
                                 <p>
                                     Hello! We are a research lab within the <NormalA
                                         href="https://www.cs.umd.edu/" text="Department of Computer
@@ -100,7 +100,7 @@ class Home extends Component {
                             </div>
 
 
-                            {!isMobile && <div className='col-lg-4'>
+                            {!isMobile && <div className='col-lg-4 offset-lg-1'>
                                 <img src="front-page.svg" style={{ 'width': '100%' }} />
                             </div>}
 

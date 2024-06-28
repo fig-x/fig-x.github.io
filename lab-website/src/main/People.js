@@ -9,8 +9,8 @@ import { FiExternalLink } from "react-icons/fi";
 let arr = ['current', 'current-non-human', 'alumni']
 
 let nameMap = {
-    'current': 'Current',
-    'current-non-human': 'Non-human',
+    'current': 'Current Members',
+    'current-non-human': 'Non-human Friends',
     'alumni': 'Alumni'
 }
 
@@ -49,8 +49,8 @@ class People extends Component {
     render() {
         return (
             <div>
-                <div className='top-header'>
-                    <div className="container border-bottom">
+                <div className='top-header border-bottom'>
+                    <div className="container">
                         <Navigator activeItem='people-nav' />
                     </div>
                 </div>
@@ -68,7 +68,7 @@ class People extends Component {
                                 {subset.map(p => {
                                     return (<Card className='people-card'>
 
-                                        <Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' />
+                                        <p style={{padding:'10px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
                                         <Card.Title>
                                             {p.website != '' && <a href={p.website} target='_blank' className='people-name'>{p.name} &#8202;
                                                 <FiExternalLink className='icon-adjustment' /></a>}
