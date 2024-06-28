@@ -70,11 +70,11 @@ class Publication extends Component {
                                             {pub.awards && pub.awards.includes("Best") && <span className='paper-award'> <PiMedalFill /> {pub.awards}</span>}</p>
 
                                         <p className='paper-info'>
-                                            <span> <a href={pub.pdf}><PiFiles /> <font className="paper-info-text">paper</font></a> </span>
-                                            {pub.demo && <span> <a href={pub.demo}><PiSparkle /> <font className="paper-info-text">demo</font></a> </span>}
-                                            {pub.repo && <span> <a href={pub.repo}><PiMagicWand /> <font className="paper-info-text">suppl</font></a> </span>}
-                                            {pub.video && <span> <a href={pub.video}> <PiMonitorPlay /> <font className="paper-info-text">video</font></a> </span>}
-                                            {pub.doi && <span> <a href={pub.doi}> <PiPiggyBank /> <font className="paper-info-text">doi</font></a> </span>}
+                                            <span> <a href={pub.pdf} target='_blank'><PiFiles /> <font className="paper-info-text">paper</font></a> </span>
+                                            {pub.demo && <span> <a href={pub.demo} target='_blank'><PiSparkle /> <font className="paper-info-text">demo</font></a> </span>}
+                                            {pub.repo && <span> <a href={pub.repo} target='_blank'><PiMagicWand /> <font className="paper-info-text">suppl</font></a> </span>}
+                                            {pub.video && <span> <a href={pub.video} target='_blank'> <PiMonitorPlay /> <font className="paper-info-text">video</font></a> </span>}
+                                            {pub.doi && <span> <a href={pub.doi} target='_blank'> <PiPiggyBank /> <font className="paper-info-text">doi</font></a> </span>}
 
                                         </p>
                                         {/* {<p className='paper-header'>  <font className="paper-info-text">{pub.nickname}</font> </p>} */}

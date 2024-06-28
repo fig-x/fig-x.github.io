@@ -5,7 +5,7 @@
   --theme-color: #1aaaed;
   --award-color: #1aaaed;
   --theme-color-light: #abe3f6;
-  --theme-color-very-light: #e1eef1;
+  --theme-color-very-light: #e7f7fe;
   --light-gray: #cccccc;
   --dark-gray: #777777;
   --background-gray: #f6f7f8; 
@@ -300,7 +300,7 @@ transition: .2s;
   font-weight: 300 !important;
 }
 .paper-info {
-  margin-top: .5rem;
+  margin-top: .3rem;
 }
 
 .paper-info span {
@@ -311,10 +311,15 @@ transition: .2s;
   text-decoration: none;
   color: var(--dark-gray);
   /* font-size: 90%; */
-  padding: .15rem .4rem .3rem .4rem;
+  padding: .15rem .4rem .35rem .4rem;
   /* border: var(--light-gray) solid .1px; */
   border-radius: .4rem;
   background-color: var(--background-gray);
+}
+
+.paper-info span a:hover{
+  background-color: var(--theme-color-very-light)!important;
+  transition: .2s;
 }
 
 .paper-info-text{

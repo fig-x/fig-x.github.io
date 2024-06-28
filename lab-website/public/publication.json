@@ -1,4 +1,6 @@
 [
+	
+	
 	{
 		"CHI": "The ACM Conference on Human Factors in Computing Systems",
 		"VIS": "IEEE Visualization and Visual Analytics Conference",
@@ -231,7 +233,7 @@
 	{
 		"title": "Correlation Judgment and Visualization Features",
 		"people": "<text class = 'figx-name-style'>Fumeng Yang</text>, Lane Harrison, Ronald A. Rensink, Steven Franconeri, Remco Chang",
-		"year": "2014-2018",
+		"year": "2018",
 		"video": null,
 		"abbr": "TVCG",
 		"thumbnail": "2018-vf.png",
