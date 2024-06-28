@@ -18,10 +18,10 @@ class Publication extends Component {
             .then(response => response.json())
             .then(data => {
                 this.setState({ publicationmap: data.slice(0, 1)[0] }, () => {
-                    data = data.slice(1).sort((a, b) => {
-                        return b.year - a.year
-                    })
-                    this.setState({ publicationdata: data })
+                    // data = data.slice(1).sort((a, b) => {
+                    //     return b.year - a.year
+                    // })
+                    this.setState({ publicationdata: data.slice(1) })
                 })
 
 

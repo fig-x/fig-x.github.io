@@ -77,7 +77,7 @@ class People extends Component {
                                         <Card.Body>
                                             <p className='people-position'>{p.position}</p>
                                             <p className='people-info' dangerouslySetInnerHTML={{__html: p.quote}}/>
-                                            {p.year && <p className='people-info'>since <font className='people-little-info'>{p.year}</font></p>}
+                                            {p.year && <p className='people-info'>Since {p.year}</p>}
                                         </Card.Body>
                                     </Card>)
                                 })}

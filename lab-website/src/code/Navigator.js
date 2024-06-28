@@ -66,9 +66,9 @@ class Navigator extends Component {
                   onClick={() => {
                     // this.setState({ 'activeItem': 'research-nav'})
                     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-                      window.open('/Research', '_self')
+                      window.open('/research', '_self')
                     } else {
-                      window.open('/Research', '_self')
+                      window.open('/research', '_self')
                     }
                   }}
                 >Research</a>
@@ -79,9 +79,9 @@ class Navigator extends Component {
                   onClick={() => {
                     // this.setState({ 'activeItem': 'people-nav' })
                     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-                      window.open('/People', '_self')
+                      window.open('/people', '_self')
                     } else {
-                      window.open('/People', '_self')
+                      window.open('/people', '_self')
                     }
                   }}
                 >People</a>
@@ -93,9 +93,9 @@ class Navigator extends Component {
                   onClick={() => {
                     // this.setState({ 'activeItem': 'publication-nav' })
                     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-                      window.open('/Publication', '_self')
+                      window.open('/publication', '_self')
                     } else {
-                      window.open('/Publication', '_self')
+                      window.open('/publication', '_self')
                     }
                   }}
                 >Publication</a>
@@ -107,9 +107,9 @@ class Navigator extends Component {
                   onClick={() => {
                     // this.setState({ 'activeItem': 'artifact-nav' })
                     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-                      window.open('/Artifact', '_self')
+                      window.open('/artifact', '_self')
                     } else {
-                      window.open('/Artifact', '_self')
+                      window.open('/artifact', '_self')
                     }
                   }}
                 >Artifact</a>
@@ -121,9 +121,9 @@ class Navigator extends Component {
                   onClick={() => {
                     // this.setState({ 'activeItem': 'workwithus-nav' })
                     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-                      window.open('/Workwithus', '_self')
+                      window.open('/workwithus', '_self')
                     } else {
-                      window.open('/Workwithus', '_self')
+                      window.open('/workwithus', '_self')
                     }
                   }}
                 >Work with us</a>
