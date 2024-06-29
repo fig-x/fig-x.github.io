@@ -386,21 +386,29 @@ b {
 
 /* work with us */
 
+
+
+@media screen and (min-width: 800px) {
+
+  .flyer{
+    /* padding-left: 3%; */
+    padding: .5rem 1.5rem 1rem 1.5rem !important;
+    border: var(--light-gray) 1px solid;
+    margin-bottom: .95rem;
+    border-radius: var(--bs-border-radius);
+    word-wrap: break-word;
+   }
+  
+  
+}
+
 .flyer{
   /* padding-left: 3%; */
-  padding: .5rem 1.5rem 1rem 1.5rem !important;
-  /* background-color: var(--background-gray); */
-  border: var(--light-gray) 1px solid;
-  margin-bottom: 1rem;
-  border-radius: var(--bs-border-radius);
-  word-wrap: break-word;
-  /* position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  background-clip: border-box;
-  border: 0 solid transparent; */
+  
 }
+
+
+
 
 
 

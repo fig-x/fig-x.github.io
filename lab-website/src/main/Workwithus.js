@@ -4,7 +4,8 @@ import HeaderSpan from '../code/HeaderSpan.js';
 import { GiTurtle } from "react-icons/gi";
 import Navigator from '../code/Navigator.js';
 import NormalA from '../code/NormalA.js';
-
+import { PiHandshake, PiStudent, PiBarbell } from "react-icons/pi";
+import { GiTurtleShell } from "react-icons/gi";
 class Workwithus extends Component {
 
 
@@ -46,27 +47,6 @@ class Workwithus extends Component {
 
                         <div className='col-lg-6'>
                             <div className='flyer'>
-                                <h2>Existing Masters' or undergraduate students</h2>
-
-                                <p> If you are a current Master's or undergraduate student at UMD, we would love to work with you.
-                                    You are likely to take on your own project(s).
-                                    We offer opportunities for independent study, paid research positions, and summer internships.
-                                    Please <b>fill out <NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="this interest form" /></b>.
-                                    We will contact you if we think this is a good match.
-                                </p>
-
-                            </div>
-                            <div className='flyer'>
-                                <h2>Prospective postdoctoral scholars</h2>
-                                <p> If you have your own funding or are interested in co-applying for fundings, please directly contact Fumeng.
-                                    Otherwise, we only consider candidates who have previously collaborated with us, and when there is a clear potential for significant synergy. </p>
-                            </div>
-                        </div>
-                        {/* <div className='col-lg-6'>
-                           
-                        </div> */}
-                        <div className='col-lg-6'>
-                            <div className='flyer'>
                             <span className='side-stick'></span>
                                 <h2>Prospective Ph.D. students </h2>
                                
@@ -98,6 +78,33 @@ class Workwithus extends Component {
                                 </p>
                             </div>
                         </div>
+
+                        <div className='col-lg-6'>
+                            <div className='flyer'>
+                                <h2>Existing Masters' or undergraduate students </h2>
+
+                                <p> If you are a current Master's or undergraduate student at UMD, we would love to work with you.
+                                    You are likely to take on your own project(s).
+                                    We offer opportunities for independent study, paid research positions, and summer internships.
+                                    Please <b>fill out <NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="this interest form" /></b>.
+                                    We will contact you if we think this is a good match.
+                                </p>
+
+                            </div>
+                            <div className='flyer'>
+                                <h2>Prospective postdoctoral scholars</h2>
+                                <p> If you have your own funding or are interested in co-applying for fundings, please directly contact Fumeng.
+                                    Otherwise, we only consider candidates who have previously collaborated with us, and when there is a clear potential for significant synergy. </p>
+                            </div>
+                            <div className='flyer'>
+                                <h2>Other collabration </h2>
+                                <p> We are generally open to on-campus and external collaborations. Please directly contact the person you want to collaborate with. </p>
+                            </div>
+                        </div>
+                        {/* <div className='col-lg-6'>
+                           
+                        </div> */}
+                        
                         {/* 
                         <div className=''>
                             <h2>Collabration</h2>
