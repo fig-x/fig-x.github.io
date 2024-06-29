@@ -73,7 +73,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
+            <div className='page-content'>
                 <div className='top-header border-bottom'>
                     <div className="container">
                         <Navigator activeItem='home-nav' />
@@ -127,6 +127,8 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+
+                
             </div >
         )
     }

@@ -38,7 +38,7 @@ class Publication extends Component {
     render() {
 
         return (
-            <div>
+            <div className='page-content'>
 
                 <div className='top-header border-bottom'>
                     <div className="container">

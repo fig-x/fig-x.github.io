@@ -17,6 +17,7 @@
 
 html {
   background-color: #212529;
+
 }
 
 body {
@@ -33,7 +34,9 @@ code {
     monospace;
 }
 
-
+.page-content{
+  min-height: calc(100vh - 150px);
+}
 /* the home page header */
 
 .top-header {
@@ -50,6 +53,13 @@ code {
   letter-spacing: 1px;
 }
 
+h1 {
+  font-size: 2rem !important;
+  font-family: 'Aleo' !important;
+  font-weight: 600 !important;
+  font-variation-settings: "wdth" 100;
+  margin-bottom: 1.5rem !important;
+}
 
 h2 {
   font-size: 1.4rem !important;
@@ -59,9 +69,14 @@ h2 {
   /* text-transform: uppercase; */
   letter-spacing: 1px;
   color: var(--theme-color);
-  margin-bottom: 1rem !important;
+  margin-bottom: .5rem !important;
+  margin-top: 2rem!important;
+  /* color: var(--award-color) !; */
 }
 
+b {
+  font-weight: 650 !important;
+}
 
 /* h3 {
   font-family: 'Zilla Slab' !important;
@@ -157,8 +172,10 @@ h2 {
 
 /* footer */
 
+
 .footer-bottom {
   height: auto;
+  /* bottom: 0 !important; */
   padding-bottom: 20px !important;
   /* bottom:-20px; */
   width: 100%;
