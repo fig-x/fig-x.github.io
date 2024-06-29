@@ -40,54 +40,63 @@ class Workwithus extends Component {
                         <p>
                             We are actively seeking talented students and researchers to enrich our lab!
                             <br />
-                            See below for information for potential postdoctoral scholars, Ph.D. students, 
+                            See below for information for potential postdoctoral scholars, Ph.D. students,
                             and Master's or undergrad research assistants or volunteers.
                         </p>
 
-                        <div className=''>
-                            <h2>Existing Masters' or undergraduate students</h2>
+                        <div className='col-lg-6'>
+                            <div className='flyer'>
+                                <h2>Existing Masters' or undergraduate students</h2>
 
-                            <p> If you are a current Master's or undergraduate student at UMD, we would love you to work with us.
-                                You are likely to take on your own project(s).
-                                We offer opportunities for independent study, paid research positions, and summer internships.
-                                Please <b>fill out <NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="this interest form" /></b>. 
-                                We will contact you if we think this is a good match.
-                            </p>
+                                <p> If you are a current Master's or undergraduate student at UMD, we would love to work with you.
+                                    You are likely to take on your own project(s).
+                                    We offer opportunities for independent study, paid research positions, and summer internships.
+                                    Please <b>fill out <NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="this interest form" /></b>.
+                                    We will contact you if we think this is a good match.
+                                </p>
+
+                            </div>
+                            <div className='flyer'>
+                                <h2>Prospective postdoctoral scholars</h2>
+                                <p> If you have your own funding or are interested in co-applying for fundings, please directly contact Fumeng.
+                                    Otherwise, we only consider candidates who have previously collaborated with us, and when there is a clear potential for significant synergy. </p>
+                            </div>
                         </div>
-                        <div className=''>
-                            <h2>Prospective Ph.D. students</h2>
-                            <p>
+                        {/* <div className='col-lg-6'>
+                           
+                        </div> */}
+                        <div className='col-lg-6'>
+                            <div className='flyer'>
+                            <span className='side-stick'></span>
+                                <h2>Prospective Ph.D. students </h2>
+                               
+                                <p>
+                                    We encourage applications from candidates with degrees in computer science and related disciplines.
+                                    Applicants from diverse academic backgrounds, such as statistics, communication, or journalism, are also welcome to apply.
 
+                                </p>
+                                <p>
+                                    Our current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, and <b>decision-making</b>.
+                                    We encourage you to familiarize yourself with our lab's work before applying,
+                                    so you can demonstrate how your interests or experiences align with ours.
+                                    Other topics overlap the lab's goals are also possible. 
+                                </p>
+                                <p>
+                                    Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
+                                    We are committed to guiding each student toward a trajectory that aligns with their background and professional goals.
+                                    A complete lack of programming skills or significant discomfort with mathematics would hinder your progress.
+                                    Above all, <b>a strong motivation and a keen interest</b>  in pursuing research are paramount.
 
-                                We encourage applications from candidates with degrees in computer science and related disciplines. 
-                                Applicants from diverse academic backgrounds, such as statistics, communication, or journalism, are also welcome to apply.
+                                </p>
 
-                            </p>
-                            <p>
-                                Our current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, and <b>decision-making</b>.
-                                We encourage you to familiarize yourself with our lab's work before applying, 
-                                so you can demonstrate how your interests or experiences align with ours.
-                            </p>
-                            <p>
-                                Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>. 
-                                We are committed to guiding each student toward a trajectory that aligns with their own background and professional goals. 
-                                Please note, a complete lack of programming skills or significant discomfort with mathematics would hinder your progress.
-                                 Above all, <b>a strong motivation and a keen interest</b>  in pursuing research are paramount.
+                                <p>
+                                    The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/catalog" text="December 20" /></b>.
+                                    You can drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
+                                    Additionally, in the U.S. academic system, students who maintain good standing are typically funded throughout
+                                    their Ph.D. program via teaching assistantships (TA), research assistantships (RA), or fellowships.
 
-                            </p>
-
-                            <p>
-                                The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/catalog" text="December 20" /></b>. 
-                                You can drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
-                                Additionally, in the U.S. academic system, students who maintain good standing are typically funded throughout 
-                                their Ph.D. program via teaching assistantships (TA), research assistantships (RA), or fellowships.
-
-                            </p>
-                        </div>
-                        <div className=''>
-                            <h2>Prospective postdoctoral scholars</h2>
-                            <p> If you have your own funding or are interested in co-applying for fundings, please directly contact Fumeng. 
-                                Otherwise, we only consider candidates who have previously collaborated with us, and when there is a clear potential for significant synergy. </p>
+                                </p>
+                            </div>
                         </div>
                         {/* 
                         <div className=''>
