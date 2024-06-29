@@ -62,7 +62,7 @@ class Footer extends Component {
                                     Last update in {this.state && <span id='lastUpdate'>{this.state.last}</span>}
                                 </div>   <div className='col-lg-3 footer-bottom'>
                                   Brendan Iribe Center 
-                                  <br />8125 Paint Branch Dr. 
+                                  <br />8125 Paint Branch Drive
                                   <br />College Park, MD 20742 
 
                             </div>
