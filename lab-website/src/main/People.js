@@ -66,7 +66,7 @@ class People extends Component {
                                 <div className='padding-top' ></div>
                                 <h2>{nameMap[c]}</h2>
                                 {subset.map(p => {
-                                    return (<Card className='people-card'>
+                                    return (<Card className='people-card' id = {p.nickname}>
 
                                         <p style={{padding:'10px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
                                         <Card.Title>

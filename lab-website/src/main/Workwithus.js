@@ -37,14 +37,14 @@ class Workwithus extends Component {
                 <div class="container">
                     <div class="row">
                         <div className='padding-top' />
-                        <h1>The Seaweeds &#x1f422; want  more friends...</h1>
+                        <h1>The <a className='none-a' href="./people#theseaweeds">Seaweeds</a> &#x1f422; want  more friends...</h1>
                         <p>
                             We are actively seeking talented students and researchers to enrich our lab!
                             <br />
                             See below for information for potential postdoctoral scholars, Ph.D. students,
                             and Master's or undergrad research assistants or volunteers.
                         </p>
-
+                        <div className='padding-top' />
                         <div className='col-lg-6'>
                             <div className='flyer'>
                             <span className='side-stick'></span>
@@ -52,27 +52,30 @@ class Workwithus extends Component {
                                
                                 <p>
                                     We encourage applications from candidates with degrees in computer science and related disciplines.
-                                    Applicants from diverse academic backgrounds, such as statistics, communication, or journalism, are also welcome to apply.
+                                    We also welcome applicants from diverse backgrounds, including but not limited to psychology, communication, and journalism.
 
                                 </p>
                                 <p>
                                     Our current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, and <b>decision-making</b>.
+                                    Other topics related to information visualization, HCI, and visual computing are also possible.
                                     We encourage you to familiarize yourself with our lab's work before applying,
-                                    so you can demonstrate how your interests or experiences align with ours.
-                                    Other topics overlap the lab's goals are also possible. 
+                                    so you can show how your interests or experiences align with ours.
                                 </p>
                                 <p>
                                     Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
-                                    We are committed to guiding each student toward a trajectory that aligns with their background and professional goals.
-                                    A complete lack of programming skills or significant discomfort with mathematics would hinder your progress.
+                                    We are committed to guiding each student toward a path that aligns with their background and goals.
+                                    A complete lack of programming skills or significant discomfort with mathematics, however, would hinder your progress.
                                     Above all, <b>a strong motivation and a keen interest</b>  in pursuing research are paramount.
 
                                 </p>
 
                                 <p>
                                     The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/catalog" text="December 20" /></b>.
-                                    You can drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
-                                    Additionally, in the U.S. academic system, students who maintain good standing are typically funded throughout
+                                    You can drop Fumeng an email, though it probably won't influence the decision-making process too much.
+
+                                </p>
+                                <p>    
+                                    Additionally,  UMD CS students who maintain good standing are typically funded throughout
                                     their Ph.D. program via teaching assistantships (TA), research assistantships (RA), or fellowships.
 
                                 </p>
@@ -81,6 +84,7 @@ class Workwithus extends Component {
 
                         <div className='col-lg-6'>
                             <div className='flyer'>
+                            <span className='side-stick'></span>
                                 <h2>Existing Masters' or undergraduate students </h2>
 
                                 <p> If you are a current Master's or undergraduate student at UMD, we would love to work with you.
@@ -92,13 +96,16 @@ class Workwithus extends Component {
 
                             </div>
                             <div className='flyer'>
+                            <span className='side-stick'></span>
                                 <h2>Prospective postdoctoral scholars</h2>
                                 <p> If you have your own funding or are interested in co-applying for fundings, please directly contact Fumeng.
                                     Otherwise, we only consider candidates who have previously collaborated with us, and when there is a clear potential for significant synergy. </p>
                             </div>
                             <div className='flyer'>
-                                <h2>Other collabration </h2>
-                                <p> We are generally open to on-campus and external collaborations. Please directly contact the person you want to collaborate with. </p>
+                            <span className='side-stick'></span>
+                                <h2>Other opportunities </h2>
+                                <p> We welcome both on-campus and external collaborations. If interested, please reach out directly to the person you want to collaborate with.  < br/>
+                                    We are also open to hosting summer or visiting students. Bringing a concrete plan will enhance the chances of a successful collaboration. </p>
                             </div>
                         </div>
                         {/* <div className='col-lg-6'>
