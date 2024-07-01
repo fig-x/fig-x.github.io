@@ -105,7 +105,7 @@ class Workwithus extends Component {
                             <span className='side-stick'></span>
                                 <h2>Other opportunities </h2>
                                 <p> We welcome both on-campus and external collaborations. If interested, please reach out directly to the person you want to collaborate with.  < br/>
-                                    We are also open to hosting summer or visiting students. Bringing a concrete plan will enhance the chances of a successful collaboration. </p>
+                                We are also open to hosting summer or visiting students. Bringing a concrete plan will help ensure a productive experience.. </p>
                             </div>
                         </div>
                         {/* <div className='col-lg-6'>
