@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.909d2694.css",
+    "main.css": "/static/css/main.ce52f755.css",
     "main.js": "/static/js/main.beb7e035.js",
     "static/js/453.45cdc164.chunk.js": "/static/js/453.45cdc164.chunk.js",
-    "static/media/headline-1.png": "/static/media/headline-1.01e96d612fa58fa5e381.png",
+    "static/media/headline-1.png": "/static/media/headline-1.14230e31a9c7d9367b0e.png",
     "static/media/BlinkMacSystemFont-Heavy.woff": "/static/media/BlinkMacSystemFont-Heavy.61c6f7446ab5525d4609.woff",
     "static/media/BlinkMacSystemFont-Semibold.woff": "/static/media/BlinkMacSystemFont-Semibold.c0c9db84d6da8756adb7.woff",
     "static/media/BlinkMacSystemFont-Medium.woff": "/static/media/BlinkMacSystemFont-Medium.b11ddc7087cc28d72eb9.woff",
@@ -41,12 +41,12 @@
     "static/media/BlinkMacSystemFont-BlackItalic.woff2": "/static/media/BlinkMacSystemFont-BlackItalic.1d43fcfebc42ae935b37.woff2",
     "static/media/BlinkMacSystemFont-RegularItalic.woff2": "/static/media/BlinkMacSystemFont-RegularItalic.eefd2e0e7879984b0fd4.woff2",
     "index.html": "/index.html",
-    "main.909d2694.css.map": "/static/css/main.909d2694.css.map",
+    "main.ce52f755.css.map": "/static/css/main.ce52f755.css.map",
     "main.beb7e035.js.map": "/static/js/main.beb7e035.js.map",
     "453.45cdc164.chunk.js.map": "/static/js/453.45cdc164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.909d2694.css",
+    "static/css/main.ce52f755.css",
     "static/js/main.beb7e035.js"
   ]
 }
