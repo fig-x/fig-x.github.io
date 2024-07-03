@@ -1,0 +1,62 @@
+[
+    {
+        "area": "Quantifying and Improving AI Literacy",
+        "core": "AI literacy defines the abiliteis of individuals to understand, interact with, and critically evaluate artificial intelligence techniques and systems.",
+        "description": " As AI becomes increasingly integrated into various aspects of society, it is crucial for people to grasp how these systems operate and the implications of their use. AI literacy involves educating individuals about the fundamentals of AI, including its capabilities, limitations, and ethical considerations. By quantifying and improving people's AI literacy, researchers can enhance trust, accountability, and informed decision-making. This interdisciplinary research area bridges computer science, education, and ethics.",
+        "paper": [
+            ""
+        ],
+        "figure": "tbd2.png"
+    },
+    {
+        "area": "Trust in Computational Models",
+        "core": "We examine how users perceive and maintain trust in computational models like probabilistic forecasts and machine learning tehcniques. ",
+        "description": "As computational models are increasingly employed in critical decision-making processes across various domains, including healthcare, finance, and policy-making, ensuring their reliability and trustworthiness is paramount. We develop visual methods to enhance the interpretability of models, enabling users to understand and verify their outputs. We aim to create computational modles that users can confidently rely on, promoting better decision-making and positive societal impact.",
+        "paper": [
+            "2020-ml-trust",
+            "2024-dice"
+        ],
+        "figure": "tbd2.png"
+    },
+    {
+        "area": "Uncertainty Communication and Decision-making",
+        "description": "We explore how to effectively convey the inherent uncertainties in electoral predictions to the public. Given the critical role that media plays in shaping public perception and understanding of election outcomes, accurately communicating the uncertainty in forecasts is essential. This research focuses on developing methods for journalists to present probabilistic information, such as margins of error and confidence intervals, in a clear and accessible manner. Additionally, this area investigates the ethical responsibilities of journalists in reporting uncertain information and the impact of such reporting on voter behavior and trust in the electoral process. ",
+        "paper": [
+            "2024-dice",
+            "2023-midterm",
+            "2023-bias-correction",
+            "2024-backstory"
+        ],
+        "figure": "tbd2.png"
+    },
+    {
+        "area": "Collobration: Visualization Perception and Evaluation",
+        "description": "We also work on understanding how people perceive, interpret, and interact with visual representations of data. As data visualization becomes an increasingly vital tool for conveying complex information, this field aims to develop principles and techniques that enhance the effectiveness and usability of visualizations. We evaluate the usability and impact of different visualization designs through empirical studies and user feedback. This research is interdisciplinary, bridging computer science, psychology, and design, and it plays a crucial role in improving how data is communicated across various domains, including science, business, and education. ",
+        "paper": [
+            "2014-weber",
+            "2018-vf",
+            "2023-dnn",
+            "2024-marey"
+        ],
+        "figure": "tbd2.png"
+    },
+    {
+        "area": "Collobration: Visualization Literacy",
+        "description": "Visualization literacy is an essential skill for accurately interpreting data to inform critical decisions. For example, people may rely on visualizations to decide between treatment options in medical settings, to make financial decisions, or to engage with sociopolitical topics. Inaccurate interpretations of such visualizations could lead to faulty reasoning and harmful outcomes. How can we measure more aspects of visualization literacy? How can we efficiently measure visualization literacy? How can we generate diverse visualization literacy test items at scale?",
+        "paper": [
+            "2024-vila",
+            "2023-cat"
+        ],
+        "figure":"tbd2.png"
+    },
+    {
+        "area": "Collobration: Immersive Analytics and Cognition",
+        "description": "We explore the use of immersive technologies, such as virtual reality (VR) and augmented reality (AR), to enhance data analysis and understanding. By studying user interactions and feedback, this research seeks to develop guidelines and best practices for designing effective immersive analytics tools. The goal is to improve the way people perceive, interpret, and derive insights from data, enabling more intuitive and efficient analysis. This interdisciplinary field combines elements of computer science, cognitive psychology, and human-computer interaction. ",
+        "paper": [
+            "2020-mp",
+            "2022-vrsd",
+            "2020-portalware"
+        ],
+        "figure": "tbd2.png"
+    }
+]

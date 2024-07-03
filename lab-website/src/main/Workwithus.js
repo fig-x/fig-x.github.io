@@ -4,6 +4,7 @@ import HeaderSpan from '../code/HeaderSpan.js';
 import { GiTurtle } from "react-icons/gi";
 import Navigator from '../code/Navigator.js';
 import NormalA from '../code/NormalA.js';
+import InternalA from '../code/InternalA.js';
 import { PiHandshake, PiStudent, PiBarbell } from "react-icons/pi";
 import { GiTurtleShell } from "react-icons/gi";
 class Workwithus extends Component {
@@ -37,7 +38,7 @@ class Workwithus extends Component {
                 <div class="container">
                     <div class="row">
                         <div className='padding-top' />
-                        <h1>The <a className='none-a' href="./people#theseaweeds">Seaweeds</a> &#x1f422; want  more friends...</h1>
+                        <h1>The <InternalA href="./people#theseaweeds" text="Seaweeds" /> &#x1f422; want  more friends...</h1>
                         <p>
                             We are actively seeking talented students and researchers to enrich our lab!
                             <br />
@@ -47,12 +48,12 @@ class Workwithus extends Component {
                         <div className='padding-top' />
                         <div className='col-lg-6'>
                             <div className='flyer'>
-                            <span className='side-stick'></span>
+                                <span className='side-stick'></span>
                                 <h2>Prospective Ph.D. students </h2>
-                               
+
                                 <p>
                                     We encourage applications from candidates with degrees in computer science and related disciplines.
-                                    We also welcome applicants from diverse backgrounds, including but not limited to psychology, communication, and journalism.
+                                    We also welcome applicants from other backgrounds, including but not limited to psychology, communication, and journalism.
 
                                 </p>
                                 <p>
@@ -64,7 +65,7 @@ class Workwithus extends Component {
                                 <p>
                                     Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
                                     We are committed to guiding each student toward a path that aligns with their background and goals.
-                                    A complete lack of programming skills or significant discomfort with mathematics, however, would hinder your progress.
+                                    A complete lack of programming skills or significant discomfort with mathematics would hinder your progress.
                                     Above all, <b>a strong motivation and a keen interest</b>  in pursuing research are paramount.
 
                                 </p>
@@ -74,7 +75,7 @@ class Workwithus extends Component {
                                     You can drop Fumeng an email, though it probably won't influence the decision-making process too much.
 
                                 </p>
-                                <p>    
+                                <p>
                                     Additionally,  UMD CS students who maintain good standing are typically funded throughout
                                     their Ph.D. program via teaching assistantships (TA), research assistantships (RA), or fellowships.
 
@@ -84,11 +85,11 @@ class Workwithus extends Component {
 
                         <div className='col-lg-6'>
                             <div className='flyer'>
-                            <span className='side-stick'></span>
+                                <span className='side-stick'></span>
                                 <h2>Existing Masters' or undergraduate students </h2>
 
-                                <p> If you are a current Master's or undergraduate student at UMD, we would love to work with you.
-                                    You are likely to take on your own project(s).
+                                <p> If you are a current Master's or undergraduate student at UMD, we would love to have you in our lab.
+                                    {/* You are likely to take on your own project(s). */}
                                     We offer opportunities for independent study, paid research positions, and summer internships.
                                     Please <b>fill out <NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="this interest form" /></b>.
                                     We will contact you if we think this is a good match.
@@ -96,22 +97,22 @@ class Workwithus extends Component {
 
                             </div>
                             <div className='flyer'>
-                            <span className='side-stick'></span>
+                                <span className='side-stick'></span>
                                 <h2>Prospective postdoctoral scholars</h2>
                                 <p> If you have your own funding or are interested in co-applying for fundings, please directly contact Fumeng.
                                     Otherwise, we only consider candidates who have previously collaborated with us, and when there is a clear potential for significant synergy. </p>
                             </div>
                             <div className='flyer'>
-                            <span className='side-stick'></span>
+                                <span className='side-stick'></span>
                                 <h2>Other opportunities </h2>
-                                <p> We welcome both on-campus and external collaborations. If interested, please reach out directly to the person you want to collaborate with.  < br/>
-                                We are also open to hosting summer or visiting students. Bringing a concrete plan will help ensure a productive experience.. </p>
+                                <p> We welcome both on-campus and external collaborations. If interested, please reach out directly to the person you want to collaborate with.  </p> <p>
+                                    We are also open to hosting summer or visiting students. Bringing a concrete plan will help ensure a productive experience.. </p>
                             </div>
                         </div>
                         {/* <div className='col-lg-6'>
                            
                         </div> */}
-                        
+
                         {/* 
                         <div className=''>
                             <h2>Collabration</h2>

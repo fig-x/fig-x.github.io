@@ -9,8 +9,8 @@ import { FiExternalLink } from "react-icons/fi";
 let arr = ['current', 'current-non-human', 'alumni']
 
 let nameMap = {
-    'current': 'Current Members',
-    'current-non-human': 'Non-human Friends',
+    'current': 'Current members',
+    'current-non-human': 'Non-human friends',
     'alumni': 'Alumni'
 }
 
