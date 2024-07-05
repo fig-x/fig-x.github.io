@@ -18,7 +18,7 @@ class Research extends Component {
 
 
     componentDidMount() {
-
+        document.title = "Research | FIGX"
         fetch(_researchpath)
             .then(response => response.json())
             .then(data => {

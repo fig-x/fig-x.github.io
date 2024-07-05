@@ -14,6 +14,7 @@ class Publication extends Component {
 
 
     componentDidMount() {
+        document.title = "Publication | FIGX"
         fetch(_publicationpath)
             .then(response => response.json())
             .then(data => {

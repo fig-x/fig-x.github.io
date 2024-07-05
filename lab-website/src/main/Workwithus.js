@@ -17,6 +17,7 @@ class Workwithus extends Component {
 
 
     componentDidMount() {
+                document.title = "Work with us | FIGX"
         // this.createVis()
     }
 
@@ -72,7 +73,7 @@ class Workwithus extends Component {
 
                                     <p>
                                         The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/catalog" text="December 20" /></b>.
-                                        You can drop Fumeng an email, though it probably won't influence the decision-making process too much.
+                                        You can drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
 
                                     </p>
                                     <p>

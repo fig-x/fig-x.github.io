@@ -24,7 +24,7 @@ class Home extends Component {
 
     componentDidMount() {
         // this.createVis()
-
+        document.title = "Home | FIGX"
         fetch(_newspath)
             .then(response => response.json())
             .then(data => {
@@ -110,8 +110,8 @@ class Home extends Component {
                             <div className="row">
                                 <h2>About FIGX</h2>
                                 {/* <div style={{'paddingRight': '20%'}}> */}
-                                <div id='topic-frontpage'   className='col-lg-8' style={{ 'paddingTop': '10px' }}>
-                                FIGX, an acronym for the <font className='color-text'><b>F</b>uture <b>I</b>ntelligent <b>G</b>raphical e<b>X</b>perience</font>. It can be thought of as the <font className="color-text"><b>Fig. X</b></font>&#8212;the graphic representation that comes to mind when you are writing an article about data or explaining complex ideas, where visuals are as expressive as a thousand words. We chose this name to reflect our lab's commitment to pushing the boundaries of innovation and exploration in graphical experiences spanning data visualization, visual interfaces, and visual computing.
+                                <div id='topic-frontpage'   className='col-lg-7' style={{ 'paddingTop': '10px' }}>
+                                FIGX, an acronym for the <font className='color-text'><b>F</b>uture <b>I</b>ntelligent <b>G</b>raphical e<b>X</b>perience</font>. It can be thought of as the <font className="color-text"><b>Fig. X</b></font>&#8212;the graphic representation that comes to mind when you are writing an article or explaining an idea, where visuals are as expressive as a thousand words. We chose this name to reflect our lab's commitment to pushing the boundaries of innovation and exploration in graphical experiences.
                           
                                 </div>
 

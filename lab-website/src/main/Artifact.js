@@ -17,6 +17,7 @@ class Artifact extends Component {
 
 
     componentDidMount() {
+               document.title = "Artifact | FIGX"
         fetch(_artifactpath)
             .then(response => response.json())
             .then(data => {
@@ -36,6 +37,7 @@ class Artifact extends Component {
 
 
     render() {
+  
         return (
             <div className='page-content'>
                 <div className='top-header border-bottom'>

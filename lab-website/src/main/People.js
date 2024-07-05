@@ -23,7 +23,7 @@ class People extends Component {
 
 
     componentDidMount() {
-
+        document.title = "People | FIGX"
         fetch(_peoplepath)
             .then(response => response.json())
             .then(data => {
