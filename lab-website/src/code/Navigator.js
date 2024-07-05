@@ -60,19 +60,7 @@ class Navigator extends Component {
                   }}
                 >Home</a>
               </li>
-              <li className="nav-item">
-                <a href="#" className={this.props.activeItem == 'research-nav' ?
-                  "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
-                  onClick={() => {
-                    // this.setState({ 'activeItem': 'research-nav'})
-                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-                      window.open('/research', '_self')
-                    } else {
-                      window.open('/research', '_self')
-                    }
-                  }}
-                >Research</a>
-              </li>
+             
               <li className="nav-item">
                 <a href="#" className={this.props.activeItem == 'people-nav' ?
                   "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
@@ -86,7 +74,19 @@ class Navigator extends Component {
                   }}
                 >People</a>
               </li>
-
+              <li className="nav-item">
+                <a href="#" className={this.props.activeItem == 'research-nav' ?
+                  "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
+                  onClick={() => {
+                    // this.setState({ 'activeItem': 'research-nav'})
+                    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+                      window.open('/research', '_self')
+                    } else {
+                      window.open('/research', '_self')
+                    }
+                  }}
+                >Research</a>
+              </li>
               <li className="nav-item">
                 <a href="#" className={this.props.activeItem == 'publication-nav' ?
                   "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}

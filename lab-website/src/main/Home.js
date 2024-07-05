@@ -78,13 +78,13 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div className='welcome-block-outside'>
-                    <div className='welcome-block-inside'>
+                <div className='welcome-block-outside border-bottom'>
+                    <div className='welcome-block-inside '>
                         <div className="container">
                             <div className="paddingTop">
                                 <div className="row">
-
                                     <div className='col-lg-7' style={{ 'paddingTop': '10px' }}>
+                                    <div class="bounce"><PiCaretDoubleDownLight /></div>
                                         <p className='welcome-text'>Welcome to the FIGX Research Lab!</p>
                                         <p >
                                             Our lab locates within the <NormalA
@@ -109,13 +109,14 @@ class Home extends Component {
                             <div className="padding-top"></div>
                             <div className="row">
                                 <h2>About FIGX</h2>
-                                <div id='topic-frontpage'>
-
+                                {/* <div style={{'paddingRight': '20%'}}> */}
+                                <div id='topic-frontpage'   className='col-lg-8' style={{ 'paddingTop': '10px' }}>
                                 FIGX, an acronym for the <font className='color-text'><b>F</b>uture <b>I</b>ntelligent <b>G</b>raphical e<b>X</b>perience</font>. It can be thought of as the <font className="color-text"><b>Fig. X</b></font>&#8212;the graphic representation that comes to mind when you are writing an article about data or explaining complex ideas, where visuals are as expressive as a thousand words. We chose this name to reflect our lab's commitment to pushing the boundaries of innovation and exploration in graphical experiences spanning data visualization, visual interfaces, and visual computing.
                           
                                 </div>
 
                             {/* </div> */}
+                            <div className="padding-top"></div>
                             <div className="padding-top"></div>
                             <div className="row">
                                 <h2>Lab news</h2>
@@ -133,10 +134,10 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="bounce"><PiCaretDoubleDownLight /></div>
+          
                     </div>
                 </div>
-<br></br>
+<br></br><br/>
 
             </div >
         )

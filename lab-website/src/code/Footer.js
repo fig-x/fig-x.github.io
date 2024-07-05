@@ -11,6 +11,7 @@ import LabName from './LabName.js';
 import * as d3 from 'd3';
 import { VscGithub } from "react-icons/vsc";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import NormalA from './NormalA.js';
 
 class Footer extends Component {
 
@@ -54,20 +55,36 @@ class Footer extends Component {
                 <div className='padding-top'></div>
                 <footer className=" border-top d-flex flex-wrap bg-dark justify-content-between align-items-center py-3 ">
                     <div className='container'>
+                    <div className='padding-top'></div>
                         <div className='row'>
                             <div className='col-lg-3 footer-bottom'>
-                                Github <VscGithub className='icon-adjustment' /> 
-                                <a href="https://github.com/fig-x" target='blank' className='plain-a'> fig-x</a>  <br />
-                               Copyright © <LabName /> <br />
-                                    Last update in {this.state && <span id='lastUpdate'>{this.state.last}</span>}
-                                </div>   <div className='col-lg-3 footer-bottom'>
+                            <b> Last update </b> <br/> {this.state && <span id='lastUpdate'>{this.state.last}</span>} <br/>
+                            Copyright © <LabName /> 
+                            </div>  
+
+                            <div className='col-lg-3 footer-bottom'>
+                            <b>Find us</b> <br/>
+                            Github <VscGithub className='icon-adjustment' /> 
+                                <a href="https://github.com/fig-x" target='blank' className='plain-a'> fig-x</a>  <br /> 
+                            </div>
+                            
+                            <div className='col-lg-3 footer-bottom'>
+                                    <b>Address</b>  <br />
                                   Brendan Iribe Center 
                                   <br />8125 Paint Branch Drive
                                   <br />College Park, MD 20742 
 
                             </div>
-                        </div>
+                            <div className='col-lg-3 footer-bottom'>
+                            <b> Links</b> 
+                                  {/* College Park, MD 20742  */}
+                                  <br /> <NormalA text="Department of Computer Science" href="https://cs.umd.edu/"/>
+                                  <br /><NormalA text="University of Maryland, College Park" href="https://www.umd.edu/"/>
+                                 
+                            </div>
+                        <div className='padding-top'></div>
                     </div>
+                    </div> 
                 </footer >
               
                 </div >

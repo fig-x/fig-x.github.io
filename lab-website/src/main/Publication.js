@@ -6,7 +6,7 @@ import { _publicationpath } from '../code/helper.js'
 import { PiFilePdf, PiFiles, PiFile, PiPiggyBank, PiMouse, PiPinwheel, PiWarehouse, PiSparkle, PiMagicWand, PiMedal, PiMedalFill, PiSlideshow, PiMonitorPlay, PiCactus } from "react-icons/pi"
 class Publication extends Component {
 
-    state = { 'saidthat': false }
+    state = { }
 
     constructor(props) {
         super(props);
@@ -50,10 +50,27 @@ class Publication extends Component {
                 <div className="container">
                     <div className='padding-top'></div>
                     <div className='header-span'> Publication</div>
-                    <p>   <font class='figx-name-style'>Names with  underline</font> indicate lab members.</p>
+
+                    <div className='row'>
+                        <div className='col-lg-6'>
+                           We publish at Visualization, HCI, and Visual Computing journals and conferences, such as
+                       
+                           {this.state && this.state.publicationmap && this.state.publicationdata && Object.keys(this.state.publicationmap).sort().map((k, i) => {
+                            return (
+                               <span>{i ==  Object.keys(this.state.publicationmap).length - 1 && ' and'} <span className='paper-short-name'> {k} </span> <span className='paper-description '> ({this.state.publicationdata && this.state.publicationdata.filter(p => p.abbr && p.abbr === k).length})</span>{i <  Object.keys(this.state.publicationmap).length - 1 && ','}</span>
+                            )
+                           })}.
+                           <p style={{'marginTop': '10px'}}>   <font class='figx-name-style'>Names with underline</font> indicate lab members,  
+                           and  <sup class='snowflake'>❊</sup> indicates equal contributions.</p>
+                         
+                        </div>
+             
+
+                    </div>
+
                     {this.state && this.state.publicationdata && this.state.publicationdata.map(pub => {
                         return (
-                            <div id = {pub.paper_id}>
+                            <div id={pub.paper_id}>
                                 {pub.separator && <h2 className='padding-top'>{pub.separator}</h2>}
                                 <div className='row paper-box'>
 

@@ -66,10 +66,9 @@ class People extends Component {
                                 <div className='padding-top' ></div>
                                 <h2>{nameMap[c]}</h2>
                                 {subset.map(p => {
-                                    return (<Card className='people-card' id = {p.nickname}>
-
+                                    return (<Card className='people-card' >
                                         <p style={{padding:'10px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
-                                        <Card.Title>
+                                        <Card.Title id = {p.nickname}>
                                             {p.website != '' && <a href={p.website} target='_blank' className='people-name'>{p.name} &#8202;
                                                 <FiExternalLink className='icon-adjustment' /></a>}
                                             {p.website == '' && <span href={p.website} target='_blank' className='people-name'>{p.name} </span>}
