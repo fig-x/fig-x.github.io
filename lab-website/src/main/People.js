@@ -58,7 +58,7 @@ class People extends Component {
                             let subset = this.state.peopledata.filter(p => p.category === c)
                             return (subset.length > 0 && <div>
                                 <div className='padding-top' ></div>
-                                <h2>{this.state.peoplemap[c]}</h2>
+                                <h2>{this.state.peoplemap[0][c]}</h2>
                                 {subset.map(p => {
                                     return (<Card className='people-card' >
                                         <p style={{padding:'10px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
