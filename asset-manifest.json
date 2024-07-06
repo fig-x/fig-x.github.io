@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0865e692.css",
-    "main.js": "/static/js/main.bf9c9af6.js",
+    "main.js": "/static/js/main.77b9bbcf.js",
     "static/js/453.45cdc164.chunk.js": "/static/js/453.45cdc164.chunk.js",
     "static/media/BlinkMacSystemFont-Heavy.woff": "/static/media/BlinkMacSystemFont-Heavy.61c6f7446ab5525d4609.woff",
     "static/media/BlinkMacSystemFont-Semibold.woff": "/static/media/BlinkMacSystemFont-Semibold.c0c9db84d6da8756adb7.woff",
@@ -41,11 +41,11 @@
     "static/media/BlinkMacSystemFont-RegularItalic.woff2": "/static/media/BlinkMacSystemFont-RegularItalic.eefd2e0e7879984b0fd4.woff2",
     "index.html": "/index.html",
     "main.0865e692.css.map": "/static/css/main.0865e692.css.map",
-    "main.bf9c9af6.js.map": "/static/js/main.bf9c9af6.js.map",
+    "main.77b9bbcf.js.map": "/static/js/main.77b9bbcf.js.map",
     "453.45cdc164.chunk.js.map": "/static/js/453.45cdc164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0865e692.css",
-    "static/js/main.bf9c9af6.js"
+    "static/js/main.77b9bbcf.js"
   ]
 }
