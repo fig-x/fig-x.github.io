@@ -26,6 +26,7 @@ Fumeng expects that she will be **the web master** and maintain this repository 
 - [ ] maybe add awards in the `Publication` page
 - [ ] test on a larger screen
 - [ ] People page - sorting should distinguish postdoc, phd, master, and undergrad
+- [ ] `artifact` page, if the bubbles don't have the same height, it's a little urgly. 
 
 ## Notes
 
