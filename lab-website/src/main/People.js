@@ -6,17 +6,10 @@ import { _peoplepath } from '../code/helper.js'
 import { Col, Card } from 'react-bootstrap';
 import { FiExternalLink } from "react-icons/fi";
 
-let arr = ['current', 'current-non-human', 'alumni']
-
-let nameMap = {
-    'current': 'Current members',
-    'current-non-human': 'Non-human friends',
-    'alumni': 'Alumni'
-}
 
 class People extends Component {
 
-
+    state = {}
     constructor(props) {
         super(props);
     }
@@ -26,8 +19,10 @@ class People extends Component {
         document.title = "People | FIGX"
         fetch(_peoplepath)
             .then(response => response.json())
-            .then(data => {
-                data.sort((a, b) => {
+            .then(rawdata => {
+                this.setState({ peoplemap: rawdata.slice(0, 1) })
+                let data =    rawdata.slice(1)
+                    data.sort((a, b) => {
                     if (Math.abs(a.year - b.year) < 0.1) {
                         return a.month - b.month
                     }
@@ -58,13 +53,12 @@ class People extends Component {
                 <div class="container">
                     <div id='people' class="row">
 
-                        {this.state && this.state.peopledata && arr.map(c => {
+                        {this.state && this.state.peoplemap && this.state.peopledata && Object.keys(this.state.peoplemap[0]).map(c => {
 
-                            let subset = this.state.peopledata.filter(p => p.catergory === c)
-    
+                            let subset = this.state.peopledata.filter(p => p.category === c)
                             return (subset.length > 0 && <div>
                                 <div className='padding-top' ></div>
-                                <h2>{nameMap[c]}</h2>
+                                <h2>{this.state.peoplemap[c]}</h2>
                                 {subset.map(p => {
                                     return (<Card className='people-card' >
                                         <p style={{padding:'10px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>

@@ -1,5 +1,7 @@
 # About the website
 
+Jul 6, 2024 by Fumeng Yang
+
 This website was written in `React.js` + `bootstrap 5` + `react-gh-pages` (to deploy to Github). You should be able to pull the github repository (the `gh-pages` branch) and then develop it locally. Each page (e.g. Home) is a *.js file. However, most of the datasets used are in the other `fig-x-data` repository. 
 
 ## Maintain
@@ -12,7 +14,9 @@ Except for the **welcome** text and `work with us` page which are embedded in th
 - People on the `People` page (`people.json` and `people` folder in that repo)
 - Artifact list on the `Artifact` page (`artifact.json` in that repo)
 
-You shouldn't need to update this repository very much unless you need to change the style or add/remove a page. Fumeng expects that she will maintain this repository for the first few years, and eventually students should maintain this website or rewrite it. 
+You shouldn't need to update this repository very much unless you need to change the style, add a feaure, or add/remove a page. The code reads the jsons specified in `helper.js`. This design should allow people without too much HTML/Javascript/React.js background to update the content. The only thing that might be annoying is that the last update date in the footer is connected to this repository.
+
+Fumeng expects that she will be **the web master** and maintain this repository for the first few years, and eventually students should maintain this repository or rewrite it. 
 
 ## TODOs
 - [ ] update logo
@@ -21,6 +25,18 @@ You shouldn't need to update this repository very much unless you need to change
 - [ ] the design of the `Research` page: one column or two-column?
 - [ ] maybe add awards in the `Publication` page
 - [ ] test on a larger screen
+- [ ] People page - sorting should distinguish postdoc, phd, master, and undergrad
+
+## Notes
+
+- Currently, the `research`, `work with us`, and `artifact` pages all used a flyer design. It is specified in a weird way with two `div`s.
+  
+- On the `Research` page, the small images are automatically added. The max number is 7 now. If there are more than 4 images, definitely take a look at the page. If there are more than 7 papers in an area, you need to add an entry in `index.css` (imagecard) and test it.
+
+- The icons are mostly hardcoded. If we need new icons, we need to add a line to the code. For consistency, please always use [Phosphor Icons](https://react-icons.github.io/react-icons/icons/pi/).
+
+- Fumeng has tested in major countries (US, China, Canada, UK, Japan, Korea, France, Germany, etc.). In China, you probably need to use VPN because the rawgithubcontent could not load and the content does not render.
+
 
 # React App
 
