@@ -1,6 +1,20 @@
-# Maintain the website
+# About the website
 
-**TODOs**
+This website was written in `React.js` + `bootstrap 5` + `react-gh-pages` (to deploy to Github). You should be able to pull the github repository (the `gh-pages` branch) and then develop it locally. Each page (e.g. Home) is a *.js file. However, most of the datasets used are in the other `fig-x-data` repository. 
+
+## Maintain
+
+Except for the **welcome** text and `work with us` page which are embedded in the html, you should refer to `fig-x-data`  when updating the content, including
+
+- News on the `Home` page (`news.json` in that repo)
+- Research area on the `Research` page (`research.json` and `research` folder in that repo)
+- Publication list on the `Publication` page (`publication.json` and `publication` folder in that repo)
+- People on the `People` page (`people.json` and `people` folder in that repo)
+- Artifact list on the `Artifact` page (`artifact.json` in that repo)
+
+You shouldn't need to update this repository very much unless you need to change the style or add/remove a page. Fumeng expects that she will maintain this repository for the first few years, and eventually students should maintain this website or rewrite it. 
+
+## TODOs
 - [ ] update logo
 - [ ] update the links in the footer
 - [ ] add UMD logo in the footer or somewhere
@@ -8,13 +22,14 @@
 - [ ] maybe add awards in the `Publication` page
 - [ ] test on a larger screen
 
-## React App
+# React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-See `https://github.com/gitname/react-gh-pages` for how to deploy this to Github.
+Notes
 
-See `https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages` for routing problems.
+- See `https://github.com/gitname/react-gh-pages` for how to deploy this to Github.
+- See `https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages` for routing problems.
 
 ## Available Scripts
 

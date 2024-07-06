@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Aleo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Aleo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @import url(BlinkMacSystemFont.css);
 
@@ -15,8 +15,8 @@
   /* font-size: 1.1rem; */
   /* bottom: 0; */
   /* margin-bottom: 0; */
-  --bs-body-font-size: 1.015rem !important;  
-  font-size: var(--bs-body-font-size);
+  /* --bs-body-font-size: 1.015rem !important;  
+  font-size: var(--bs-body-font-size); */
 }
 
 html {
@@ -64,7 +64,8 @@ code {
 
 h1 {
   font-size: 2rem !important;
-  font-family: 'Solway' !important;
+  font-family: 'Solway', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  -webkit-font-smoothing: antialiased;;
   font-weight: 600 !important;
   font-variation-settings: "wdth" 100;
   margin-bottom: 1.5rem !important;
@@ -73,8 +74,9 @@ h1 {
 
 
 h2 {
-  font-size: 1.33rem !important;
-  font-family: 'Solway' !important;
+  font-size: 1.32rem !important;
+  font-family: 'Solway', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  -webkit-font-smoothing: antialiased;;
   font-weight: 600 !important;
   font-variation-settings: "wdth" 100;
   /* text-transform: uppercase; */
@@ -811,7 +813,7 @@ nav{
 }
 @media screen and (max-width: 1200px) {
   .imagecard{
-    width:20rem!important;
+    width:15rem!important;
   }
   .imagecard:nth-child(2) {
     margin-top: -0%;

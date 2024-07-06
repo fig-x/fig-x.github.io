@@ -53,15 +53,13 @@ class Publication extends Component {
                     <div className='header-span'> Publication</div>
 
                     <div className='row'>
-                        <div className='col-lg-6'>
-                           We publish at Visualization, HCI, and Visual Computing journals and conferences, such as
-                       
-                           {this.state && this.state.publicationmap && this.state.publicationdata && Object.keys(this.state.publicationmap).sort().map((k, i) => {
+                        <div className='col-lg-12'>
+                           We publish at Visualization, HCI, and Visual Computing journals and conferences, such as {this.state && this.state.publicationmap && this.state.publicationdata && Object.keys(this.state.publicationmap).sort().map((k, i) => {
                             return (
                                <span>{i ==  Object.keys(this.state.publicationmap).length - 1 && ' and'} <span className='paper-short-name'> {k} </span> <span className='paper-description '> ({this.state.publicationdata && this.state.publicationdata.filter(p => p.abbr && p.abbr === k).length})</span>{i <  Object.keys(this.state.publicationmap).length - 1 && ','}</span>
                             )
                            })}.
-                           <p style={{'marginTop': '10px'}}>   <font class='figx-name-style'>Names with underline</font> indicate lab members,  
+                           <p style={{'marginTop': '5px'}}>   <font class='figx-name-style'>Names with underline</font> indicate lab members,  
                            and  <sup class='snowflake'>❊</sup> indicates equal contributions.</p>
                          
                         </div>
