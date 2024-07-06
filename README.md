@@ -2,7 +2,7 @@
 
 Jul 6, 2024 by Fumeng Yang
 
-This website was written in `React.js` + `bootstrap 5` + `react-gh-pages` (to deploy to Github). You should be able to pull the github repository (the `gh-pages` branch) and then develop it locally. Each page (e.g. Home) is a *.js file. However, most of the datasets used are in the other `fig-x-data` repository. 
+This website was written in `React.js` + `bootstrap 5` + `react-gh-pages`. You should be able to pull the github repository (the `gh-pages` branch) and then develop it to github locally. Each page (e.g. Home) is a *.js file. However, most of the datasets used are in the other `fig-x-data` repository. 
 
 ## Maintain
 
