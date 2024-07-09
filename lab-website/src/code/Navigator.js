@@ -35,15 +35,15 @@ class Navigator extends Component {
     // https://www.codeply.com/p/zzFC5XoyUm
     return (
       <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid" style={{'paddingLeft': 0}}>
-            <a className="navbar-brand" href="#"><img src='fig.svg' style={{ 'width': '2rem' }}></img></a>
+        <div className="container-fluid" style={{'paddingLeft': 'auo'}}>
+           
             {/* <div className="w-100 text-right  "> */}
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
    
           <div className="collapse navbar-collapse" id="myNavbar">
-            <ul className="navbar-nav ms-auto flex-nowrap d-flex">
+            <ul className="navbar-nav flex-nowrap d-flex justify-content-start">
               <li className="nav-item">
                 <a href="#"
                   className={this.props.activeItem == 'home-nav' ?
@@ -129,7 +129,10 @@ class Navigator extends Component {
                 >Work with us</a>
               </li>
             </ul>
-          </div></div>
+          </div>
+          
+          <a className="navbar-brand" href="#"><img src='full-1.png' style={{ 'height': '3rem', 'marginLeft': '-1.6rem' }}></img></a> 
+          </div>
       </nav>
     )
   }

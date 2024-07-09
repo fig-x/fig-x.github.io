@@ -73,7 +73,8 @@ class Workwithus extends Component {
 
                                     <p>
                                         The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/catalog" text="December 20" /></b>.
-                                        You can drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
+                                        Please mention Fumeng as the faculty of your interests.
+                                        You could drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
 
                                     </p>
                                     <p>

@@ -131,7 +131,7 @@ class Research extends Component {
                                 })
 
                                 return (
-                                    <div className={'research-area-card-' + (i%2)}>
+                                    <div className={'research-area-card-' + (i%2)} style={{'backgroundColor': 'white'}}>
                                         <h2 className='research-title'>{area.area.includes('AI') && <PiRobot className='icon-right-adjustment ' />}
                                             {area.area.includes('Trust') && <PiHandshake className='icon-right-adjustment ' />}
                                             {area.area.includes('Uncertainty') && <PiBrain className='icon-right-adjustment ' />}
