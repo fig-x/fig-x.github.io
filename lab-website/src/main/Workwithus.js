@@ -17,7 +17,7 @@ class Workwithus extends Component {
 
 
     componentDidMount() {
-                document.title = "Work with us | FIGX"
+                document.title = "FIGX | Work with us"
         // this.createVis()
     }
 
@@ -32,7 +32,7 @@ class Workwithus extends Component {
             <div className='page-content'>
                 <div className='top-header border-bottom'>
                     <div className="container">
-                        <Navigator activeItem='workwithus-nav' />
+                        <Navigator activeItem='workwithus-nav' showlogo={true}/>
                     </div>
                 </div>
                 {/* <HeaderSpan text='Work with us'/> */}
@@ -73,7 +73,7 @@ class Workwithus extends Component {
 
                                     <p>
                                         The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/catalog" text="December 20" /></b>.
-                                        Please mention Fumeng as the faculty of your interests.
+                                        Make sure to mention Fumeng as the faculty of interest when you apply. 
                                         You could drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
 
                                     </p>
@@ -91,8 +91,7 @@ class Workwithus extends Component {
                                 {/* <span className='side-stick'></span> */}
                                 <h2 className='research-title'>Existing Masters' or undergraduate students </h2>
                                 <div className='flyer-inner'>
-                                    <p> If you are a current Master's or undergraduate student at UMD, we would love to have you in our lab.
-                                        {/* You are likely to take on your own project(s). */}
+                                    <p> If you are a current Master's or undergraduate student at UMD, we would love to have you in our lab.  
                                         We offer opportunities for independent study, paid research positions, and summer internships.
                                         Please <b>fill out <NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="this interest form" /></b>.
                                         We will contact you if we think this is a good match.

@@ -2,11 +2,11 @@
 
 Jul 6, 2024 by Fumeng Yang
 
-This website was written in `React.js` + `bootstrap 5` + `react-gh-pages` (to deploy to Github). You should be able to pull the github repository (the `gh-pages` branch) and then develop it locally. Each page (e.g. Home) is a *.js file. However, most of the datasets used are in the other `fig-x-data` repository. 
+This website was written in `React.js` + `bootstrap 5` + `react-gh-pages` (to deploy to Github). You should be able to pull the github repository (the `gh-pages` branch) and then develop it locally. Each page (e.g. Home) is a *.js file. However, most of the datasets used are in the other [`fig-x-data`](https://github.com/fig-x/fig-x-data) repository. 
 
 ## Maintain
 
-Except for the **welcome** text and `work with us` page which are embedded in the html, you should refer to `fig-x-data`  when updating the content, including
+Except for the **welcome** text and `work with us` page which are embedded in the html, you should refer to [`fig-x-data`](https://github.com/fig-x/fig-x-data)  when updating the content, including
 
 - News on the `Home` page (`news.json` in that repo)
 - Research area on the `Research` page (`research.json` and `research` folder in that repo)
@@ -25,7 +25,7 @@ Fumeng expects that she will be **the web master** and maintain this repository 
 - [ ] the design of the `Research` page: one column or two-column?
 - [ ] maybe add awards in the `Publication` page
 - [ ] test on a larger screen
-- [ ] People page - sorting should distinguish postdoc, phd, master, and undergrad
+- [x] People page - sorting should distinguish postdoc, phd, master, and undergrad
 - [ ] `artifact` page, if the bubbles don't have the same height, it's a little urgly. 
 
 ## Notes

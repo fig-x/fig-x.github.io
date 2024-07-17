@@ -29,7 +29,6 @@ function App() {
         <Route path="/artifact" element={<Artifact />} />
         <Route path="/workwithus" element={<Workwithus />} />
       </Routes>
-
       <Footer />
     </Router>
   );

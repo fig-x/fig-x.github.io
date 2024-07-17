@@ -6,6 +6,12 @@ import { _peoplepath } from '../code/helper.js'
 import { Col, Card } from 'react-bootstrap';
 import { FiExternalLink } from "react-icons/fi";
 
+let sorting = {
+    'prof': 0,
+    'phd': 1,
+    'master': 2,
+    'undergrad': 3
+}
 
 class People extends Component {
 
@@ -16,13 +22,17 @@ class People extends Component {
 
 
     componentDidMount() {
-        document.title = "People | FIGX"
+        document.title = "FIGX | People"
         fetch(_peoplepath)
             .then(response => response.json())
             .then(rawdata => {
                 this.setState({ peoplemap: rawdata.slice(0, 1) })
-                let data =    rawdata.slice(1)
+                let data =  rawdata.slice(1)
                     data.sort((a, b) => {
+
+                    if(sorting[a.sorting] - sorting[b.sorting] > 0) return 1
+                    if(sorting[a.sorting] - sorting[b.sorting] < 0) return -1
+
                     if (Math.abs(a.year - b.year) < 0.1) {
                         return a.month - b.month
                     }
@@ -46,19 +56,21 @@ class People extends Component {
             <div className='page-content'>
                 <div className='top-header border-bottom'>
                     <div className="container">
-                        <Navigator activeItem='people-nav' />
+                        <Navigator activeItem='people-nav' showlogo={true} />
                     </div>
                 </div>
                 {/* <HeaderSpan text='People' /> */}
                 <div class="container">
-                    <div id='people' class="row">
+               
 
                         {this.state && this.state.peoplemap && this.state.peopledata && Object.keys(this.state.peoplemap[0]).map(c => {
 
                             let subset = this.state.peopledata.filter(p => p.category === c)
                             return (subset.length > 0 && <div>
                                 <div className='padding-top' ></div>
-                                <h2>{this.state.peoplemap[0][c]}</h2>
+                                <h2 className='header-span'>{this.state.peoplemap[0][c]}</h2>
+
+                                <div id='people' class="row">
                                 {subset.map(p => {
                                     return (<Card className='people-card'style={{'backgroundColor': 'transparent'}} >
                                         <p style={{padding:'10px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
@@ -70,10 +82,11 @@ class People extends Component {
                                         <Card.Body>
                                             <p className='people-position'>{p.position}</p>
                                             <p className='people-info' dangerouslySetInnerHTML={{__html: p.quote}}/>
-                                            {p.year && <p className='people-info'>Since {p.year}</p>}
+                                            {p.year && <p className='people-info'>{p.year}</p>}
                                         </Card.Body>
                                     </Card>)
                                 })}
+                            </div>
                             </div>
                             )
                         })}
@@ -82,7 +95,6 @@ class People extends Component {
 
                     </div>
                 </div>
-            </div>
         )
     }
 

@@ -34,11 +34,11 @@ class Navigator extends Component {
   render() {
     // https://www.codeply.com/p/zzFC5XoyUm
     return (
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid" style={{'paddingLeft': 'auo'}}>
            
             {/* <div className="w-100 text-right  "> */}
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation" style={{'marginLeft': '-15px'}}>
               <span className="navbar-toggler-icon"></span>
             </button>
    
@@ -131,7 +131,7 @@ class Navigator extends Component {
             </ul>
           </div>
           
-          <a className="navbar-brand" href="#"><img src='full-1.png' style={{ 'height': '3rem', 'marginLeft': '-1.6rem' }}></img></a> 
+         {this.props.showlogo && <a className="navbar-brand" href="#"><img src='figx-logo-2.png' style={{ 'height': '3.5rem', 'marginLeft': '-1.6rem' }}></img></a> }
           </div>
       </nav>
     )

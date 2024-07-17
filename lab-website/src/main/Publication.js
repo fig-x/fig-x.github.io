@@ -3,7 +3,7 @@ import Navigator from '../code/Navigator.js';
 import HeaderSpan from '../code/HeaderSpan.js';
 import { _publicationpath } from '../code/helper.js'
 // import { BsFlower1 } from "react-icons/bs";
-import { PiFilePdf, PiFiles, PiFile, PiPiggyBank, PiMouse, PiPinwheel, PiWarehouse, PiSparkle, PiMagicWand, PiMedal, PiMedalFill, PiSlideshow, PiMonitorPlay, PiCactus } from "react-icons/pi"
+import { PiFilePdf, PiFiles, PiFile, PiPiggyBank, PiWrench, PiMouse, PiPinwheel, PiWarehouse, PiSparkle, PiMagicWand, PiMedal, PiMedalFill, PiSlideshow, PiMonitorPlay, PiCactus } from "react-icons/pi"
 class Publication extends Component {
 
     state = { }
@@ -14,7 +14,7 @@ class Publication extends Component {
 
 
     componentDidMount() {
-        document.title = "Publication | FIGX"
+        document.title = "FIGX | Publication"
         fetch(_publicationpath)
             .then(response => response.json())
             .then(data => {
@@ -43,7 +43,7 @@ class Publication extends Component {
 
                 <div className='top-header border-bottom'>
                     <div className="container">
-                        <Navigator activeItem='publication-nav' />
+                        <Navigator activeItem='publication-nav' showlogo={true} />
                     </div>
                 </div>
                 {/* <HeaderSpan text='Publication' /> */}
@@ -54,13 +54,16 @@ class Publication extends Component {
 
                     <div className='row'>
                         <div className='col-lg-12'>
-                           We publish at Visualization, HCI, and Visual Computing journals and conferences, such as {this.state && this.state.publicationmap && this.state.publicationdata && Object.keys(this.state.publicationmap).sort().map((k, i) => {
+                          <p> We publish at Visualization, HCI, and Visual Computing journals and conferences, such as {this.state && this.state.publicationmap && this.state.publicationdata && Object.keys(this.state.publicationmap).sort().map((k, i) => {
                             return (
                                <span>{i ==  Object.keys(this.state.publicationmap).length - 1 && ' and'} <span className='paper-short-name'> {k} </span> <span className='paper-description '> ({this.state.publicationdata && this.state.publicationdata.filter(p => p.abbr && p.abbr === k).length})</span>{i <  Object.keys(this.state.publicationmap).length - 1 && ','}</span>
                             )
                            })}.
-                           <p style={{'marginTop': '5px'}}>   <font class='figx-name-style'>Names with underline</font> indicate lab members,  
+                           </p>
+                           <p style={{'marginTop': '-7px'}}>   <font class='figx-name-style'>Names with underline</font> indicate lab members,  
                            and  <sup class='snowflake'>❊</sup> indicates equal contributions.</p>
+
+                           <p style={{'marginTop': '-7px'}}> Also, IEEE VIS papers are published as a special issue of the journal TVCG.</p>
                          
                         </div>
              
@@ -87,9 +90,9 @@ class Publication extends Component {
                                             {pub.awards && pub.awards.includes("Best") && <span className='paper-award'> <PiMedalFill /> {pub.awards}</span>}</p>
 
                                         <p className='paper-info'>
-                                            <span className='paper-info-inner'> <a href={pub.pdf} target='_blank'><PiFiles /><font className="paper-info-text"> paper</font></a></span>
+                                            {pub.pdf && <span className='paper-info-inner'> <a href={pub.pdf} target='_blank'><PiFiles /><font className="paper-info-text"> paper</font></a></span>}
                                             {pub.demo && <span className='paper-info-inner'> <a href={pub.demo} target='_blank'><PiSparkle /><font className="paper-info-text"> demo</font></a></span>}
-                                            {pub.repo && <span className='paper-info-inner'> <a href={pub.repo} target='_blank'><PiMagicWand /><font className="paper-info-text"> suppl</font></a></span>}
+                                            {pub.repo && <span className='paper-info-inner'> <a href={pub.repo} target='_blank'><PiWrench /><font className="paper-info-text"> suppl</font></a></span>}
                                             {pub.video && <span className='paper-info-inner'> <a href={pub.video} target='_blank'> <PiMonitorPlay /><font className="paper-info-text"> video</font></a></span>}
                                             {pub.doi && <span className='paper-info-inner'> <a href={pub.doi} target='_blank'> <PiPiggyBank /><font className="paper-info-text"> doi</font></a></span>}
 

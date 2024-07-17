@@ -17,7 +17,7 @@ class Artifact extends Component {
 
 
     componentDidMount() {
-               document.title = "Artifact | FIGX"
+               document.title = "FIGX | Artifact"
         fetch(_artifactpath)
             .then(response => response.json())
             .then(data => {
@@ -42,7 +42,7 @@ class Artifact extends Component {
             <div className='page-content'>
                 <div className='top-header border-bottom'>
                     <div className="container">
-                        <Navigator activeItem='artifact-nav' />
+                        <Navigator activeItem='artifact-nav' showlogo={true}/>
                     </div>
                 </div>
                 <div className='padding-top'></div>

@@ -18,7 +18,7 @@ class Research extends Component {
 
 
     componentDidMount() {
-        document.title = "Research | FIGX"
+        document.title = "FIGX | Research"
         fetch(_researchpath)
             .then(response => response.json())
             .then(data => {
@@ -114,7 +114,7 @@ class Research extends Component {
             <div className='page-content'>
                 <div className='top-header border-bottom'>
                     <div className="container">
-                        <Navigator activeItem='research-nav' />
+                        <Navigator activeItem='research-nav' showlogo={true}/>
                     </div>
                 </div>
                 <div class="container">
