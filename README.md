@@ -14,9 +14,9 @@ Except for the **welcome** text and `work with us` page which are embedded in th
 - People on the `People` page (`people.json` and `people` folder in that repo)
 - Artifact list on the `Artifact` page (`artifact.json` in that repo)
 
-You shouldn't need to update this repository very much unless you need to change the style, add a feaure, or add/remove a page. The code reads the jsons specified in `helper.js`. This design should allow people without too much HTML/Javascript/React.js background to update the content. The only thing that might be annoying is that the last update date in the footer is connected to this repository.
+You shouldn't need to update this repository very much unless you need to change the style, add a feature, or add/remove a page. The code reads the jsons specified in `helper.js`. This design should allow people without too much HTML/Javascript/React.js background to update the content. The only thing that might be annoying is that the last update date in the footer is connected to this repository.
 
-Fumeng expects that she will be **the web master** and maintain this repository for the first few years, and eventually students should maintain this repository or rewrite it. 
+Fumeng expects that she will be **the webmaster** and maintain this repository for the first few years, and eventually students should maintain this repository or rewrite it. 
 
 ## TODOs
 - [ ] update logo
@@ -30,13 +30,13 @@ Fumeng expects that she will be **the web master** and maintain this repository 
 
 ## Notes
 
-- Currently, the `research`, `work with us`, and `artifact` pages all used a flyer design. It is specified in a weird way with two `div`s.
+- Currently, the `research`, `work with us`, and `artifact` pages all use a flyer design. It is specified in a weird way with two `div`s.
   
 - On the `Research` page, the small images are automatically added. The max number is 7 now. If there are more than 4 images, definitely take a look at the page. If there are more than 7 papers in an area, you need to add an entry in `index.css` (imagecard) and test it.
 
 - The icons are mostly hardcoded. If we need new icons, we need to add a line to the code. For consistency, please always use [Phosphor Icons](https://react-icons.github.io/react-icons/icons/pi/).
 
-- Fumeng has tested in major countries (US, China, Canada, UK, Japan, Korea, France, Germany, etc.). In China, you probably need to use VPN because the rawgithubcontent could not load and the content does not render.
+- Fumeng has tested in major countries (US, China, Canada, UK, Japan, Korea, France, Germany, etc.). In China, you probably need to use a VPN because the rawgithubcontent could not load and the content does not render.
 
 
 # React App
@@ -45,7 +45,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Notes
 
-- See `https://github.com/gitname/react-gh-pages` for how to deploy this to Github.
+- See `https://github.com/gitname/react-gh-pages` for instructions on how to deploy this to Github.
 - See `https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages` for routing problems.
 
 ## Available Scripts
