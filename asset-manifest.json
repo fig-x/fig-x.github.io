@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.54663f21.css",
-    "main.js": "/static/js/main.7bc91e90.js",
+    "main.js": "/static/js/main.4ef3fbaf.js",
     "static/js/453.45cdc164.chunk.js": "/static/js/453.45cdc164.chunk.js",
     "static/media/headline-2.png": "/static/media/headline-2.b00a940a40e8cf593e29.png",
     "static/media/MusticaPro-Bold.woff": "/static/media/MusticaPro-Bold.cfe1e037c260aa93610e.woff",
@@ -43,11 +43,11 @@
     "static/media/BlinkMacSystemFont-RegularItalic.woff2": "/static/media/BlinkMacSystemFont-RegularItalic.eefd2e0e7879984b0fd4.woff2",
     "index.html": "/index.html",
     "main.54663f21.css.map": "/static/css/main.54663f21.css.map",
-    "main.7bc91e90.js.map": "/static/js/main.7bc91e90.js.map",
+    "main.4ef3fbaf.js.map": "/static/js/main.4ef3fbaf.js.map",
     "453.45cdc164.chunk.js.map": "/static/js/453.45cdc164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54663f21.css",
-    "static/js/main.7bc91e90.js"
+    "static/js/main.4ef3fbaf.js"
   ]
 }
