@@ -60,10 +60,8 @@ class Publication extends Component {
                             )
                            })}.
                            </p>
-                           <p style={{'marginTop': '-7px'}}>   <font class='figx-name-style'>Names with underline</font> indicate lab members,  
-                           and  <sup class='snowflake'>❊</sup> indicates equal contributions.</p>
-
-                           <p style={{'marginTop': '-7px'}}> Also, IEEE VIS papers are published as a special issue of the journal TVCG.</p>
+                           <p style={{'marginTop': '-7px'}}>  <font class='figx-name-style'>Names with underline</font> indicate lab members,  
+                           and  <sup class='snowflake'>❊</sup> indicates equal contributions. Also, IEEE VIS papers are published as a special issue of the journal TVCG.</p>
                          
                         </div>
              

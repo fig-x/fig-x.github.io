@@ -59,7 +59,8 @@ class Footer extends Component {
                         <div className='row'>
                             <div className='col-lg-3 footer-bottom'>
                             <b> Last update </b> <br/> {this.state && <span id='lastUpdate'>{this.state.last}</span>} <br/>
-                            Copyright © <LabName /> 
+                            Copyright © <LabName /> <br/>
+                          Logo created by 意匠原创设计, <br/> a design studio in China.
                             </div>  
 
                             <div className='col-lg-3 footer-bottom'>

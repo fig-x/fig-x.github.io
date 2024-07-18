@@ -41,7 +41,7 @@ class Workwithus extends Component {
                         <div className='padding-top' />
                         <div className='header-span'>The <InternalA href="./people#theseaweeds" text="Seaweeds" /> &#x1f422; want  more friends...</div>
                         <p>
-                            We are actively seeking talented students and researchers to enrich our lab!
+                            We are actively seeking talented students and researchers to enrich our group!
                             <br />
                             See below for information for potential postdoctoral scholars, Ph.D. students,
                             and Master's or undergrad research assistants or volunteers.

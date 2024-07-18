@@ -125,19 +125,19 @@ b {
 
 
 #welcome-logo-right {
-height: 10em;
+height: 11em;
 width: auto;
 margin-top: 1rem;
 margin-bottom: 1rem;
-/* margin-left: -1rem; */
+margin-left: 3rem;
 /* display: inline; */
 }
 
 #welcome-logo-left{
-  height: 10em;
+  height: 12em;
 width: auto;
 /* margin-top: .5rem; */
-margin-bottom: 1rem;
+margin-bottom: 2rem;
 }
 
 .welcome-block-outside {
@@ -176,14 +176,12 @@ margin-bottom: 1rem;
 
 .welcome-text {
   /* font-weight: 500 !important; */
-  font-size: 3.5rem;
   font-family: 'HeaderFont', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   /* letter-spacing: 1px; */
   font-weight: 600 !important;
   /* margin-bottom: 1rem; */
   margin-top: 1rem;
   line-height: 120%;
-  letter-spacing: 4px;
   text-transform: uppercase !important;
 }
 
@@ -628,10 +626,12 @@ nav {
     padding-top: 3.5rem;
     padding-bottom: 4rem;
   }
+  .welcome-text {
+    font-weight: 600 !important;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+  }
 
-  /* #welcome-logo-right{
-    display: none;
-  } */
 
 }
 
@@ -692,6 +692,12 @@ nav {
 
 @media screen and (min-width: 1200px) {
 
+  .welcome-text {
+    /* font-weight: 500 !important; */
+  font-size: 3.4rem;
+  letter-spacing: 4px;
+  /* margin-bottom: rem; */
+  }
   .welcome-block-outside{
     min-height: 50vh !important;
     background-image: url(../public/headline-2.png);
