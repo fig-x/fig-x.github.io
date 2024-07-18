@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.28b05f40.css",
+    "main.css": "/static/css/main.54663f21.css",
     "main.js": "/static/js/main.e158f043.js",
     "static/js/453.45cdc164.chunk.js": "/static/js/453.45cdc164.chunk.js",
     "static/media/headline-2.png": "/static/media/headline-2.b00a940a40e8cf593e29.png",
@@ -42,12 +42,12 @@
     "static/media/BlinkMacSystemFont-BlackItalic.woff2": "/static/media/BlinkMacSystemFont-BlackItalic.1d43fcfebc42ae935b37.woff2",
     "static/media/BlinkMacSystemFont-RegularItalic.woff2": "/static/media/BlinkMacSystemFont-RegularItalic.eefd2e0e7879984b0fd4.woff2",
     "index.html": "/index.html",
-    "main.28b05f40.css.map": "/static/css/main.28b05f40.css.map",
+    "main.54663f21.css.map": "/static/css/main.54663f21.css.map",
     "main.e158f043.js.map": "/static/js/main.e158f043.js.map",
     "453.45cdc164.chunk.js.map": "/static/js/453.45cdc164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28b05f40.css",
+    "static/css/main.54663f21.css",
     "static/js/main.e158f043.js"
   ]
 }
