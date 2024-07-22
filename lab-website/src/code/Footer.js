@@ -57,18 +57,21 @@ class Footer extends Component {
                     <div className='container'>
                     <div className='padding-top'></div>
                         <div className='row'>
-                            <div className='col-lg-3 footer-bottom'>
-                            <b> Last update </b> <br/> {this.state && <span id='lastUpdate'>{this.state.last}</span>} <br/>
-                            Copyright © <LabName /> <br/>
-                          Logo created by 意匠原创设计, <br/> a design studio in China.
-                            </div>  
-
+                           
+                           
                             <div className='col-lg-3 footer-bottom'>
                             <b>Find us</b> <br/>
                             Github <VscGithub className='icon-adjustment' /> 
                                 <a href="https://github.com/fig-x" target='blank' className='plain-a'> fig-x</a>  <br /> 
                             </div>
                             
+                            <div className='col-lg-3 footer-bottom'>
+                            <b> Last update </b> <br/> {this.state && <span id='lastUpdate'>{this.state.last}</span>} <br/>
+                            Copyright © <LabName /> <br/>
+                          Logo created by 意匠原创设计, <br/> a design studio in China.
+                            </div>  
+
+
                             <div className='col-lg-3 footer-bottom'>
                                     <b>Address</b>  <br />
                                   Brendan Iribe Center 
@@ -83,6 +86,10 @@ class Footer extends Component {
                                   <br /><NormalA text="University of Maryland, College Park" href="https://www.umd.edu/"/>
                                  
                             </div>
+
+                            
+                   
+
                         <div className='padding-top'></div>
                     </div>
                     </div> 

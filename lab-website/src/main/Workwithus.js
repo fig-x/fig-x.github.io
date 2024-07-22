@@ -58,7 +58,7 @@ class Workwithus extends Component {
 
                                     </p>
                                     <p>
-                                        Our current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, and <b>decision-making</b>.
+                                        Our current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, <b>decision-making</b>, and  <b>model explanation</b>.
                                         Other topics related to information visualization, HCI, and visual computing are also possible.
                                         We encourage you to familiarize yourself with our lab's work before applying,
                                         so you can show how your interests or experiences align with ours.
@@ -67,7 +67,7 @@ class Workwithus extends Component {
                                         Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
                                         We are committed to guiding each student toward a path that aligns with their background and goals.
                                         However, a complete lack of programming skills or significant discomfort with mathematics would significantly hinder your progress.
-                                        Above all, <b>a strong motivation and a keen interest</b> in pursuing research are paramount.
+                                        Above all, <b>self-motivation and keen interests</b> in pursuing research are paramount.
 
                                     </p>
 

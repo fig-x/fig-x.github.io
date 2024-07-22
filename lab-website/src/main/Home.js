@@ -9,6 +9,8 @@ import { isMobile } from 'react-device-detect';
 import { _newspath } from '../code/helper.js'
 import { Col, Card } from 'react-bootstrap';
 import { PiCaretDoubleDownLight } from "react-icons/pi";
+// import axios from 'axios';
+
 const tParser = d3time.timeParse("%Y-%m-%d")
 const oFormat = d3time.timeFormat("%Y %B")
 
@@ -25,6 +27,7 @@ class Home extends Component {
     componentDidMount() {
         // this.createVis()
         document.title = "FIGX | Home"
+        
         fetch(_newspath)
             .then(response => response.json())
             .then(data => {
@@ -34,7 +37,11 @@ class Home extends Component {
                     return b.timeFormatted - a.timeFormatted
                 })
                 this.setState({ 'newsdata': data })
-            });
+            }).catch(error => {
+                console.log(error)
+            })
+
+        
     }
 
     componentDidUpdate() {
