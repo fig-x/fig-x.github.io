@@ -67,7 +67,7 @@ class Workwithus extends Component {
                                         Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
                                         We are committed to guiding each student toward a path that aligns with their background and goals.
                                         However, a complete lack of programming skills or significant discomfort with mathematics would significantly hinder your progress.
-                                        Above all, <b>self-motivation and keen interests</b> in pursuing research are paramount.
+                                        Above all, <b>self-motivation and a keen interest</b> in pursuing research are paramount.
 
                                     </p>
 
