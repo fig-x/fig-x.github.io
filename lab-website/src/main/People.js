@@ -73,7 +73,7 @@ class People extends Component {
                                 <div id='people' class="row">
                                 {subset.map(p => {
                                     return (<Card className='people-card'style={{'backgroundColor': 'transparent'}} >
-                                        <p style={{padding:'10px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
+                                        <p style={{padding:'15px'}}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
                                         <Card.Title id = {p.nickname}>
                                             {p.website != '' && <a href={p.website} target='_blank' className='people-name'>{p.name} &#8202;
                                                 <FiExternalLink className='icon-adjustment' /></a>}
