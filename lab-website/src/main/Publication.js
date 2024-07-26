@@ -31,8 +31,23 @@ class Publication extends Component {
 
     }
 
+
     componentDidUpdate() {
-    }
+        this.runAfterRender()
+     }
+ 
+ 
+     runAfterRender(){
+         let id = window.location.href.split('#')[1]
+         const element = document.getElementById(id);
+ 
+         if (element) {  
+             element.scrollIntoView({
+                 behavior: 'smooth',
+                 block: 'start'
+             });
+         }
+     }
 
 
 

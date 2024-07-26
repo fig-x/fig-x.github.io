@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import { withRouter } from '../code/withRouter.js';
 
 import Navigator from '../code/Navigator.js';
@@ -44,10 +45,23 @@ class Home extends Component {
         
     }
 
-    componentDidUpdate() {
-        // this.createVis();
-    }
 
+    componentDidUpdate() {
+        this.runAfterRender()
+     }
+ 
+ 
+     runAfterRender(){
+         let id = window.location.href.split('#')[1]
+         const element = document.getElementById(id);
+ 
+         if (element) {  
+             element.scrollIntoView({
+                 behavior: 'smooth',
+                 block: 'start'
+             });
+         }
+     }
 
     render() {
         return (

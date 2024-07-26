@@ -16,19 +16,17 @@
   --dark-gray: #777777;
   --background-gray: #f8f8f8;
   --my-border-radius: 7px;
-  /* #e21833; */
-  /* font-size: 1.1rem; */
-  /* bottom: 0; */
-  /* margin-bottom: 0; */
-  /* --bs-body-font-size: 1.015rem !important;  
-  font-size: var(--bs-body-font-size); */
 }
 
 
-@font-face { font-family: HeaderFont; src: url('../public/font/MusticaPro-Bold.woff'); } 
+@font-face {
+  font-family: HeaderFont;
+  src: url('../public/font/MusticaPro-Bold.woff');
+}
 
 html {
   background-color: #212529;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,10 +36,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400 !important;
-  /* letter-spacing: -.1px; */
-  /* line-height: 170% !important; */
-  /* background-color: #ebebeb !important; */
-
 }
 
 code {
@@ -87,7 +81,7 @@ h1 {
   font-variation-settings: "wdth" 100;
   margin-bottom: 1.5rem !important;
   letter-spacing: .3px !important;
- 
+
 }
 
 
@@ -125,19 +119,19 @@ b {
 
 
 #welcome-logo-right {
-height: 11em;
-width: auto;
-margin-top: 1rem;
-margin-bottom: 1rem;
-margin-left: 3.5rem;
-/* display: inline; */
+  height: 11em;
+  width: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3.5rem;
+  /* display: inline; */
 }
 
-#welcome-logo-left{
+#welcome-logo-left {
   height: 12em;
-width: auto;
-/* margin-top: .5rem; */
-margin-bottom: 2rem;
+  width: auto;
+  /* margin-top: .5rem; */
+  margin-bottom: 2rem;
 }
 
 .welcome-block-outside {
@@ -152,8 +146,8 @@ margin-bottom: 2rem;
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: .3s ease-in-out;
 
-  background-image:linear-gradient(to bottom,#f1f2f3 1%, #f2f2f2f0 40%, #f7f7f7cc 70%, #fefcfd); 
-  
+  background-image: linear-gradient(to bottom, #f1f2f3 1%, #f2f2f2f0 40%, #f7f7f7cc 70%, #fefcfd);
+
 }
 
 
@@ -268,6 +262,7 @@ nav {
   vertical-align: -1px;
   font-size: 85%;
 }
+
 /* each module */
 
 #news-containter {
@@ -280,6 +275,14 @@ nav {
 .newsdate {
   color: var(--dark-gray);
   font-size: 96%;
+}
+
+.news-paper-nickname {
+  font-style: italic;
+  /* background-color: var(--background-gray);
+  padding: 2px 5px 3px 5px; */
+  /* border-radius: .4rem; */
+  /* color: var(--dark-gray); */
 }
 
 /* bounce */
@@ -410,7 +413,7 @@ nav {
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.people-category{
+.people-category {
   /* text-transform: uppercase;
   letter-spacing: px; */
 }
@@ -594,10 +597,10 @@ nav {
 
 @media screen and (max-width: 1200px) {
 
-  .newsitem{
+  .newsitem {
     padding-top: 5px !important;
   }
-  
+
   .paper-description,
   .paper-info-text,
   .paper-long-name,
@@ -626,8 +629,9 @@ nav {
     padding-top: 3.5rem;
     padding-bottom: 4rem;
   }
+
   .welcome-text {
-    font-weight: 600 !important;
+    font-weight: 700 !important;
     font-size: 1.9rem;
     letter-spacing: 2px;
   }
@@ -694,11 +698,12 @@ nav {
 
   .welcome-text {
     /* font-weight: 500 !important; */
-  font-size: 3.2vw;
-  letter-spacing: 4px;
-  /* margin-bottom: rem; */
+    font-size: 5vh;
+    letter-spacing: 4px;
+    /* margin-bottom: rem; */
   }
-  .welcome-block-outside{
+
+  .welcome-block-outside {
     min-height: 50vh !important;
     background-image: url(../public/headline-2.png);
     background-blend-mode: soft-light;
@@ -717,8 +722,8 @@ nav {
 
   }
 
-  #topic-frontpage{
-    padding-right:2rem;
+  #topic-frontpage {
+    padding-right: 2rem;
   }
 
 
@@ -747,7 +752,7 @@ nav {
 
   }
 
-  .mobile-only{
+  .mobile-only {
     display: none;
   }
 
@@ -849,10 +854,19 @@ nav {
   margin: .1rem 3% 5% .1rem !important;
   border: 1px solid var(--light-gray);
   background-color: white !important;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+  -o-transition: -o-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .flyer-inner {
   margin: 1.5rem 1.75rem .8rem 1.75rem !important;
+}
+
+.flyer:hover {
+  transform: scale(1.02);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .side-stick {
@@ -1021,53 +1035,85 @@ nav {
 
 #welcome-img {
   animation: changingphoto 7s 2s 1;
--moz-animation: changingphoto 7s 2s 1;
--webkit-animation: changingphoto 7s 2s 1;
--o-animation: changingphoto 7s 2s 1;
-animation-iteration-count: infinite;
+  -moz-animation: changingphoto 7s 2s 1;
+  -webkit-animation: changingphoto 7s 2s 1;
+  -o-animation: changingphoto 7s 2s 1;
+  animation-iteration-count: infinite;
 }
 
 
 @keyframes changingphoto {
-0% { transform: scale(1); }
-50% { transform: scale(1.02); }
-100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @-moz-keyframes changingphoto {
-0% { transform: scale(1); }
-50% { transform: scale(1.02); }
-A100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  A100% {
+    transform: scale(1);
+  }
 }
 
 @-webkit-keyframes changingphoto {
-0% { transform: scale(1); }
-50% { transform: scale(1.02); }
-100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @-o-keyframes changingphoto {
-0% { transform: scale(1); }
-50% { transform: scale(1.02 ); }
-100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 
 @media (min-width: 1200px) {
-  .container{
-      max-width: 1140px !important;
+  .container {
+    max-width: 1140px !important;
   }
 }
 
 @media (min-width: 1500px) {
-  .container{
-      max-width: 1300px!important;
+  .container {
+    max-width: 1300px !important;
   }
 }
 
 
 @media (min-width: 2000px) {
-  .container{
-      max-width: 70%!important;
+  .container {
+    max-width: 70% !important;
   }
 }

@@ -39,7 +39,7 @@ class Workwithus extends Component {
                 <div class="container">
                     <div class="row">
                         <div className='padding-top' />
-                        <div className='header-span'>The <InternalA href="./people#theseaweeds" text="Seaweeds" /> &#x1f422; want  more friends...</div>
+                        <div className='header-span'>The <InternalA href="./people#theseaweeds" text="Seaweeds"/> &#x1f422; want  more friends...</div>
                         <p>
                             We are actively seeking talented students and researchers to enrich our group!
                             <br />
