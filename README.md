@@ -19,12 +19,13 @@ You shouldn't need to update this repository very much unless you need to change
 Fumeng expects that she will be **the webmaster** and maintain this repository for the first few years, and eventually students should maintain this repository or rewrite it. 
 
 ## TODOs
-- [ ] update logo
-- [ ] update the links in the footer
+- [x] update logo
+- [ ] add more links in the footer
+- [ ] maybe add an "our friends" page (MU, VIEW, other UMD labs, etc.)
 - [ ] add UMD logo in the footer or somewhere
-- [ ] the design of the `Research` page: one column or two-column?
+- [x] the design of the `Research` page: one column or two-column?
 - [ ] maybe add awards in the `Publication` page
-- [ ] test on a larger screen
+- [x] test on a larger screen (and smaller)
 - [x] People page - sorting should distinguish postdoc, phd, master, and undergrad
 - [ ] `artifact` page, if the bubbles don't have the same height, it's a little urgly. 
 

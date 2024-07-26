@@ -694,7 +694,7 @@ nav {
 
   .welcome-text {
     /* font-weight: 500 !important; */
-  font-size: 3.4rem;
+  font-size: 3.2vw;
   letter-spacing: 4px;
   /* margin-bottom: rem; */
   }
@@ -718,7 +718,7 @@ nav {
   }
 
   #topic-frontpage{
-    padding-right: 3rem;
+    padding-right:2rem;
   }
 
 
@@ -732,7 +732,7 @@ nav {
 
   .research-area-card-0,
   .research-area-card-1 {
-    width: 45% !important;
+    width: 46% !important;
     margin: 1.5rem 3% 3%.5rem;
     -moz-transition: -moz-transform 0.3s ease-in-out;
     -o-transition: -o-transform 0.3s ease-in-out;

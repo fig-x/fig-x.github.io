@@ -150,7 +150,7 @@ class Research extends Component {
                                             </div> */}
                                             {papers.length > 0 && <div style={{'height': '5px'}}/>}
 
-                                            <div className='container'>
+                                            <div className='container-flex'>
                                                 {papers.reverse().map(p => { return (<img className='imagecard' src={p.thumbnail} />) })}
                                             </div>
                                             {papers.length > 0 && <br />}

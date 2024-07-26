@@ -66,7 +66,7 @@ class Workwithus extends Component {
                                     <p>
                                         Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
                                         We are committed to guiding each student toward a path that aligns with their background and goals.
-                                        However, a complete lack of programming skills or significant discomfort with mathematics would significantly hinder your progress.
+                                        However, a complete lack of programming skills or severe discomfort with mathematics would significantly hinder your progress.
                                         Above all, <b>self-motivation and a keen interest</b> in pursuing research are paramount.
 
                                     </p>
@@ -110,7 +110,7 @@ class Workwithus extends Component {
                                 <h2 className='research-title'>Other opportunities </h2>
                                 <div className='flyer-inner'>
                                     <p> We welcome both on-campus and external collaborations. If interested, please reach out directly to the person you want to collaborate with.  <br/>
-                                        We are also open to hosting summer or visiting students. Bringing a concrete plan will help ensure a productive experience. </p>
+                                        We are also open to hosting summer or visiting students. Bringing a plan will help ensure a productive experience. </p>
                                 </div>
                             </div>
                         </div>

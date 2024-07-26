@@ -52,13 +52,13 @@ class Home extends Component {
     render() {
         return (
             <div className='page-content'>
-                <div className='top-header border-bottom' style={{ 'marginBottom': 0 }}>
+                <div className='top-header' style={{ 'marginBottom': 0 }}>
                     <div className="container">
                         <Navigator activeItem='home-nav' />
                     </div>
                 </div>
 
-                <div className='welcome-block-outside border-bottom'>
+                <div className='welcome-block-outside'>
 
                     <div className='welcome-block-inside'>
                         <div className="container">
@@ -109,10 +109,17 @@ class Home extends Component {
                     <div className="row">
                         {/* <div> */}
                         <h2>About FIGX</h2>
-                        <div id='topic-frontpage' className='col-lg-9' style={{ 'paddingTop': '10px' }}>
+                        <div id='topic-frontpage' className='col-lg-11 mobile-only' style={{ 'paddingTop': '10px' }}>
                             FIGX is an acronym for <b className='verybold'>Future Intelligent Graphical eXperience</b>. It can be thought of as <b className='verybold'>Fig. X</b>, the graphic representation that springs to mind when crafting an article. We chose this name to reflect our lab's commitment to pushing the boundaries of innovation and exploration in graphical experiences.
 
-                        </div>   <div className="padding-top">   </div>
+                        </div>   
+
+                        <div id='topic-frontpage' className='col-lg-8 desktop-only' style={{ 'paddingTop': '10px' }}>
+                            FIGX is an acronym for <b className='verybold'>Future Intelligent Graphical eXperience</b>. It can be thought of as <b className='verybold'>Fig. X</b>, the graphic representation that springs to mind when crafting an article. We chose this name to reflect our lab's commitment to pushing the boundaries of innovation and exploration in graphical experiences.
+
+                        </div>   
+                        
+                        <div className="padding-top">   </div>
 
                         <h2>Lab news</h2>
                         <div id='news-containter' style={{ 'paddingTop': '10px' }}>
