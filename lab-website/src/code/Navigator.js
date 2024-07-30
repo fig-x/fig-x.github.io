@@ -131,7 +131,7 @@ class Navigator extends Component {
             </ul>
           </div>
           
-         {this.props.showlogo && <a className="navbar-brand" href="#"><img src='figx-logo.svg' style={{ 'height': '2.75rem', 'marginLeft': '-1.6rem' }}></img></a> }
+         {this.props.showlogo && <a className="navbar-brand desktop-only" href="#"><img src='figx-logo.svg' style={{ 'height': '2.75rem', 'marginLeft': '-1.6rem' }}></img></a> }
           </div>
       </nav>
     )
