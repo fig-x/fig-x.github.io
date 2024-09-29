@@ -21,7 +21,7 @@ Fumeng expects that she will be **the webmaster** and maintain this repository f
 ## TODOs
 - [x] update logo
 - [x] add more links in the footer - no need
-- [ ] maybe add an "our friends" page (MU, VIEW, HDL, other UMD labs, etc.)
+- [x] maybe add an "our friends" page (MU, VIEW, HDL, other UMD labs, etc.)
 - [x] add UMD logo in the footer or somewhere - doesn't fit
 - [x] the design of the `Research` page: one column or two-column?
 - [ ] maybe add awards in the `Publication` page

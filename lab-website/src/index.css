@@ -725,7 +725,7 @@ nav {
     background-color: #ffffff99;
     background-position: center center;
     /* animation: shrink 5s infinite alternate; */
-    animation: panning 50s infinite linear;
+    animation: panning 60s infinite  ease-in-out;
     /* filter: blur(1.1px); */
   }
     @keyframes shrink {
