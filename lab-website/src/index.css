@@ -43,7 +43,6 @@ code {
     monospace;
 }
 
-
 .my-bg-dark {
   background-color: #222222;
   color: white !important;
@@ -87,7 +86,7 @@ h1 {
 
 
 h2 {
-  font-size: 1.2rem !important;
+  font-size: 1.25rem !important;
   font-family: 'HeaderFont', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   ;
@@ -148,7 +147,9 @@ b {
 
   background-image: linear-gradient(to bottom, #f1f2f3 1%, #f2f2f2f0 40%, #f7f7f7cc 70%, #fefcfd);
 
+
 }
+
 
 
 .welcome-block-inside {
@@ -252,6 +253,8 @@ nav {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
+
 
 .padding-top {
   padding-top: 20px;
@@ -413,10 +416,6 @@ nav {
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.people-category {
-  /* text-transform: uppercase;
-  letter-spacing: px; */
-}
 
 /* people */
 .people-card {
@@ -432,6 +431,7 @@ nav {
   margin-top: 0 !important;
   flex: 1 1 auto;
   padding: 0 calc(var(--bs-card-spacer-x)*.5) 0 calc(var(--bs-card-spacer-x)*1.25) !important;
+  font-size: 100%;
   /* margin-left: var(--bs-card-spacer-x); */
 }
 
@@ -453,7 +453,19 @@ nav {
   color: var(--link-color);
 }
 
-
+.people-friends-card{
+  max-width: 800px;
+}
+.friends-logo{
+  width: 3rem;
+  border-radius: 50%;
+  padding: 2px;
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+  border: var(--light-gray) 1px solid;
+}
 
 .headshot {
   /* padding: .5px; */
@@ -595,7 +607,7 @@ nav {
   font-weight: 300;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
 
   .newsitem {
     padding-top: 5px !important;
@@ -604,6 +616,7 @@ nav {
   .paper-description,
   .paper-info-text,
   .paper-long-name,
+  .friends-logo,
   .desktop-only {
     display: none
   }
@@ -698,7 +711,7 @@ nav {
 
   .welcome-text {
     /* font-weight: 500 !important; */
-    font-size: 5vh;
+    font-size: 5.5vh;
     letter-spacing: 4px;
     /* margin-bottom: rem; */
   }
@@ -708,10 +721,39 @@ nav {
     background-image: url(../public/headline-2.png);
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 130%;
     background-color: #ffffff99;
-    /* background-color:linear-gradient(to bottom,#f1f2f3 1%, #f3f7fff0 40%, #eefeffcc 70%, #fefcfd);  */
+    background-position: center center;
+    /* animation: shrink 5s infinite alternate; */
+    animation: panning 50s infinite linear;
+    /* filter: blur(1.1px); */
   }
+    @keyframes shrink {
+    0% {
+      background-size: 110% 110%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+  @keyframes panning {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 100% 100%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    75% {
+      background-position: 0 100%;
+    }
+    200% {
+      background-position: 0 0;
+    }
+  }
+  
 
   .welcome-block-inside {
     /* background-image: ; */
@@ -854,10 +896,10 @@ nav {
   margin: .1rem 3% 5% .1rem !important;
   border: 1px solid var(--light-gray);
   background-color: white !important;
-    -moz-transition: -moz-transform 0.5s ease-in-out;
-  -o-transition: -o-transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .flyer-inner {

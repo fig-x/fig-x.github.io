@@ -15,7 +15,7 @@ let sorting = {
 
 class People extends Component {
     readyforscrolling = false
-    state = {'loading': true}
+    state = { 'loading': true }
 
     constructor(props) {
         super(props);
@@ -40,22 +40,22 @@ class People extends Component {
                     return a.year - b.year
                 })
 
-                this.setState({ 'peopledata': data})
+                this.setState({ 'peopledata': data })
 
             });
 
     }
 
     componentDidUpdate() {
-       this.runAfterRender()
+        this.runAfterRender()
     }
 
 
-    runAfterRender(){
+    runAfterRender() {
         let id = window.location.href.split('#')[1]
         const element = document.getElementById(id);
 
-        if (element) {  
+        if (element) {
             element.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -65,7 +65,7 @@ class People extends Component {
 
     render() {
 
-    
+
         return (
             <div className='page-content'>
                 <div className='top-header border-bottom'>
@@ -80,11 +80,13 @@ class People extends Component {
                     {this.state && this.state.peoplemap && this.state.peopledata && Object.keys(this.state.peoplemap[0]).map((c, i) => {
 
                         let subset = this.state.peopledata.filter(p => p.category === c)
+
                         return (subset.length > 0 && <div>
                             <div className='padding-top' ></div>
                             <h2 className='header-span'>{this.state.peoplemap[0][c]}</h2>
+                            <br />
+                            {c.includes('current') && <div id={'people' + i} class="row">
 
-                            <div id={'people'+i} class="row">
                                 {subset.map(p => {
                                     return (<Card className='people-card' style={{ 'backgroundColor': 'transparent' }} >
                                         <p style={{ padding: '15px' }}><Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' /></p>
@@ -101,11 +103,43 @@ class People extends Component {
                                     </Card>)
                                 })}
                             </div>
+                            }
+                            {
+                                !c.includes('current') && <div>
+
+                                    {subset.sort((a, b) => {
+                                        return a.position.localeCompare(b.position)
+                                    }).map(p => {
+                                        return (<div className='people-friends-card containter'>
+                                         <div className='row'>
+                                            <div className='col-sm-1 desk-only'>
+                                            <img src={p.headshot} className='friends-logo'></img>
+                                            </div>
+                                            <div className='col-sm-11' >{
+                                                p.website != '' &&
+                                                <p><a href={p.website} target='_blank' className='paper-title people-name'>{p.name} &#8202;
+                                                    <FiExternalLink className='icon-adjustment' /></a> <br />
+                                                    <span className='people-position'>{p.position}</span>
+                                                </p>
+                                            }
+                                                {p.website == '' &&
+                                                    <span href={p.website} target='_blank' className='people-name'>{p.name}</span>}
+                                            </div>
+
+
+                                        </div>
+                                        </div>
+                                        )
+                                    })}
+
+                                </div>
+                            }
                         </div>
                         )
                     })}
 
                 </div>
+                <br></br>
             </div>
         )
     }

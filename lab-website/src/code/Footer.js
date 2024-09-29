@@ -63,6 +63,8 @@ class Footer extends Component {
                             <b>Find us</b> <br/>
                             Github <VscGithub className='icon-adjustment' /> 
                                 <a href="https://github.com/fig-x" target='blank' className='plain-a'> fig-x</a>  <br /> 
+
+                                {/* <img src="UMD_Informal_ALL_White.svg"></img> */}
                             </div>
                             
                             <div className='col-lg-3 footer-bottom'>
@@ -79,17 +81,15 @@ class Footer extends Component {
                                   <br />College Park, MD 20742 
 
                             </div>
-                            <div className='col-lg-3 footer-bottom'>
+                            <div className='col-lg-3 footer-bottom' id="footer-right" >
                             <b> Links</b> 
                                   {/* College Park, MD 20742  */}
                                   <br /> <NormalA text="Department of Computer Science" href="https://cs.umd.edu/"/>
                                   <br /><NormalA text="University of Maryland, College Park" href="https://www.umd.edu/"/>
-                                 
+                                
                             </div>
 
-                            
-                   
-
+                         
                         <div className='padding-top'></div>
                     </div>
                     </div> 

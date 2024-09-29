@@ -54,11 +54,11 @@ class Workwithus extends Component {
                                 <div className='flyer-inner'>
                                     <p>
                                         We encourage applications from candidates with degrees in computer science and related disciplines.
-                                        We also welcome applicants from other backgrounds, including but not limited to psychology, communication, and journalism.
+                                        We also welcome applicants from other backgrounds, including but not limited to psychology, communication, and journalism. 
 
                                     </p>
-                                    <p>
-                                        Our current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, <b>decision-making</b>, and  <b>model explanation</b>.
+                                    <p> Our primary areas are <b>HCI</b> and <b>Information Visualization</b>.
+                                        Current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, <b>decision-making</b>, and  <b>model explanation</b>.
                                         Other topics related to information visualization, HCI, and visual computing are also possible.
                                         We encourage you to familiarize yourself with our lab's work before applying,
                                         so you can show how your interests or experiences align with ours.
@@ -72,9 +72,10 @@ class Workwithus extends Component {
                                     </p>
 
                                     <p>
-                                        The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/catalog" text="December 20" /></b>.
+                                        The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/apply" text="December 20" /></b>.
+                                        UMD CS utilizes an admission committee for reviewing applications. 
                                         Make sure to mention Fumeng as the faculty of interest when you apply. 
-                                        You could drop Fumeng an email about your application, though it probably won't influence the decision-making process too much.
+                                        Keep in mind that our faculty are adept at detecting genuine interest, and I may not be able to reply to all inquiries.
 
                                     </p>
                                     <p>
@@ -93,8 +94,8 @@ class Workwithus extends Component {
                                 <div className='flyer-inner'>
                                     <p> If you are a current Master's or undergraduate student at UMD, we would love to have you in our lab.  
                                         We offer opportunities for independent study, paid research positions, and summer internships.
-                                        Please <b>fill out <NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="this interest form" /></b>.
-                                        We will contact you if we think this is a good match.
+                                        Please <b><NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="fill out this interest form" /></b>.
+                                        We will contact you if we think this is a good match. Expect a turnaround time of 1 to 4 weeks.
                                     </p>
                                 </div>
                             </div>
