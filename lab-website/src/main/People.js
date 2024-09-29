@@ -112,7 +112,7 @@ class People extends Component {
                                     }).map(p => {
                                         return (<div className='people-friends-card containter'>
                                          <div className='row'>
-                                            <div className='col-sm-1 desk-only'>
+                                            <div className='desktop-only col-sm-1'>
                                             <img src={p.headshot} className='friends-logo'></img>
                                             </div>
                                             <div className='col-sm-11' >{
