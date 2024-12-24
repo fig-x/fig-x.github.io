@@ -52,19 +52,16 @@ class Workwithus extends Component {
                                 {/* <span className='side-stick'></span> */}
                                 <h2 className='research-title'>Prospective Ph.D. students </h2>
                                 <div className='flyer-inner'>
-                                    <p>
-                                        We encourage applications from candidates with degrees in computer science and related disciplines.
-                                        We also welcome applicants from other backgrounds, including but not limited to psychology, communication, and journalism. 
-
-                                    </p>
-                                    <p> Our primary areas are <b>HCI</b> and <b>Information Visualization</b>.
+                                  
+                                   <p>  
+                                        Our primary areas are <b>Human-Computer Interaction</b> (HCI)  and <b>Information Visualization</b>.
                                         Current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, <b>decision-making</b>, and  <b>model explanation</b>.
-                                        Other topics related to information visualization, HCI, and visual computing are also possible.
                                         We encourage you to familiarize yourself with our lab's work before applying,
                                         so you can show how your interests or experiences align with ours.
                                     </p>
                                     <p>
-                                        Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
+                                    We welcome applications from candidates with degrees in computer science and related disciplines. 
+                                    Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
                                         We are committed to guiding each student toward a path that aligns with their background and goals.
                                         However, a complete lack of programming skills or severe discomfort with mathematics would significantly hinder your progress.
                                         Above all, <b>self-motivation and a keen interest</b> in pursuing research are paramount.
@@ -75,27 +72,38 @@ class Workwithus extends Component {
                                         The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/apply" text="December 20" /></b>.
                                         UMD CS utilizes an admission committee for reviewing applications. 
                                         Make sure to mention Fumeng as the faculty of interest when you apply. 
-                                        Keep in mind that our faculty are adept at detecting genuine interest, and I may not be able to reply to all inquiries.
-
+                                     
                                     </p>
+                                
                                     <p>
                                         Additionally,  UMD CS students who maintain good standing are typically funded throughout
                                         their Ph.D. program via teaching assistantships (TA), research assistantships (RA), or fellowships.
 
                                     </p>
+                                    <p>
+                                      <b>About emails</b>: While I welcome emails from prospective students, please be mindful that I receive hundreds of similar inquiries. 
+                                      I read all but may not be able to respond to each. 
+                                      A single, short email with clear objectives is sufficient. There's no need for many follow-ups about the same inquiry. 
+                                      
+                                    </p>
                                 </div>
                             </div>
-                        </div>
+
+                            </div>
 
                         <div className='col-lg-6'>
                             <div className='flyer'>
                                 {/* <span className='side-stick'></span> */}
                                 <h2 className='research-title'>Existing Masters' or undergraduate students </h2>
                                 <div className='flyer-inner'>
-                                    <p> If you are a current Master's or undergraduate student at UMD, we would love to have you in our lab.  
-                                        We offer opportunities for independent study, paid research positions, and summer internships.
-                                        Please <b><NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="fill out this interest form" /></b>.
-                                        We will contact you if we think this is a good match. Expect a turnaround time of 1 to 4 weeks.
+                                    <p> If you are a current Master's or undergraduate student at UMD, we can discuss opportunities for independent study, paid research positions, or summer internships.</p><p>
+                                    We are currently seeking students for two projects:<br/>
+                                    (1) <b>Election data analytics</b>, compiling and analyzing historical election datasets; and <br/>
+                                    (2) <b> Medical AI explainability</b>, applying explainable AI techniques to cancer prediction models.
+                                   </p>
+                                   <p>
+                                        Please <b><NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="fill out this interest form" /></b> and mention your project interests.
+                                        We will contact you if we think this is a good match. Expect a turnaround time of 2 to 6 weeks.
                                     </p>
                                 </div>
                             </div>
@@ -104,14 +112,20 @@ class Workwithus extends Component {
                                 <h2 className='research-title'>Prospective postdoctoral scholars</h2>
                                 <div className='flyer-inner'>
                                     <p> If you have your own funding or are interested in co-applying for fundings, please directly contact Fumeng.
-                                        Otherwise, we only consider candidates who have previously collaborated with us, and when there is a clear potential for significant synergy. </p>
-                                </div></div>
+                                        Otherwise, we only consider candidates who have previously collaborated with us.</p>
+                                        {/* , and when there is a clear potential for significant synergy.  */}
+                                </div>
+                            </div>
+                           
+               
+                      
+                      
                             <div className='flyer'>
                                 {/* <span className='side-stick'></span> */}
                                 <h2 className='research-title'>Other opportunities </h2>
                                 <div className='flyer-inner'>
-                                    <p> We welcome both on-campus and external collaborations. If interested, please reach out directly to the person you want to collaborate with.  <br/>
-                                        We are also open to hosting summer or visiting students. Bringing a plan will help ensure a productive experience. </p>
+                                    <p> We welcome both on-campus and external collaborations. If interested, please reach out directly via emails.  
+                                        We are also open to hosting summer or visiting students. </p>
                                 </div>
                             </div>
                         </div>

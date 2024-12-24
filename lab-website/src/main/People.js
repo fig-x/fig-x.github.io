@@ -105,9 +105,11 @@ class People extends Component {
                             </div>
                             }
                             {
-                                !c.includes('current') && <div>
+                                c.includes('partner-lab') && <div>
 
                                     {subset.sort((a, b) => {
+                                        return a.name.localeCompare(b.name)
+                                    }).sort((a, b) => {
                                         return a.position.localeCompare(b.position)
                                     }).map(p => {
                                         return (<div className='people-friends-card containter'>
@@ -117,8 +119,41 @@ class People extends Component {
                                             </div>
                                             <div className='col-sm-11' >{
                                                 p.website != '' &&
-                                                <p><a href={p.website} target='_blank' className='paper-title people-name'>{p.name} &#8202;
-                                                    <FiExternalLink className='icon-adjustment' /></a> <br />
+                                                <p><Card.Title><a href={p.website} target='_blank' className='people-name'>{p.name} &#8202;
+                                                    <FiExternalLink className='icon-adjustment' /></a> </Card.Title>
+                                                    <span className='people-position'>{p.position}</span>
+                                                </p>
+                                            }
+                                                {p.website == '' &&
+                                                    <span href={p.website} target='_blank' className='people-name'>{p.name}</span>}
+                                            </div>
+
+
+                                        </div>
+                                        </div>
+                                        )
+                                    })}
+
+                                </div>
+                            }
+
+{
+                                c.includes('alumni') && <div>
+
+                                    {subset.sort((a, b) => {
+                                        return a.name.localeCompare(b.name)
+                                    }).sort((a, b) => {
+                                        return a.position.localeCompare(b.position)
+                                    }).map(p => {
+                                        return (<div className='people-friends-card containter'>
+                                         <div className='row'>
+                                            <div className='desktop-only col-sm-1'>
+                                            <img src={p.headshot} className='friends-logo'></img>
+                                            </div>
+                                            <div className='col-sm-11' >{
+                                                p.website != '' &&
+                                                <p><Card.Title><a href={p.website} target='_blank' className='people-name'>{p.name} &#8202;
+                                                    <FiExternalLink className='icon-adjustment' /></a> </Card.Title>
                                                     <span className='people-position'>{p.position}</span>
                                                 </p>
                                             }
