@@ -54,17 +54,14 @@ class Workwithus extends Component {
                                 <div className='flyer-inner'>
                                   
                                    <p>  
-                                        Our primary areas are <b>Human-Computer Interaction</b> (HCI)  and <b>Information Visualization</b>.
-                                        Current interests include <b>uncertainty communication</b>, <b>AI literacy</b>, <b>decision-making</b>, and  <b>model explanation</b>.
-                                        We encourage you to familiarize yourself with our lab's work before applying,
-                                        so you can show how your interests or experiences align with ours.
+                                   Our primary areas are Human-Computer Interaction (HCI) and Information Visualization.
+                                   We connect <b>computational models</b>—AI, machine learning, and probabilistic forecasts—with users in domains like <b>education, policy-making, and politics</b>. We are particularly interested in  <b>data and AI literacy, decision-making, explainable AI, human-AI interaction, and uncertainty communication</b> (alphabetically).
                                     </p>
                                     <p>
-                                    We welcome applications from candidates with degrees in computer science and related disciplines. 
-                                    Candidates are expected to have <b>at least basic skills in mathematics/statistics and programming</b>.
-                                        We are committed to guiding each student toward a path that aligns with their background and goals.
+                                    We welcome applicants with degrees in computer science and related disciplines.   
+                                         We are committed to guiding each student toward a path that aligns with their background and goals.
                                         However, a complete lack of programming skills or severe discomfort with mathematics would significantly hinder your progress.
-                                        Above all, <b>self-motivation and a keen interest</b> in pursuing research are paramount.
+                                        Above all, <b>self-motivation and a keen interest</b> in pursuing research are critical.
 
                                     </p>
 
@@ -72,18 +69,12 @@ class Workwithus extends Component {
                                         The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/apply" text="December 20" /></b>.
                                         UMD CS utilizes an admission committee for reviewing applications. 
                                         Make sure to mention Fumeng as the faculty of interest when you apply. 
-                                     
-                                    </p>
-                                
-                                    <p>
                                         Additionally,  UMD CS students who maintain good standing are typically funded throughout
                                         their Ph.D. program via teaching assistantships (TA), research assistantships (RA), or fellowships.
-
                                     </p>
                                     <p>
                                       <b>About emails</b>: While I welcome emails from prospective students, please be mindful that I receive hundreds of similar inquiries. 
-                                      I read all but may not be able to respond to each. 
-                                      A single, short email with clear objectives is sufficient. There's no need for many follow-ups about the same inquiry. 
+                                      A single, short email with clear objectives is sufficient. There's no need for many follow-ups about the same inquiry. Sometimes no answer is the answer.
                                       
                                     </p>
                                 </div>
@@ -96,14 +87,9 @@ class Workwithus extends Component {
                                 {/* <span className='side-stick'></span> */}
                                 <h2 className='research-title'>Existing Masters' or undergraduate students </h2>
                                 <div className='flyer-inner'>
-                                    <p> If you are a current Master's or undergraduate student at UMD, we can discuss opportunities for independent study, paid research positions, or summer internships.</p><p>
-                                    We are currently seeking students for two projects:<br/>
-                                    (1) <b>Election data analytics</b>, compiling and analyzing historical election datasets; and <br/>
-                                    (2) <b> Medical AI explainability</b>, applying explainable AI techniques to cancer prediction models.
-                                   </p>
-                                   <p>
-                                        Please <b><NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="fill out this interest form" /></b> and mention your project interests.
-                                        We will contact you if we think this is a good match. Expect a turnaround time of 2 to 6 weeks.
+                                    <p> If you are a current Master's or undergraduate student at UMD,
+                                        please <b><NormalA href="https://forms.gle/3kGiWskRw4zoau5EA" text="fill out this interest form" /></b> and mention your project interests.
+                                        We will contact you if we think this is a good match.
                                     </p>
                                 </div>
                             </div>
