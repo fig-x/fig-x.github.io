@@ -79,7 +79,7 @@ code {
   text-transform: uppercase;
   /* color: var(--theme-color); */
   letter-spacing: 1px !important;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
   margin-top: .5rem;
 }
 
@@ -291,11 +291,20 @@ nav {
 }
 
 .news-paper-nickname {
-  font-style: italic;
-  /* background-color: var(--background-gray);
-  padding: 2px 5px 3px 5px; */
+    /* color: var(--name-color); */
+  /* background-color: var(--theme-color-very-light); */
+   /* text-decoration: underline 2.5px var(--theme-color-mid) !important; */
+  /* text-underline-offset: 3px; */
+  /* -webkit-text-decoration-line: underline !important; */
+  /* -webkit-text-decoration-color: var(--theme-color-mid) !important; */
+  /* -webkit-text-decoration-style: solid !important; */
+  /* -webkit-text-decoration-thickness: 3px !important; */
+  /* text-decoration: underline 2px var(--theme-color-mid) !important; */
+  /* font-style: italic; */
+ /* background-color: var(--background-gray); */
+    /*padding: 2px 5px 3px 5px; */
   /* border-radius: .4rem; */
-  /* color: var(--dark-gray); */
+  font-weight: 500;
 }
 
 .snowflake{
@@ -593,7 +602,7 @@ nav {
   font-family: 'HeaderFont', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-style: normal;
   text-decoration: none;
-  font-weight: 600 !important;
+  font-weight: 550 !important;
   background-color: var(--background-gray);
   padding: 1.2rem 1rem 1.2rem 1.9rem;
   margin: 0 !important;

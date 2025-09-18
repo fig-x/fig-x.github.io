@@ -74,7 +74,7 @@ class Workwithus extends Component {
                                     </p>
                                     <p>
                                       <b>About emails</b>: While I welcome emails from prospective students, please be mindful that I receive hundreds of similar inquiries. 
-                                      A single, short email with clear objectives is sufficient. There's no need for many follow-ups about the same inquiry. Sometimes no answer is the answer.
+                                      A single, short email with clear objectives is usually sufficient. 
                                       
                                     </p>
                                 </div>

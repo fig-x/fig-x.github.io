@@ -77,7 +77,7 @@ class People extends Component {
                 <div class="container">
                     <div className='padding-top'></div>
                     <div className='header-span'>People</div>
-                    <p>Our lab is made up of a group of <b>researchers</b>, <b>students</b>, and even a few honorary <b>non-human members</b>. We also collaborate with <b>brilliant students</b> and <b>partner labs</b>—meet them all below!</p>
+                    {/* <p>Our lab is made up of a group of <b>researchers</b>, <b>students</b>, and even a few honorary <b>non-human members</b>. We also collaborate with <b>cool students</b> and <b>partner labs</b>—meet them all below!</p> */}
 
                     {this.state && this.state.peoplemap && this.state.peopledata && Object.keys(this.state.peoplemap[0]).map((c, i) => {
 
@@ -149,7 +149,8 @@ class People extends Component {
                                 c.includes('student-col') && <div className='row'>
 
                                     {subset.sort((a, b) => {
-                                        return a.graduated.localeCompare(b.graduated)
+                                        if (a.graduated && b.graduated) return a.graduated.localeCompare(b.graduated)
+                                            return 0
                                     }).sort((a, b) => {
                                         let anames = a.name.split(' ')
                                         let bnames = b.name.split(' ')

@@ -6,7 +6,7 @@ import Navigator from '../code/Navigator.js';
 import InternalA from '../code/InternalA.js';
 import { _publicationpath, _researchpath } from '../code/helper.js'
 import { Col, Card } from 'react-bootstrap';
-import { PiRobot, PiRobotFill, PiEye, PiCloudSnow, PiBrain, PiHandshake, PiChartBar, PiHeadCircui, PiEyesFill, PiButterfly, PiBookOpen, PiMedal, PiMedalFill } from "react-icons/pi";
+import { PiRobot, PiRobotFill, PiEye, PiCloudSnow, PiPlant, PiSwap, PiBrain, PiHandshake, PiChartBar, PiHeadCircui, PiEyesFill, PiButterfly, PiBookOpen, PiMedal, PiMedalFill } from "react-icons/pi";
 
 class Research extends Component {
 
@@ -132,8 +132,10 @@ class Research extends Component {
 
                                 return (
                                     <div className={'research-area-card-' + (i%2)} style={{'backgroundColor': 'white'}}>
-                                        <h2 className='research-title'>{area.area.includes('AI') && <PiRobot className='icon-right-adjustment ' />}
-                                            {area.area.includes('Trust') && <PiHandshake className='icon-right-adjustment ' />}
+                                        <h2 className='research-title'>
+                                            {/* {area.area.includes('AI') && <PiRobot className='icon-right-adjustment ' />} */}
+                                            {area.area.includes('Evolution') && <PiPlant className='icon-right-adjustment ' />}
+                                            {area.area.includes('Interaction') && <PiHandshake className='icon-right-adjustment ' />}
                                             {area.area.includes('Uncertainty') && <PiBrain className='icon-right-adjustment ' />}
                                             {area.area.includes('Visualization Literacy') && <PiChartBar className='icon-right-adjustment ' />}
                                             {area.area.includes('Immersive') && <PiButterfly className='icon-right-adjustment ' />}
