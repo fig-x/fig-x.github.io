@@ -14,7 +14,7 @@ Except for the **welcome** text and `work with us` page which are embedded in th
 - People on the `People` page (`people.json` and `people` folder in that repo)
 - Artifact list on the `Artifact` page (`artifact.json` in that repo)
 
-You shouldn't need to update this repository very much unless you need to change the style, add a feature, or add/remove a page. The code reads the jsons specified in `helper.js`. This design should allow people without too much HTML/Javascript/React.js background to update the content. The only thing that might be annoying is that the last update date in the footer is connected to this repository.
+You shouldn't need to update this repository very much unless you need to change the style, add a feature, or add/remove a page. The code reads the jsons specified in `helper.js`. This design allows people without too much HTML/Javascript/React.js background to update the content. The only thing that might be annoying is that the last update date in the footer is connected to this repository.
 
 Fumeng expects that she will be **the webmaster** and maintain this repository for the first few years, and eventually students should maintain this repository or rewrite it. 
 
