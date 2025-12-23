@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2be4f1ee.css",
+    "main.css": "/static/css/main.63b619ee.css",
     "main.js": "/static/js/main.8ef53cbd.js",
     "static/js/453.45cdc164.chunk.js": "/static/js/453.45cdc164.chunk.js",
     "static/media/headline-2.png": "/static/media/headline-2.b00a940a40e8cf593e29.png",
     "static/media/MusticaPro-Bold.woff": "/static/media/MusticaPro-Bold.cfe1e037c260aa93610e.woff",
     "index.html": "/index.html",
-    "main.2be4f1ee.css.map": "/static/css/main.2be4f1ee.css.map",
+    "main.63b619ee.css.map": "/static/css/main.63b619ee.css.map",
     "main.8ef53cbd.js.map": "/static/js/main.8ef53cbd.js.map",
     "453.45cdc164.chunk.js.map": "/static/js/453.45cdc164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2be4f1ee.css",
+    "static/css/main.63b619ee.css",
     "static/js/main.8ef53cbd.js"
   ]
 }
