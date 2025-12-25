@@ -89,7 +89,7 @@ class Publication extends Component {
                                 <div className='row paper-box'>
 
 
-                                    {!pub.separator && <div className='col-lg-4 paper-thumbnail'><img className="img-thumbnail" src={pub.thumbnail} ></img></div>}
+                                    {!pub.separator && <div className='col-lg-4'><img className="img-thumbnail" src={pub.thumbnail} ></img></div>}
                                     {!pub.separator && <div className='col-lg-8 paper-body'>
                                         <h5 className='paper-title'>{pub.title} </h5>
                                         <p className='paper-people' dangerouslySetInnerHTML={{ __html: pub.people }} />  

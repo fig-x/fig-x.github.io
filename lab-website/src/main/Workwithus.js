@@ -55,18 +55,17 @@ class Workwithus extends Component {
                                   
                                    <p>  
                                    Our primary areas are Human-Computer Interaction (HCI) and Information Visualization.
-                                   We connect <b>computational models</b>—AI, machine learning, and probabilistic forecasts—with users in domains like <b>education, policy-making, and politics</b>. We are particularly interested in  <b>data and AI literacy, decision-making, explainable AI, human-AI interaction, and uncertainty communication</b> (alphabetically).
+                                   We connect <b>computational models</b>—AI, machine learning, and probabilistic forecasts—with users in domains like <b>education, policy-making, and politics</b>. We are particularly interested in  <b>data and AI literacy, human-AI decision-making, human-AI interaction, and uncertainty visualization</b> (alphabetically).
                                     </p>
                                     <p>
                                     We welcome applicants with degrees in computer science and related disciplines.   
                                          We are committed to guiding each student toward a path that aligns with their background and goals.
                                         However, a complete lack of programming skills or severe discomfort with mathematics would significantly hinder your progress.
-                                        Above all, <b>self-motivation and a keen interest</b> in pursuing research are critical.
-
+                                       Note that our focus is on HCI and Information Visualization, so applicants primarily interested in AI/ML/NLP may not find the best fit here.
                                     </p>
 
                                     <p>
-                                        The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/apply" text="December 20" /></b>.
+                                        The application deadline is <b><NormalA href="https://www.cs.umd.edu/grad/apply" text="December 5, 2025" /></b>.
                                         UMD CS utilizes an admission committee for reviewing applications. 
                                         Make sure to mention Fumeng as the faculty of interest when you apply. 
                                         Additionally,  UMD CS students who maintain good standing are typically funded throughout
@@ -76,6 +75,7 @@ class Workwithus extends Component {
                                       <b>About emails</b>: While I welcome emails from prospective students, please be mindful that I receive hundreds of similar inquiries. 
                                       A single, short email with clear objectives is usually sufficient. 
                                       
+
                                     </p>
                                 </div>
                             </div>

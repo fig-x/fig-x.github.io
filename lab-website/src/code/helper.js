@@ -10,8 +10,8 @@ export const _artifactpath = 'https://raw.githubusercontent.com/fig-x/fig-x-data
 
 
 // export const _newspath = "http://localhost:8081/news.json"
-// export const _peoplepath = 'http://localhost:8081/people_new.json'
-// // export const _peoplepath = '/people.json'
+// export const _peoplepath = 'http://localhost:8081/people.json'
+// export const _peoplepath = '/people.json'
 // export const _publicationpath = 'http://localhost:8081/publication.json'
 // export const _researchpath = 'http://localhost:8081/research.json'
 // // export const _artifactpath = 'http://localhost:8081/artifact.json'

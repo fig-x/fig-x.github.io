@@ -58,7 +58,7 @@ class Artifact extends Component {
                         if (this.state.artifactdata && this.state.artifactdata.filter(a => a.what === art).length > 0)
                             return (
                                 <div class="row">
-                                    <div className='col-lg-2'> <h2>
+                                    <div className='col-lg-2 '> <h2 className='padding-top'>
                                         {art === 'model' && <PiCubeBold />}
                                         {art === 'dataset' && <PiDatabaseBold />}
                                         {art === 'website' && <PiGlobeBold />}
