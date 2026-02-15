@@ -4,6 +4,7 @@
   --theme-color: #222222;
   --award-color: #04b1e6; /* 00b5e8 ed3434 */
   --link-color: #04b1e6;
+  --darker-link-color: #03a8d0;
   --nav-active-color: #222222;
   --theme-color-mid: #c3edf8;
   --theme-color-light: #eaf6f9;
@@ -531,13 +532,13 @@ nav {
 .research-tag {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background: linear-gradient(135deg, var(--background-gray) 0%, var(--theme-color-very-light) 100%);
-  color: var(--link-color);
+  background-color: #fcfdff;
+  color: var(--nav-active-color);
   border-radius: 25px;
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Inter', 'Roboto', sans-serif;
-  border: 1px solid rgba(4, 177, 230, 0.3);
+  border: 1px solid var(--light-gray);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
   position: relative;
@@ -545,7 +546,7 @@ nav {
 }
 
 .research-tag:hover {
-  background: linear-gradient(135deg, var(--theme-color-light) 0%, var(--theme-color-mid) 100%);
+  background-color: var(--theme-color-very-light);
   border-color: var(--link-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(4, 177, 230, 0.25), 0 2px 4px rgba(4, 177, 230, 0.15);
@@ -553,7 +554,7 @@ nav {
 }
 
 .research-tag.active {
-  background: linear-gradient(135deg, var(--link-color) 0%, #03a8d0 100%);
+  background-color: var(--link-color);
   color: white !important;
   border-color: var(--link-color);
   box-shadow: 0 4px 16px rgba(4, 177, 230, 0.4), 0 0 20px rgba(4, 177, 230, 0.25);
@@ -561,7 +562,7 @@ nav {
 }
 
 .research-tag.active:hover {
-  background: linear-gradient(135deg, var(--link-color) 0%, #05c5f5 100%);
+  background-color: #05c5f5;
   color: white !important;
   box-shadow: 0 6px 20px rgba(4, 177, 230, 0.5), 0 0 25px rgba(4, 177, 230, 0.35), 0 0 40px rgba(4, 177, 230, 0.15);
   transform: translateY(-2px);
@@ -792,7 +793,7 @@ nav {
 }
 
 .people-text {
-  width: max(17%, 14rem) !important;
+  width: max(17%, 15em) !important;
   margin: 0 auto 0 auto !important;
   overflow-x: visible !important;
   white-space: nowrap;
@@ -810,8 +811,6 @@ nav {
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-    overflow-x: visible !important;
-  white-space: nowrap;
 }
 
 .people-name:hover {
@@ -822,8 +821,11 @@ nav {
   /* max-width: 600px; */
   /* position: relative; */
   display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
   /* flex-direction: column; */
 }
+
 
 .friends-logo {
   width: 4rem;
@@ -946,7 +948,7 @@ nav {
 .paper-title {
   font-family: 'Roboto';
   padding-top: .25rem;
-  padding-bottom: .3rem;
+  padding-bottom: .4rem;
   font-size: 1.15rem;
   line-height: 1.5;
   margin-bottom: 0;
@@ -968,15 +970,17 @@ nav {
 
 .paper-people {
   font-size: 1rem;
-  line-height: 1.5;
-  color: #212529;
+  /* line-height: 2; */
+  font-weight: 450;
+  font-style: italic;
+  color: var(--dark-gray) !important;
 }
 
 /* .paper-short-name */
 
 .paper-venue {
-  padding-top: .1rem;
-  padding-bottom: .5rem;
+  padding-top: .4rem;
+  padding-bottom: .6rem;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -1329,7 +1333,7 @@ nav {
 
 .paper-short-name {
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   line-height: 1.5;
 }
 
@@ -1354,14 +1358,14 @@ nav {
   color: var(--dark-gray);
   padding: .1rem .4rem .35rem .4rem;
   border-radius: .4rem;
-  background: linear-gradient(135deg, var(--background-gray) 0%, var(--theme-color-light) 100%);
-  border: 1px solid transparent;  /* border: 1px solid rgba(4, 177, 230, 0.2); */
+  background-color: var(--background-gray);
+  border: 1px solid var(--very-light-gray);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+  
 .paper-info span a:hover {
-  background: linear-gradient(135deg, var(--theme-color-light) 0%, var(--theme-color-mid) 100%);
+  background-color: var(--theme-color-very-light);
   color: var(--link-color) !important;
   border-color: var(--link-color);
   transform: translateY(-1px);
@@ -1370,7 +1374,7 @@ nav {
 
 .paper-info-inner a:hover {
   color: var(--link-color) !important;
-  background: linear-gradient(135deg, var(--theme-color-very-light) 0%, var(--theme-color-light) 100%);
+  background-color: var(--theme-color-very-light);
   -moz-transition: -moz-transform 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -1388,7 +1392,7 @@ nav {
   color: var(--name-color);
   /* background-color: var(--theme-color-very-light); */
    text-decoration: underline 3.5px var(--theme-color-mid) !important;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
   -webkit-text-decoration-line: underline !important;
   text-decoration-line: underline !important;
   -webkit-text-decoration-color: var(--theme-color-mid) !important;

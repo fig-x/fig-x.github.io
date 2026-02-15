@@ -101,7 +101,7 @@ class Navigator extends Component {
                 >Publication</a>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a href="#" className={this.props.activeItem == 'artifact-nav' ?
                   "nav-link m-2 menu-item nav-active" : "nav-link m-2 menu-item nav-none"}
                   onClick={() => {
@@ -113,7 +113,7 @@ class Navigator extends Component {
                     }
                   }}
                 >Artifact</a>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <a href="#" className={this.props.activeItem == 'workwithus-nav' ?

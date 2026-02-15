@@ -55,7 +55,7 @@ class Workwithus extends Component {
                                   
                                    <p>  
                                    Our primary areas are Human-Computer Interaction (HCI) and Information Visualization.
-                                   We connect <b>computational models</b>—AI, machine learning, and probabilistic forecasts—with users in domains like <b>education, policy-making, and politics</b>. We are particularly interested in  <b>data and AI literacy, human-AI decision-making, human-AI interaction, and uncertainty visualization</b> (alphabetically).
+                                   We connect <b>computational models</b>—AI, machine learning, and probabilistic forecasts—with users in domains like <b>education, policy-making, and politics</b>. We are particularly interested in  <b>AI literacy, human-AI decision-making, human-AI interaction, and uncertainty visualization</b> (alphabetically).
                                     </p>
                                     <p>
                                     We welcome applicants with degrees in computer science and related disciplines.   
@@ -73,7 +73,7 @@ class Workwithus extends Component {
                                     </p>
                                     <p>
                                       <b>About emails</b>: While I welcome emails from prospective students, please be mindful that I receive hundreds of similar inquiries. 
-                                      A single, short email with clear objectives is usually sufficient. 
+                                      A single, short email with clear objectives is usually sufficient. While I appreciate persistence, sometimes no answer is an answer. 
                                       
 
                                     </p>

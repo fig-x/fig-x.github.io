@@ -72,7 +72,7 @@ class Artifact extends Component {
                                             this.state.artifactdata && this.state.artifactdata.filter(a => a.what === art).map(a => {
                                                 return (
 
-                                                    <div className='col-lg-4'>
+                                                    <div className='col-lg-3'>
                                                    <a className='plain-a' target="_blank" href={a.link}>     <Card className='artifact-card'>
                                                           
                                                          <p className='artifact-small-title' dangerouslySetInnerHTML={{__html: a.title}}></p>

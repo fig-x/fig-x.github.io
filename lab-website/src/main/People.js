@@ -127,7 +127,7 @@ class People extends Component {
                                     <div className='row'>
                                         {subset.map(p => (
                                             <div key={p.name} className='people-friends-card col-sm-6'>
-                                                <div className='desktop-only' style={{ width: '100px' }}>
+                                                <div className='desktop-only'>
                                                     <img src={p.headshot} alt={p.name} className='friends-logo' />
                                                 </div>
                                                 <div style={{ flexGrow: 1 }}>

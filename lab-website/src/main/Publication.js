@@ -75,7 +75,7 @@ class Publication extends Component {
                             )
                            })}.
                            </p>
-                           <p style={{'marginTop': '-7px'}}>  <font class='figx-name-style'>Names with underline</font> indicate lab members. Also, IEEE VIS papers are published as a special issue of the journal TVCG.</p>
+                           <p style={{'marginTop': '-7px'}}>  <font class='figx-name-style'>Names with underline</font> indicate lab members at the time. Also, IEEE VIS papers are published as a special issue of the journal TVCG.</p>
                          
                         </div>
              
@@ -93,7 +93,7 @@ class Publication extends Component {
                                     {!pub.separator && <div className='col-lg-8 paper-body'>
                                         <h5 className='paper-title'>{pub.title} </h5>
                                         <p className='paper-people' dangerouslySetInnerHTML={{ __html: pub.people }} />  
-                                        {pub.description && <p className='paper-description'><q>{pub.description}</q></p>}
+                                        {/* {pub.description && <p className='paper-description'><q>{pub.description}</q></p>} */}
                                         <p className='paper-venue'><span className='paper-short-name'>{pub.abbr} {pub.year} </span>  <span className='sep-bar paper-long-name'>  | </span>
                                             <span className='paper-long-name'>{this.state.publicationmap[pub.abbr]} </span>{pub.awards && <span className='sep-bar'>  | </span>}
                                             {pub.awards && pub.awards.includes("Honorable") && <span className='paper-award'> <PiMedal /> {pub.awards}</span>}
