@@ -69,11 +69,17 @@ class Publication extends Component {
 
                     <div className='row'>
                         <div className='col-lg-12'>
-                          <p> We publish at Visualization, HCI, and Visual Computing journals and conferences, such as {this.state && this.state.publicationmap && this.state.publicationdata && Object.keys(this.state.publicationmap).sort().map((k, i) => {
-                            return (
-                               <span>{i ==  Object.keys(this.state.publicationmap).length - 1 && ' and'} <span className='paper-short-name'> {k} </span> <span className='research-description'> ({this.state.publicationdata && this.state.publicationdata.filter(p => p.abbr && p.abbr === k).length})</span>{i <  Object.keys(this.state.publicationmap).length - 1 && ','}</span>
-                            )
-                           })}.
+                          <p> We publish at Visualization, HCI, and Visual Computing journals and conferences, such as {this.state && this.state.publicationmap && this.state.publicationdata && (() => {
+                            const mergeInto = { 'CHI LBW': 'CHI', 'ACL Findings': 'ACL' }
+                            const mergeFrom = { 'CHI': 'CHI LBW', 'ACL': 'ACL Findings' }
+                            const keys = Object.keys(this.state.publicationmap).sort().filter(k => !mergeInto[k])
+                            return keys.map((k, i) => {
+                              const count = this.state.publicationdata.filter(p => p.abbr && (p.abbr === k || p.abbr === mergeFrom[k])).length
+                              return (
+                                <span key={k}>{i === keys.length - 1 && ' and'} <span className='paper-short-name'> {k} </span> <span className='research-description'> ({count})</span>{i < keys.length - 1 && ','}</span>
+                              )
+                            })
+                           })()}.
                            </p>
                            <p style={{'marginTop': '-7px'}}>  <font class='figx-name-style'>Names with underline</font> indicate lab members at the time. Also, IEEE VIS papers are published as a special issue of the journal TVCG.</p>
                          

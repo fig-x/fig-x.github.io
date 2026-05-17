@@ -3,8 +3,9 @@ import Navigator from '../code/Navigator.js';
 import HeaderSpan from '../code/HeaderSpan.js';
 import { _peoplepath } from '../code/helper.js'
 // import * as d3 from 'd3'
-import { Col, Card } from 'react-bootstrap';
+import { Col, Card, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { FiExternalLink } from "react-icons/fi";
+import { TbFish } from "react-icons/tb";
 
 let sorting = {
     'prof': 0,
@@ -95,15 +96,27 @@ class People extends Component {
                         return (
                             <div key={c}>
                                 <h2 className='sub-span padding-top'>{this.state.peoplemap[0][c]}</h2>
-    
+
 
                                 {c.includes('current') ? (
                                     <div id={c} className="row">
+                                        {/* <p className='small-note' style={{ marginBottom: '0.5rem' }}>
+                                            <TbFish size={16} color='#04b1e6' style={{ verticalAlign: '-2px', marginRight: '4px' }} />
+                                            On the job market, hover to see specifics
+                                        </p> */}
+
                                         {subset.map(p => (
                                             <Card key={p.nickname || p.name} className='people-card'>
-                                                <p style={{ padding: '15px' }}>
+                                                <div style={{ padding: '15px', position: 'relative', display: 'inline-block' }}>
                                                     <Card.Img variant="top" src={p.headshot} alt={p.name} className='headshot' />
-                                                </p>
+                                                    {p.market && (
+                                                        <OverlayTrigger placement='top' overlay={<Tooltip>{p.market}</Tooltip>}>
+                                                            <span className='market-icon-float profile'>
+                                                                <TbFish size={24} />
+                                                            </span>
+                                                        </OverlayTrigger>
+                                                    )}
+                                                </div>
                                                 <div style={{ paddingLeft: '10px' }} className='people-text'>
                                                     <Card.Title id={p.nickname}>
                                                         {p.website ? (
@@ -116,8 +129,8 @@ class People extends Component {
                                                     </Card.Title>
                                                     <Card.Body>
                                                         <p className='people-position'>{p.position}</p>
-                                                        {p.quote && <p className='people-info' dangerouslySetInnerHTML={{ __html: p.quote }} />}
-                                                        {p.year && <p className='people-info'>{p.year}</p>}
+                                                        {p.quote && <p className='people-info'><span dangerouslySetInnerHTML={{ __html: p.quote }} /></p>}
+                                                        {p.year && <p className='people-info small'>{p.year}</p>}
                                                     </Card.Body>
                                                 </div>
                                             </Card>
@@ -127,8 +140,15 @@ class People extends Component {
                                     <div className='row'>
                                         {subset.map(p => (
                                             <div key={p.name} className='people-friends-card col-sm-6'>
-                                                <div className='desktop-only'>
+                                                <div className='desktop-only' style={{ position: 'relative', display: 'inline-block' }}>
                                                     <img src={p.headshot} alt={p.name} className='friends-logo' />
+                                                    {p.market && (
+                                                        <OverlayTrigger placement='top' overlay={<Tooltip>{p.market}</Tooltip>}>
+                                                            <span className='market-icon-float friends'>
+                                                                <TbFish size={24} />
+                                                            </span>
+                                                        </OverlayTrigger>
+                                                    )}
                                                 </div>
                                                 <div style={{ flexGrow: 1 }}>
                                                     {p.website ? (
