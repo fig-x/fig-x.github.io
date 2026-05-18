@@ -95,15 +95,15 @@ class People extends Component {
 
                         return (
                             <div key={c}>
-                                <h2 className='sub-span padding-top'>{this.state.peoplemap[0][c]}</h2>
+                                <h2 className='sub-span padding-top'>{this.state.peoplemap[0][c]}  {c.includes('current') && !c.includes('non') && <span className='small-note' style={{ marginBottom: '0.5rem' }}>
+                                            (<TbFish size={16} color='#04b1e6' style={{ verticalAlign: '-2px', marginRight: '4px'}} />=
+                                            On the job market)
+                                        </span>}</h2>
 
 
                                 {c.includes('current') ? (
                                     <div id={c} className="row">
-                                        {/* <p className='small-note' style={{ marginBottom: '0.5rem' }}>
-                                            <TbFish size={16} color='#04b1e6' style={{ verticalAlign: '-2px', marginRight: '4px' }} />
-                                            On the job market, hover to see specifics
-                                        </p> */}
+                           
 
                                         {subset.map(p => (
                                             <Card key={p.nickname || p.name} className='people-card'>

@@ -39,6 +39,7 @@ Fumeng expects that she will be **the webmaster** and maintain this repository f
 
 - Fumeng has tested in major countries (US, China, Canada, UK, Japan, Korea, France, Germany, etc.). In China, you probably need to use a VPN because the rawgithubcontent could not load and the content does not render.
 
+- Use ChatGPT to remove background for all swag images and adjust lighting. Then set saturation = 0 and cyan + 12.
 
 # React App
 
