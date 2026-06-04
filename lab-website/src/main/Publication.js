@@ -69,7 +69,7 @@ class Publication extends Component {
 
                     <div className='row'>
                         <div className='col-lg-12'>
-                          <p> We publish at Visualization, HCI, and Visual Computing journals and conferences, such as {this.state && this.state.publicationmap && this.state.publicationdata && (() => {
+                          <p> We publish at HCI and Visualization venues, such as {this.state && this.state.publicationmap && this.state.publicationdata && (() => {
                             const mergeInto = { 'CHI LBW': 'CHI', 'ACL Findings': 'ACL' }
                             const mergeFrom = { 'CHI': 'CHI LBW', 'ACL': 'ACL Findings' }
                             const keys = Object.keys(this.state.publicationmap).sort().filter(k => !mergeInto[k])

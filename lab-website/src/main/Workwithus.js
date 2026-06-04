@@ -14,7 +14,9 @@ const swagImages = [
     { src: 'swags/cap, lanyard, magnet, badge.png',    caption: 'Caps, lanyards, and badges for conference outfits.' },
     { src: 'swags/white tote bags and key chains.png', caption: 'Tote bags and key chains for lab members.' },
     { src: 'swags/more white tote bags.png',           caption: 'You can never have enough tote bags.' },
+    { src: 'swags/black tote bags and mugs.png',      caption: 'Black tote bags and mugs for those who have a different taste.' },
     { src: 'swags/badge for paper (ripplet).png',      caption: 'A custom badge for each paper.' },
+    { src: 'swags/alternative logo stickers.png',      caption: 'Alternative logo sticker sheets for those who can\'t pick a favorite.' },
 ]
 
 class Workwithus extends Component {
