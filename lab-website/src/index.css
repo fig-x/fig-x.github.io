@@ -1419,7 +1419,7 @@ nav {
     text-decoration: none !important;
     text-underline-offset: 7px;
     text-decoration-line: underline !important;
-    text-decoration-color: var(--accent-soft) !important;
+    text-decoration-color: var(--text-muted) !important;
     text-decoration-style: solid !important;
     text-decoration-thickness: 2px !important;
   }
@@ -1517,7 +1517,7 @@ nav {
     left: 0;
     right: 0;
     height: 1.5px;
-    background: var(--accent);
+    background: var(--ink);
     border-radius: 1px;
   }
 
@@ -1592,7 +1592,6 @@ nav {
   .research-area-card-0:hover,
   .research-area-card-1:hover {
     box-shadow: var(--shadow-md);
-    border-color: var(--text-muted) !important;
   }
 
   .mobile-only {
