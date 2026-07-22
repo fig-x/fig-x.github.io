@@ -159,7 +159,7 @@ class Workwithus extends Component {
                                     Our focus is on HCI and Visualization, so applicants primarily interested in AI/ML/NLP may not find the best fit here.
                                     </p>
                                     <p>
-                                        The application deadline for 26fall is <b><NormalA href="https://www.cs.umd.edu/grad/apply" text="December 5, 2025" /></b>.
+                                        The application deadline for fall27 is <b><NormalA href="https://www.cs.umd.edu/grad/apply" text="December 4, 2026" /></b>.
                                         UMD CS utilizes an admission committee for reviewing applications.
                                         Make sure to mention Fumeng as the faculty of interest when you apply.
                                         Additionally,  UMD CS students who maintain good standing are typically funded throughout

@@ -1,15 +1,15 @@
 /* ——— Font imports — all loaded, switch body-font/heading-font below ——— */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap");
 
 :root {
-  --ink: #18181b;
-  --text: #27272a;
-  --text-secondary: #52525b;
-  --text-muted: #a1a1a5;
-  --border: #e4e4e7;
-  --border-subtle: #f4f4f5;
+  --ink: #1a1a1d;
+  --text: #303035;
+  --text-secondary: #6b6b73;
+  --text-muted: #a0a0a8;
+  --border: #e8e8eb;
+  --border-subtle: #f3f3f4;
   --surface: #ffffff;
-  --bg: #fafaf9;
+  --bg: #f8f8f7;
   --accent: #04b1e6;
   --accent-dark: #039cc8;
   --accent-soft: #c3edf8;
@@ -22,16 +22,16 @@
   /* --body-font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; */
   /* --body-font: 'Plus Jakarta Sans', sans-serif; */
   /* --body-font: 'Outfit', sans-serif; */
-  --body-font: 'Figtree', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif; 
+  --body-font: 'Figtree', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
   /* --body-font: 'Manrope', sans-serif; */
   --mono-font: 'SF Mono', 'Fira Code', Menlo, Monaco, monospace;
 
-  --transition: 0.2s ease;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-snappy: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-  --radius: 8px;
-  --radius-lg: 12px;
+  --radius: 6px;
+  --radius-lg: 10px;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
-  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 2px 16px rgba(0, 0, 0, 0.045);
 
   --theme-color: #18181b;
   --award-color: #04b1e6;
@@ -62,7 +62,7 @@
 /* ——— Base ——— */
 
 html {
-  font-size: 16px;
+  font-size: 16.25px;
   background-color: var(--bg);
   scroll-behavior: smooth;
 }
@@ -82,9 +82,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400 !important;
   font-size: 1rem !important;
-  letter-spacing: -0.005em;
-  word-spacing: 0.01em !important;
-  line-height: 1.7 !important;
+  letter-spacing: 0.01em;
+  word-spacing: 0.015em !important;
+  line-height: 1.65 !important;
   color: var(--text);
 }
 
@@ -104,11 +104,11 @@ code {
 .page-content {
   min-height: calc(100vh - 150px);
   background: var(--surface);
-  animation: fadeUp 0.45s ease-out;
+  animation: fadeUp 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -137,15 +137,15 @@ code {
 }
 
 .sub-span {
-  font-size: 1.05rem !important;
-  font-family: var(--body-font) !important;
-  font-weight: 700 !important;
+  font-size: 1.12rem !important;
+  font-family: 'Barlow Semi Condensed', sans-serif !important;
+  font-weight: 600 !important;
   text-transform: uppercase;
-  letter-spacing: 0.08em !important;
+  letter-spacing: 0.14em !important;
   line-height: 1.4 !important;
-  margin-bottom: 1.25rem !important;
+  margin-bottom: 1.5rem !important;
   margin-top: 0.5rem;
-  /* color: var(--text-se); */
+  color: var(--ink);
 }
 
 h1 {
@@ -160,11 +160,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.15rem !important;
-  font-family: var(--body-font) !important;
+  font-size: 1.2rem !important;
+  font-family: 'Barlow Semi Condensed', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em !important;
   /* letter-spacing:.05rem !important; */
   /* color: var(--text-secondary) !important; */
   /* text-transform: uppercase; */
@@ -206,12 +208,12 @@ nav {
 }
 
 .menu-item {
-  font-family: var(--body-font);
+  font-family: 'Barlow Semi Condensed', sans-serif;
   text-transform: uppercase;
-  font-size: 0.78rem !important;
+  font-size: 0.88rem !important;
   font-weight: 500 !important;
-  letter-spacing: 0.08em;
-  color: var(--text-muted) !important;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary) !important;
   padding-left: 0;
   transition: color var(--transition);
 }
@@ -230,7 +232,7 @@ nav {
   left: 50%;
   width: 0;
   height: 1.5px;
-  background: var(--ink);
+  background: var(--accent);
   transition: all 0.25s ease;
   transform: translateX(-50%);
 }
@@ -531,7 +533,7 @@ nav {
 .normal-a:hover,
 .none-a:hover,
 .plain-a:hover {
-  color: var(--accent);
+  color: var(--ink);
   transition: color var(--transition);
   cursor: pointer !important;
   text-decoration: none !important;
@@ -586,11 +588,8 @@ nav {
 }
 
 .news-item:hover {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-  border-radius: 6px;
+  opacity: 0.7;
+  transition: opacity var(--transition);
 }
 
 .news-date {
@@ -638,21 +637,19 @@ nav {
 
 .research-tag {
   display: inline-block;
-  padding: 0.4rem 0.9rem;
-  background: linear-gradient(135deg, rgba(244, 250, 252, 0.55) 0%, rgba(250,250,255,0.25) 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: var(--text);
+  padding: 0.38rem 0.85rem;
+  background: transparent;
+  color: var(--text-secondary);
   border-radius: 999px;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 500;
   font-family: var(--body-font);
-  border: 1px solid var(--accent-soft);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.07), inset 0 1px 0 rgba(255,255,255,0.7);
+  border: 1px solid var(--border);
   transition: all var(--transition);
   white-space: nowrap;
   position: relative;
   line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 
 /* .research-tag:hover {
@@ -705,6 +702,11 @@ nav {
 
 .footer-bottom b {
   color: #d4d4d8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  font-size: 0.92rem;
 }
 
 
@@ -723,7 +725,6 @@ nav {
 .research-area-card-0:hover,
 .research-area-card-1:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--text-muted) !important;
 }
 
 
@@ -749,7 +750,6 @@ nav {
 
 .img-thumbnail:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--text-muted) !important;
 }
 
 
@@ -790,7 +790,7 @@ nav {
 }
 
 .people-name:hover {
-  color: var(--accent);
+  color: var(--text-muted);
 }
 
 .people-friends-card {
@@ -803,7 +803,7 @@ nav {
   width: 3.5rem;
   border-radius: 50%;
   padding: 0;
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   background: none;
   transition: border-color var(--transition);
   position: relative;
@@ -814,14 +814,14 @@ nav {
 }
 
 .friends-logo:hover {
-  border-color: var(--accent);
+  border-color: var(--text-muted);
 }
 
 .headshot {
   margin: 15px 15px -5px 0;
   border-radius: 50% !important;
   padding: 0;
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   background: none;
   transition: border-color var(--transition);
   position: relative;
@@ -832,7 +832,7 @@ nav {
 }
 
 .headshot:hover {
-  border-color: var(--accent);
+  border-color: var(--text-muted);
 }
 
 .people-position {
@@ -953,6 +953,7 @@ nav {
   font-family: var(--body-font) !important;
   font-style: normal;
   text-decoration: none;
+  text-transform: none !important;
   font-weight: 600 !important;
   font-size: 1.05rem !important;
   background-color: var(--bg);
@@ -1025,18 +1026,18 @@ nav {
 }
 
 .paper-info span a {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   line-height: 1.4;
   text-decoration: none;
-  color: var(--text-secondary);
-  padding: 0.2rem 0.5rem 0.25rem 0.5rem;
-  border-radius: 4px;
-  background-color: var(--bg);
+  color: var(--text-muted);
+  padding: 0.2rem 0.55rem 0.25rem 0.55rem;
+  border-radius: var(--radius);
+  background-color: transparent;
   border: 1px solid var(--border);
   transition: all var(--transition);
   display: inline-flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.25rem;
 }
 
 .paper-info span a:hover {
@@ -1059,12 +1060,12 @@ nav {
 .figx-name-style {
   color: var(--ink);
   font-weight: 450;
-  text-decoration: underline 2px var(--accent-soft) !important;
+  text-decoration: underline 1.5px var(--border) !important;
   text-underline-offset: 3px;
   text-decoration-line: underline !important;
-  text-decoration-color: var(--accent-soft) !important;
+  text-decoration-color: var(--border) !important;
   text-decoration-style: solid !important;
-  text-decoration-thickness: 2px !important;
+  text-decoration-thickness: 1.5px !important;
 }
 
 
@@ -1093,7 +1094,6 @@ nav {
 
 .artifact-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--text-muted) !important;
   cursor: pointer;
 }
 
@@ -1172,7 +1172,6 @@ nav {
 }
 
 .swag-card:hover {
-  border-color: var(--text-muted);
   box-shadow: var(--shadow-md);
 }
 
@@ -1309,7 +1308,6 @@ nav {
 
 .flyer:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--text-muted) !important;
 }
 
 .side-stick {
@@ -1535,15 +1533,33 @@ nav {
     background-image: url(../public/headline-4.png);
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 120%;
     background-color: #f8f8f8de;
     background-position: center center;
     animation: panning 80s infinite ease-in-out;
+    position: relative;
+  }
+
+  .welcome-block-outside::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      150deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.02) 40%,
+      rgba(255, 255, 255, 0.02) 70%,
+      rgba(255, 255, 255, 0.12) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
   }
 
   .welcome-block-inside-container{
     background-color: #ffffff22;
     backdrop-filter: blur(20px) opacity(40%);
+    position: relative;
+    z-index: 2;
   }
 
   @keyframes panning {
