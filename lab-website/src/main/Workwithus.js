@@ -152,7 +152,7 @@ class Workwithus extends Component {
                                 <h2 className='research-title'>Prospective Ph.D. students </h2>
                                 <div className='flyer-inner'>
                                    <p>
-                                   We connect <b>computational models</b>—AI, machine learning, and probabilistic forecasts—with users in domains like <b>education, healthcare, policymaking, and politics</b>. We are particularly interested in  <b>AI literacy, human-AI decision-making, human-AI interaction, and uncertainty visualization</b> (alphabetically).
+                                   We connect <b>computational models</b>—AI, machine learning, and probabilistic forecasts—with users in domains like <b>education, healthcare, policymaking, and politics</b>. We are particularly interested in  <b>human-AI co-creation, human-AI decision-making, human-AI interaction,  and uncertainty visualization</b> (alphabetically).
                                     </p>
                                     <p>
                                     We welcome applicants with degrees in computer science and related disciplines.

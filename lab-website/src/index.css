@@ -1,5 +1,7 @@
 /* ——— Font imports — all loaded, switch body-font/heading-font below ——— */
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@1&f[]=satoshi@1&f[]=switzer@1&f[]=cabinet-grotesk@1&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/geist@1/dist/fonts/geist-sans/style.css");
 
 :root {
   --ink: #1a1a1d;
@@ -22,7 +24,13 @@
   /* --body-font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; */
   /* --body-font: 'Plus Jakarta Sans', sans-serif; */
   /* --body-font: 'Outfit', sans-serif; */
-  --body-font: 'Figtree', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* --body-font: 'Figtree', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif; */
+  --body-font: 'General Sans', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* --body-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; */
+  /* --body-font: 'Satoshi', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif; */
+  /* --body-font: 'Geist', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif; */
+  /* --body-font: 'Switzer', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif; */
+  /* --body-font: 'Cabinet Grotesk', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif; */
   /* --body-font: 'Manrope', sans-serif; */
   --mono-font: 'SF Mono', 'Fira Code', Menlo, Monaco, monospace;
 
@@ -80,10 +88,10 @@ body {
   font-family: var(--body-font) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400 !important;
+  font-weight: 425 !important;
   font-size: 1rem !important;
-  letter-spacing: 0.01em;
-  word-spacing: 0.015em !important;
+  letter-spacing: 0.008em;
+  word-spacing: 0.025em !important;
   line-height: 1.65 !important;
   color: var(--text);
 }
@@ -139,7 +147,7 @@ code {
 .sub-span {
   font-size: 1.12rem !important;
   font-family: 'Barlow Semi Condensed', sans-serif !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: uppercase;
   letter-spacing: 0.14em !important;
   line-height: 1.4 !important;
@@ -164,7 +172,7 @@ h2 {
   font-family: 'Barlow Semi Condensed', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: uppercase;
   letter-spacing: 0.12em !important;
   /* letter-spacing:.05rem !important; */
@@ -188,7 +196,7 @@ p {
 }
 
 b, bold {
-  font-weight: 600 !important;
+  font-weight: 550 !important;
 }
 
 .verybold {
@@ -272,19 +280,17 @@ nav {
 /* ——— Mobile Hero ——— */
 
 .mobile-hero {
-  padding: 2.5rem 1.25rem 1.5rem;
+  padding: 2.5rem 0 1.5rem;
   background: linear-gradient(180deg, #f6f6f5 0%, #fafaf9 40%, var(--surface) 100%);
 }
 
 .mobile-hero-card {
   border-radius: var(--radius-lg);
-  padding: 1.5rem 1.25rem;
+  padding: 1.5rem 1.15rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  max-width: 760px;
-  margin: 0 auto;
   background: transparent;
 }
 
@@ -426,7 +432,7 @@ nav {
 .mobile-section-label {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   font-family: 'Barlow Semi Condensed', sans-serif;
   color: var(--ink);
@@ -435,7 +441,7 @@ nav {
 
 .mobile-section-title {
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 550;
   font-family: var(--body-font);
   color: var(--ink);
 }
@@ -462,7 +468,7 @@ nav {
   font-weight: 500;
   font-size: 0.82rem;
   font-family: var(--body-font);
-  border: 1px solid var(--accent-soft);
+  border: 1px solid var(--border);
 }
 
 .mobile-news-list {
@@ -479,7 +485,7 @@ nav {
 }
 
 .mobile-news-date {
-  font-weight: 600;
+  font-weight: 550;
   font-size: 0.82rem;
   font-family: var(--body-font);
   color: var(--text-muted);
@@ -587,10 +593,6 @@ nav {
   border-bottom: none;
 }
 
-.news-item:hover {
-  opacity: 0.7;
-  transition: opacity var(--transition);
-}
 
 .news-date {
   flex: 0 0 140px;
@@ -705,7 +707,7 @@ nav {
   font-family: 'Barlow Semi Condensed', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.92rem;
 }
 
@@ -784,7 +786,7 @@ nav {
   font-style: normal;
   color: inherit;
   text-decoration: none;
-  font-weight: 600 !important;
+  font-weight: 550 !important;
   line-height: 1.5;
   transition: color var(--transition);
 }
@@ -911,7 +913,7 @@ nav {
   line-height: 1.5;
   margin-bottom: 0;
   word-spacing: 1px;
-  font-weight: 600 !important;
+  font-weight: 550 !important;
   letter-spacing: -0.005em !important;
   color: var(--ink);
 }
@@ -942,7 +944,7 @@ nav {
 
 .paper-award {
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 550;
   font-size: 0.93rem !important;
   line-height: 1.5;
   padding: 0.15rem 0rem;
@@ -954,7 +956,7 @@ nav {
   font-style: normal;
   text-decoration: none;
   text-transform: none !important;
-  font-weight: 600 !important;
+  font-weight: 550 !important;
   font-size: 1.05rem !important;
   background-color: var(--bg);
   padding: 0.9rem 1.25rem 0.9rem 1.5rem !important;
@@ -1007,7 +1009,7 @@ nav {
 /* ——— Paper Info / Links ——— */
 
 .paper-short-name {
-  font-weight: 700;
+  font-weight: 550;
   font-size: 0.88rem;
   font-family: var(--body-font);
   line-height: 1.5;
@@ -1060,12 +1062,8 @@ nav {
 .figx-name-style {
   color: var(--ink);
   font-weight: 450;
-  text-decoration: underline 1.5px var(--border) !important;
+  text-decoration: underline 1.5px var(--accent-soft) !important;
   text-underline-offset: 3px;
-  text-decoration-line: underline !important;
-  text-decoration-color: var(--border) !important;
-  text-decoration-style: solid !important;
-  text-decoration-thickness: 1.5px !important;
 }
 
 
@@ -1074,7 +1072,7 @@ nav {
 .artifact-small-title {
   font-family: var(--body-font);
   font-size: 1.02rem !important;
-  font-weight: 600;
+  font-weight: 550;
   line-height: 1.4;
   background-color: var(--bg);
   padding: 12px 1.5rem;
@@ -1417,11 +1415,17 @@ nav {
     font-weight: 600 !important;
     position: relative;
     text-decoration: none !important;
-    text-underline-offset: 7px;
-    text-decoration-line: underline !important;
-    text-decoration-color: var(--text-muted) !important;
-    text-decoration-style: solid !important;
-    text-decoration-thickness: 1.5px !important;
+  }
+
+  .nav-active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background: var(--ink);
+    border-radius: 1px;
   }
 
   .paper-description,
@@ -1432,10 +1436,6 @@ nav {
     display: none;
   }
 
-  .nav-none::after,
-  .nav-none:hover::after {
-    display: none;
-  }
 
   .research-area-card-inner {
     margin: 1rem 1em 1.5rem 1.5rem !important;

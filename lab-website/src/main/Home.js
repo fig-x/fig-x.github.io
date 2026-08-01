@@ -66,6 +66,7 @@ class Home extends Component {
                 </div>
 
                 <div className='mobile-hero mobile-only'>
+                  <div className='container'>
                     <div className='mobile-hero-card'>
                         <div className='mobile-hero-top'>
                             <img src='figx-logo.svg' alt='FIGX Lab logo' className='mobile-hero-logo' />
@@ -73,6 +74,7 @@ class Home extends Component {
                             <p className='mobile-hero-desc'>{labIntro}</p>
                         </div>
                     </div>
+                  </div>
                 </div>
 
                 <div className='welcome-block-outside desktop-only'>
