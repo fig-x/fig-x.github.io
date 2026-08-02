@@ -956,7 +956,7 @@ nav {
   font-style: normal;
   text-decoration: none;
   text-transform: none !important;
-  font-weight: 550 !important;
+  font-weight: 580 !important;
   font-size: 1.05rem !important;
   background-color: var(--bg);
   padding: 0.9rem 1.25rem 0.9rem 1.5rem !important;
@@ -1031,11 +1031,11 @@ nav {
   font-size: 0.85rem;
   line-height: 1.4;
   text-decoration: none;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   padding: 0.2rem 0.55rem 0.25rem 0.55rem;
   border-radius: var(--radius);
   background-color: transparent;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(107, 107, 115, 0.35);
   transition: all var(--transition);
   display: inline-flex;
   align-items: center;
@@ -1060,7 +1060,7 @@ nav {
 }
 
 .figx-name-style {
-  color: var(--ink);
+  color: var(--text);
   font-weight: 450;
   text-decoration: underline 1.5px var(--accent-soft) !important;
   text-underline-offset: 3px;
